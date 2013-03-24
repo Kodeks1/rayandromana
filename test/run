@@ -1,0 +1,10 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+pushd $DIR/..
+
+phantomjs src/libs/mocha-phantomjs/mocha-phantomjs.coffee test/index.html
+
+if [ $? -ne 0 ]
+    then echo "FAIL"
+    exit 1
+fi

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test Runner</title>
+    <link rel="stylesheet" href="../src/libs/mocha.css" type="text/css">
+</head>
+<body>
+    <div id="mocha"></div>
+    <div id="fixture"></div>
+    <script src="../src/libs/jquery-1.9.1.js"></script>
+    <script src="../src/libs/chai.js"></script>
+    <script src="../src/libs/mocha.js"></script>
+    <script>
+        var assert = chai.assert;
+    </script>
+    <script>mocha.setup('bdd')</script>
+    <script src="./require.config.js"></script>
+    <script src="../src/libs/require.js"></script>
+    <script>
+        require(['./test'], function () {
+            if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+            else { mocha.run(); }
+        });
+    </script>
+  </body>
+</html>
+</body>
+</html>

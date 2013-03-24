@@ -1,0 +1,10 @@
+.DS_Store
+*.svn
+*.gem
+*.rbc
+.iws
+.idea
+.sass-cache
+src/libs
+node_modules
+dist/

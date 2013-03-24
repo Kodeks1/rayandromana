@@ -1,0 +1,28 @@
+{
+    "name": "rayandromana",
+    "description": "Ray and Romana",
+    "homepage": "http://www.rayandromana.com",
+    "version": "0.0.1",
+    "private": true,
+    "engines": {
+        "node": "0.8.x"
+    },
+    "dependencies": {
+        "underscore": "1.4.x",
+        "mocha": "1.8.x",
+        "es5-shim": "~2.0.5",
+        "grunt": "0.4.0rc7",
+        "grunt-contrib-copy": "0.4.x",
+        "grunt-contrib-concat": "0.1.x",
+        "grunt-contrib-uglify": "0.2.x",
+        "grunt-contrib-compass": "0.1.x",
+        "grunt-contrib-jshint": "0.3.x",
+        "grunt-contrib-cssmin": "0.5.x",
+        "grunt-contrib-clean": "0.4.x",
+        "grunt-contrib-htmlmin": "0.1.x",
+        "grunt-usemin": "0.1.x",
+        "grunt-regarde": "0.1.x",
+        "grunt-google-cdn": "0.1.x",
+        "grunt-ngmin": "0.0.x"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "bitwise": true,
+    "camelcase": true,
+    "curly": true,
+    "browser": true,
+    "eqeqeq": true,
+    "latedef": false,
+    "newcap" : false,
+    "noarg": true,
+    "noempty": true,
+    "supernew": true,
+    "quotmark": "single",
+    "undef": true,
+    "unused": true,
+    "strict": true,
+    "forin" : false,
+    "trailing": false,
+    "maxparams": 5,
+    "maxlen": 160,
+    "eqnull": true,
+    "boss": true,
+    "white": false,
+    "predef": [
+        "define", "require",
+        "describe", "ddescribe", "it", "xdescribe", "xit", "iit", "expect", "spyOn",
+        "beforeEach", "waits", "waitsFor", "runs", "jasmine", "afterEach", "module"
+    ]
+}
