@@ -2,14 +2,24 @@ module.exports = function(grunt) {
 
     'use strict';
 
-    // configurable paths
     var gruntConfig = {
         app: 'src',
         dist: 'dist'
     };
 
-    // Project configuration.
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-ngmin');
+    //grunt.loadNpmTasks('grunt-google-cdn');
+
     grunt.initConfig({
+
         pkg: grunt.file.readJSON('package.json'),
         config: gruntConfig,
 
@@ -28,33 +38,6 @@ module.exports = function(grunt) {
             ]
         },
 
-        concat: {
-            dist: {
-                files: {
-                    '<%= config.dist %>/js/raycashmore.min.js': ['<%= config.app %>/js/{,*/}*.js'],
-                    '<%= config.dist %>/css/styles.css': ['<%= config.app %>/css/{,*/}*.css']
-                }
-            }
-        },
-
-        uglify: {
-            dist: {
-                files: {
-                    '<%= config.dist %>/js/raycashmore.min.js': [
-                        '<%= config.dist %>/js/raycashmore.min.js'
-                    ]
-                }
-            }
-        },
-
-        cssmin: {
-            dist: {
-                files: {
-                    '<%= config.dist %>/css/styles.css': ['<%= config.dist %>/css/styles.css']
-                }
-            }
-        },
-
         copy: {
             dist: {
                 files: [{
@@ -65,8 +48,10 @@ module.exports = function(grunt) {
                     src: [
                         'img/**/*',
                         'libs/**/*',
-                        'photos/**/*',
-                        'templates/**/*'
+                        'content/**/*',
+                        'templates/**/*',
+                        'analytics.js',
+                        'index.html'
                     ]
                 }]
             }
@@ -81,23 +66,46 @@ module.exports = function(grunt) {
 
         usemin: {
             html: ['<%= config.dist %>/index.html'],
-            //css: ['<%= config.dist %>/styles/{,*/}*.css'],
             options: {
                 dirs: ['<%= config.dist %>']
             }
+        },
+
+        htmlmin: {
+            dist: {
+                options: {
+                    collapseWhitespace: true,
+                    removeComments: true,
+                    removeCommentsFromCDATA: false,
+                    useShortDoctype: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.dist %>',
+                    src: ['*.html', 'templates/*.html'],
+                    dest: '<%= config.dist %>'
+                }]
+            }
         }
 
+        /*ngmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.dist %>/js',
+                    src: '*.js',
+                    dest: '<%= config.dist %>/js'
+                }]
+            }
+        }*/
+
+        /*cdnify: {
+            dist: {
+                html: ['<%= config.dist %>*//*.html']
+            }
+        }*/
+
     });
-
-    // Load the plugin that provides the "uglify" task.
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-usemin');
-
 
     /*grunt.registerTask('test', [
         'clean:server',
@@ -111,12 +119,15 @@ module.exports = function(grunt) {
         'clean:dist',
         //'jshint',
         //'test',
+        'useminPrepare',
         'concat',
+        //'ngmin',
         'uglify',
+        //'cdnify',
         'cssmin',
-        'copy'
-        //'useminPrepare'
-        //'usemin'
+        'copy',
+        'usemin',
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', ['build']);

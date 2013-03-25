@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('rcpics', ['rcpicsFilters', 'rcpicsServices'])
+angular.module('rayandromana', ['rrFilters', 'rrServices'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('', {templateUrl: 'templates/photo-stream.html',   controller: PhotoStreamCtrl})

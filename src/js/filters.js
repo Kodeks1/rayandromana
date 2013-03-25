@@ -1,7 +1,9 @@
 'use strict';
 
-angular.module('rcpicsFilters', []).filter('checkmark', function() {
-    return function(input) {
-        return input ? '\u2713' : '\u2718';
-    };
+angular.module('rrFilters', [])
+    .filter('checkmark', function() {
+        return function(input) {
+            return input ? '\u2713' : '\u2718';
+        };
 });
+
