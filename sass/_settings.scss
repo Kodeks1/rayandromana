@@ -50,7 +50,7 @@
 // Grid Variables
 //
 
-// $row-width: 62.5em;
+$row-width: 60em;
 // $column-gutter: 1.875em;
 // $total-columns: 12;
 
@@ -953,10 +953,10 @@
 //
 
 // Background color for the top bar
-// $topbar-bg: #111;
+$topbar-bg: #FFF;
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 75px;
 // $topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar
@@ -967,7 +967,7 @@
 // $topbar-title-font-size: emCalc(17px);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+$topbar-link-color: #000;
 // $topbar-link-weight: bold;
 // $topbar-link-font-size: emCalc(13px);
 

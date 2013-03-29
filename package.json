@@ -22,7 +22,7 @@
         "grunt-contrib-htmlmin": "0.1.x",
         "grunt-usemin": "0.1.x",
         "grunt-regarde": "0.1.x",
-        "grunt-google-cdn": "0.1.x",
+        "grunt-cdn": "0.2.x",
         "grunt-ngmin": "0.0.x"
     }
 }

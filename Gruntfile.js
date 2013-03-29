@@ -16,6 +16,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-ngmin');
+    grunt.loadNpmTasks('grunt-cdn');
     //grunt.loadNpmTasks('grunt-google-cdn');
 
     grunt.initConfig({
@@ -105,6 +106,16 @@ module.exports = function(grunt) {
             }
         }*/
 
+        /*cdn: {
+            options: {
+                cdn: '//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js'
+            },
+            dist: {
+                src: ['<%= config.dist %>/index.html'],
+                dest: './dist/static/'
+            }
+        }*/
+
     });
 
     /*grunt.registerTask('test', [
@@ -127,6 +138,7 @@ module.exports = function(grunt) {
         'cssmin',
         'copy',
         'usemin',
+        //'cdn',
         'htmlmin'
     ]);
 
