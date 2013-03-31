@@ -1,22 +1,51 @@
-/* line 2, ../../sass/style.scss */
+/* line 1, ../../sass/style.scss */
 .banner {
   position: fixed;
   top: 75px;
   z-index: -1;
 }
 
-/* line 11, ../../sass/style.scss */
+/* line 10, ../../sass/style.scss */
 .zigzag {
   background-image: url(../img/zigzag.png);
   height: 119px;
 }
 
-/* line 16, ../../sass/style.scss */
+/* line 15, ../../sass/style.scss */
 .date-img {
   text-align: center;
 }
 
-/* line 20, ../../sass/style.scss */
+/* line 19, ../../sass/style.scss */
 .paper {
   background-image: url(../img/paper.png);
+}
+
+/* line 23, ../../sass/style.scss */
+.white {
+  background-color: #fff;
+}
+
+/* line 27, ../../sass/style.scss */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+}
+
+/* line 32, ../../sass/style.scss */
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.2em;
+}
+
+/* line 37, ../../sass/style.scss */
+p {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+}
+
+/* line 42, ../../sass/style.scss */
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
 }
