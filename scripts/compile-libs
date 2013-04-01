@@ -7,6 +7,7 @@ pushd $EXTERNALDIR
 # curl -O http://backbonejs.org/backbone.js
 curl -O http://underscorejs.org/underscore.js
 curl -O http://code.jquery.com/jquery-1.9.1.js
+curl -O http://modernizr.com/downloads/modernizr-latest.js
 curl -O http://code.angularjs.org/1.1.3/angular.js
 curl -O http://code.angularjs.org/1.1.3/angular-resource.js
 # curl -O http://requirejs.org/docs/release/2.0.6/comments/require.js

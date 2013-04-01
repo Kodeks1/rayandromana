@@ -1,21 +1,10 @@
 'use strict';
 
-var PhotoStreamCtrl = ['$scope', 'Photo', function($scope, Photo) {
-    $scope.photos = Photo.query();
-    //$scope.orderProp = 'age';
-}];
+var PhotosController = ['$scope', '$timeout', 'PhotoService', function($scope, $timeout, PhotoService) {
+    $scope.photos = PhotoService.query();
 
-var PhotoDetailCtrl = ['$scope', '$routeParams', 'Phone', function($scope, $routeParams, Phone) {
-
-    /*$scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-        $scope.mainImageUrl = phone.images[0];
+    $timeout(function() {
+        setTimeout(Grid.init(), 500);   //hack
     });
-
-    $scope.setImage = function(imageUrl) {
-        $scope.mainImageUrl = imageUrl;
-    }*/
-
-
-    console.log('PhotoDetailCtrl');
 
 }];

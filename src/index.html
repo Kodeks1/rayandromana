@@ -15,20 +15,9 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- endbuild -->
 
-    <script src="libs/foundation/js/vendor/custom.modernizr.js"></script>
-
-    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>-->
-    <script src="libs/angular.js"></script>
-    <script src="libs/angular-resource.js"></script>
-
-    <!-- build:js js/rayandromana.min.js -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/directives.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/services.js"></script>
-    <!-- endbuild -->
+    <script src="libs/jquery-1.9.1.js"></script>
+    <script src="libs/modernizr-latest.js"></script>
+    <!--<script src="libs/foundation/js/vendor/custom.modernizr.js"></script>-->
 
 </head>
 <body>
@@ -39,14 +28,13 @@
             <ul class="title-area">
                 <li class="name">
                     <h1>
-                        <a href="#" class="logo">Ray and Romana</a>
+                        <span class="logo">Ray and Romana</span>
                     </h1>
                 </li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
             </ul>
 
             <section class="top-bar-section">
-                <!-- Right Nav Section -->
                 <ul class="right">
                     <li class="has-dropdown">
                         <a href="#">Language:</a>
@@ -60,14 +48,14 @@
         </nav>
     </div>
 
-    <section resize>
+    <section resize ng-cloak>
         <div class="banner">
             <img src="content/imgs/savethedate.jpg" class="banner-img" width="{{width}}" height="{{height}}"/>
         </div>
         <div style="{{heightStyle}}"></div>
     </section>
 
-    <section class="paper">
+    <section class="paper" ng-cloak>
 
         <section class="zigzag">
             <div class="row">
@@ -94,15 +82,52 @@
 
     </section>
 
-    <section class="white">
+    <section class="white" ng-cloak>
         <div class="row">
-            <div class="small-12 columns">
-                <p>abc</p>
+            <div class="small-4 columns">
+                <img src="img/chapel.jpg" width="291" height="328"/>
+            </div>
+            <div class="small-8 columns">
+                <h2>Ceremony</h2>
+                <p class="location">Chateau Chapel, Valtice<br/>
+                    Saturday, September 28, 2013 | 13:00 - 13:30</p>
+                <p class="sublabel"><br/>A bus will be organized for everyone to and from the
+                the Chateau Chapel leaving around 12:20pm.<p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-4 columns">
+                <img src="img/tavern.jpg" width="291" height="193"/>
+            </div>
+            <div class="small-8 columns">
+                <h2>Reception</h2>
+                <p class="location">Winery by the Chapel, Zaječí<br/>
+                    Saturday, September 28, 2013 | 14:30 - 16:30</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-4 columns">
+                <img src="img/cellar.jpg" width="291" height="193"/>
+            </div>
+            <div class="small-8 columns">
+                <h2>Wine Tasting</h2>
+                <p class="location">Winery by the Chapel, Zaječí<br/>
+                    Saturday, September 28, 2013 | 17:30 - 18:30</p>
+                <p class="sublabel"><br/>While we will be taking our wedding photos, you can enjoy some fine wine.<p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-4 columns">
+                <img src="img/openbar.jpg" width="291" height="206"/>
+            </div>
+            <div class="small-8 columns">
+                <h2>Party!</h2>
+                <p class="location">Saturday, September 28, 2013 | all night long</p>
             </div>
         </div>
     </section>
 
-    <section class="paper">
+    <section class="paper" ng-cloak>
         <div class="row">
             <h1>Location / Travel / Accommodation</h1>
             <div class="small-6 columns">
@@ -112,7 +137,7 @@
                 <p>Perhaps the easilest option is to fly to Vienna, and catch a train accross the border to Breclav. We can then organise to have someone pick you by car from there. But let us know your plans, and we’ll figure out the best route for you.</p>
             </div>
             <div class="small-6 columns">
-                abc
+                <img src="img/map.jpg" width="435" height="352"/>
             </div>
         </div>
         <div class="row">
@@ -137,15 +162,24 @@
         </div>
     </section>
 
-    <section class="white">
+    <section class="white" ng-controller="PhotosController" ng-cloak>
         <div class="row">
             <div class="small-12 columns">
                 <h1>Photos</h1>
+                <div class="main">
+                    <ul id="og-grid" class="og-grid">
+                        <li ng-repeat="photo in photos">
+                            <a href="" data-largesrc="content/imgs/lrg/{{photo.largesrc}}" data-title="My title" data-description="My desc">
+                                <img ng-src="content/imgs/thumb/{{photo.thumbsrc}}" alt="My title"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="paper">
+    <section class="paper" ng-cloak>
         <div class="row">
             <div class="small-12 columns">
                 <h1>Czech this out!</h1>
@@ -171,27 +205,37 @@
 
 
 
-    <script>
-        document.write('<script src=' +
-        ('__proto__' in {} ? 'libs/foundation/js/vendor/zepto' : 'libs/foundation/js/vendor/jquery') +
-        '.js><\/script>')
-    </script>
+
+    <!--
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>
+    -->
+    <script src="libs/angular.js"></script>
+    <script src="libs/angular-resource.js"></script>
+
+    <!-- build:js js/rayandromana.min.js -->
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/imggrid.js"></script>
+    <!-- endbuild -->
 
     <script src="libs/foundation/js/foundation/foundation.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.alerts.js"></script>
+    <!--<script src="libs/foundation/js/foundation/foundation.alerts.js"></script>
     <script src="libs/foundation/js/foundation/foundation.clearing.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.cookie.js"></script>
+    <script src="libs/foundation/js/foundation/foundation.cookie.js"></script>-->
     <script src="libs/foundation/js/foundation/foundation.dropdown.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.forms.js"></script>
+   <!-- <script src="libs/foundation/js/foundation/foundation.forms.js"></script>
     <script src="libs/foundation/js/foundation/foundation.joyride.js"></script>
     <script src="libs/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="libs/foundation/js/foundation/foundation.orbit.js"></script>
     <script src="libs/foundation/js/foundation/foundation.placeholder.js"></script>
     <script src="libs/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="libs/foundation/js/foundation/foundation.section.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.tooltips.js"></script>
+    <script src="libs/foundation/js/foundation/foundation.tooltips.js"></script>-->
     <script src="libs/foundation/js/foundation/foundation.topbar.js"></script>
-
     <script>
         $(document).foundation();
     </script>
