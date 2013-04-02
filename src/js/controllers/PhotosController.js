@@ -4,7 +4,7 @@ var PhotosController = ['$scope', '$timeout', 'PhotoService', function($scope, $
     $scope.photos = PhotoService.query();
 
     $timeout(function() {
-        setTimeout(Grid.init(), 500);   //hack
+        setTimeout(Grid.init(), 1000);   //hack
     });
 
 }];

@@ -20,7 +20,7 @@
     <!--<script src="libs/foundation/js/vendor/custom.modernizr.js"></script>-->
 
 </head>
-<body>
+<body ng-controller="AppController">
 
     <div class="fixed contain-to-grid">
 
@@ -37,10 +37,10 @@
             <section class="top-bar-section">
                 <ul class="right">
                     <li class="has-dropdown">
-                        <a href="#">Language:</a>
+                        <a href="#"><img src="img/flags.gif" width="84" height="34"/></a>
                         <ul class="dropdown">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Czech</a></li>
+                            <li><a href="#" ng-click="setEnglishLanguage()">English</a></li>
+                            <li><a href="#" ng-click="setCzechLanguage()">Czech</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -67,13 +67,8 @@
 
         <section class="welcome">
             <div class="row">
-                <h1>The big day</h1>
-                <div class="small-9 columns">
-                    <p>Welcome to our wedding website. This is the place you’ll find every piece of information you will need regarding our wedding celebration and much more. We are so excited to be spending this special time with friends and family we hold so dear to our hearts.</p>
-                    <p>We decided to get married in a place close to Romana’s hometown, area rich in wine, folklore and warm-hearted people. If you are interested to learn some fun facts go to the “Czech this out!” link.</p>
-                    <p>We can’t wait to see you on our Big Day!</p>
-                    <p>Lots of love,<br/>Ray & Romana</p>
-                </div>
+                <h1 ngBindHtml>{{'_BigDay_' | i18n}}</h1>
+                <div class="small-9 columns" ng-bind-html="'_Greeting_' | i18n"></div>
                 <div class="small-3 columns">
                     <img src="img/mugs.jpg" width="200" height="200">
                 </div>
@@ -88,11 +83,9 @@
                 <img src="img/chapel.jpg" width="291" height="328"/>
             </div>
             <div class="small-8 columns">
-                <h2>Ceremony</h2>
-                <p class="location">Chateau Chapel, Valtice<br/>
-                    Saturday, September 28, 2013 | 13:00 - 13:30</p>
-                <p class="sublabel"><br/>A bus will be organized for everyone to and from the
-                the Chateau Chapel leaving around 12:20pm.<p>
+                <h2>{{'_Ceremony_' | i18n}}</h2>
+                <p class="location">{{'_CeremonyWhere_' | i18n}}<br/>{{'_CeremonyWhen_' | i18n}}</p>
+                <p class="sublabel"><br/>{{'_CeremonyBus_' | i18n}}<p>
             </div>
         </div>
         <div class="row">
@@ -100,9 +93,8 @@
                 <img src="img/tavern.jpg" width="291" height="193"/>
             </div>
             <div class="small-8 columns">
-                <h2>Reception</h2>
-                <p class="location">Winery by the Chapel, Zaječí<br/>
-                    Saturday, September 28, 2013 | 14:30 - 16:30</p>
+                <h2>{{'_Reception_' | i18n}}</h2>
+                <p class="location">{{'_ReceptionWhere_' | i18n}}<br/>{{'_ReceptionWhen_' | i18n}}</p>
             </div>
         </div>
         <div class="row">
@@ -110,10 +102,9 @@
                 <img src="img/cellar.jpg" width="291" height="193"/>
             </div>
             <div class="small-8 columns">
-                <h2>Wine Tasting</h2>
-                <p class="location">Winery by the Chapel, Zaječí<br/>
-                    Saturday, September 28, 2013 | 17:30 - 18:30</p>
-                <p class="sublabel"><br/>While we will be taking our wedding photos, you can enjoy some fine wine.<p>
+                <h2>{{'_Winetasting_' | i18n}}</h2>
+                <p class="location">{{'_WinetastingWhere_' | i18n}}<br/>{{'_WinetastingWhen_' | i18n}}</p>
+                <p class="sublabel"><br/>{{'_WinetastingLabel_' | i18n}}<p>
             </div>
         </div>
         <div class="row">
@@ -121,21 +112,17 @@
                 <img src="img/openbar.jpg" width="291" height="206"/>
             </div>
             <div class="small-8 columns">
-                <h2>Party!</h2>
-                <p class="location">Saturday, September 28, 2013 | all night long</p>
+                <h2>{{'_Party_' | i18n}}</h2>
+                <p class="location">{{'_PartyWhere_' | i18n}}<br/>{{'_PartyWhen_' | i18n}}</p>
+                <p class="sublabel"><br/>{{'_PartyLabel_' | i18n}}<p>
             </div>
         </div>
     </section>
 
     <section class="paper" ng-cloak>
         <div class="row">
-            <h1>Location / Travel / Accommodation</h1>
-            <div class="small-6 columns">
-                <p>The wedding will take place in the south of the Czech Republic in a region called Moravia. It is very close to the Austrian and Slovak borders. Prague is about 2.5 hours away by car and Vienna is about 1.5 hours away.</p>
-                <p>The reception and accommodation venue is located in Zaječí, while the wedding ceremony will take place in Valtice  which is about a 20 minute drive away. We will organise bus transport between the venues.</p>
-                <p>For guests flying in from overseas, the best bet is to fly into Prague, Brno, or Vienna. EasyJet or Ryan Air can get you there pretty easily from London, just don’t get your hopes up if you’re expecting a spacious seat.</p>
-                <p>Perhaps the easilest option is to fly to Vienna, and catch a train accross the border to Breclav. We can then organise to have someone pick you by car from there. But let us know your plans, and we’ll figure out the best route for you.</p>
-            </div>
+            <h1>{{'_Location_' | i18n}}</h1>
+            <div class="small-6 columns" ng-bind-html="'_LocationSpeil_' | i18n"></div>
             <div class="small-6 columns">
                 <img src="img/map.jpg" width="435" height="352"/>
             </div>
@@ -150,14 +137,8 @@
                 abc
             </div>
             <div class="small-6 columns">
-                <h2>Vinarstvi U Kaplicky /<br/>Winery by the Chapel</h2>
-                <p>The winery has the accommodation, main reception room, a spa/wellness centre for relaxting on Sunday, as well as a ‘Retro disco’ club with a cool bowling ally, all in the one location. So although remote, it has everything there for the weekend of celebrations.</p>
-                <p>We will book accommodation for you at the wedding venue. Please go to RSVP link to let us know how many nights you need and any requirements you have.</p>
-                <p>
-                    1 night - Saturday (28 Sept)<br/>
-                    2 nights - Friday and Saturday (27 and 28 Sept)<br/>
-                    3 nights - Thursday, Friday and Saturday (26, 27 and 28 Sept)
-                </p>
+                <h2>{{'_Accomm_' | i18n}}</h2>
+                <p ng-bind-html="'_AccommSpeil_' | i18n"></p>
             </div>
         </div>
     </section>
@@ -183,6 +164,35 @@
         <div class="row">
             <div class="small-12 columns">
                 <h1>Czech this out!</h1>
+
+                <div class="small-3 columns">
+                    <img src="http://placehold.it/500x500&text=Thumbnail">
+                    <div class="panel">
+                        <p>{{'_RSVP_' | i18n}}</p>
+                    </div>
+                </div>
+
+                <div class="small-3 columns">
+                    <img src="http://placehold.it/500x500&text=Thumbnail">
+                    <div class="panel">
+                        <p>{{'_Guestbook_' | i18n}}</p>
+                    </div>
+                </div>
+
+                <div class="small-3 columns">
+                    <img src="http://placehold.it/500x500&text=Thumbnail">
+                    <div class="panel">
+                        <p>{{'_Gifts_' | i18n}}</p>
+                    </div>
+                </div>
+
+                <div class="small-3 columns">
+                    <img src="http://placehold.it/500x500&text=Thumbnail">
+                    <div class="panel">
+                        <p>{{'_Contact_' | i18n}}</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -212,14 +222,17 @@
     -->
     <script src="libs/angular.js"></script>
     <script src="libs/angular-resource.js"></script>
+    <script src="libs/angular-sanitize.js"></script>
 
     <!-- build:js js/rayandromana.min.js -->
-    <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/filters.js"></script>
+    <script src="js/services/services.js"></script>
+    <script src="js/controllers/AppController.js"></script>
+    <script src="js/controllers/PhotosController.js"></script>
+    <script src="js/filters/filters.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/directives.js"></script>
-    <script src="js/imggrid.js"></script>
+    <script src="js/directives/directives.js"></script>
+    <script src="js/utils/imggrid.js"></script>
+    <script src="js/utils/localize.js"></script>
     <!-- endbuild -->
 
     <script src="libs/foundation/js/foundation/foundation.js"></script>
