@@ -3942,7 +3942,7 @@ form.custom .custom.disabled {
   height: 100%;
   width: 100%;
   background: black;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(238, 238, 238, 0.6);
   z-index: 98;
   display: none;
   top: 0;

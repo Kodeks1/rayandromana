@@ -14,13 +14,14 @@
 
 .date-img {
     text-align: center;
+    padding-top: 8px;
 }
 
 .paper {
     background-image: url(../img/paper.png);
 }
 
-.white {
+.solid-section {
     background-color: #fff;
 }
 
@@ -28,6 +29,7 @@ h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
     font-weight: normal;
+    padding-left: 16px;
 }
 
 h2 {
@@ -42,14 +44,28 @@ p {
     font-weight: normal;
 }
 
+.infopanel-label {
+    font-size: 1.2em;
+}
+
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: normal;
 }
 
 .sublabel {
     font-size: 0.8em;
+}
+
+.padded-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.padded-subdiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
