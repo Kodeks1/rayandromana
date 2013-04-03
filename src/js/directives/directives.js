@@ -18,4 +18,13 @@ angular.module('rrDirectives', [])
                 });
             });
         };
+    }])
+
+    .directive('ajaxPost', [function() {
+        return function(scope, elem, attrs) {
+            $('#' + attrs.id).submit(function() {
+                $('#' + attrs.id).ajaxSubmit({dataType: 'jsonp'});
+                return false;
+            });
+        };
     }]);

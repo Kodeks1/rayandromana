@@ -19,6 +19,7 @@
     <!-- endbuild -->
 
     <script src="libs/jquery-1.9.1.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
     <script src="libs/modernizr-latest.js"></script>
     <!--<script src="libs/foundation/js/vendor/custom.modernizr.js"></script>-->
 
@@ -229,12 +230,10 @@
 
     <!-- Popup -->
 
-    <div class="reveal-modal" id="rsvpModal">
+    <div class="reveal-modal" id="rsvpModal" ng-controller="RsvpController">
         <h4>RSVP</h4>
-        <p></p>
-
-        <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
         <a href="#" class="close-reveal-modal">&times;</a>
+        <ng-include src="'templates/rsvpform.html'"/>
     </div>
 
     <div class="reveal-modal" id="guestbookModal">
