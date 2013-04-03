@@ -51,6 +51,7 @@ module.exports = function(grunt) {
                         'libs/**/*',
                         'content/**/*',
                         'templates/**/*',
+                        'lang/**/*',
                         'analytics.js',
                         'index.html'
                     ]

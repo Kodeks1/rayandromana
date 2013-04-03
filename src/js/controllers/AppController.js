@@ -1,6 +1,6 @@
 'use strict';
 
-function AppController($scope, localize) {
+var AppController = ['$scope', 'localize', function($scope, localize) {
 
     $scope.setEnglishLanguage = function() {
         localize.setLanguage('en-US');
@@ -9,4 +9,5 @@ function AppController($scope, localize) {
     $scope.setCzechLanguage = function() {
         localize.setLanguage('cs-CZ');
     };
-}
+
+}];

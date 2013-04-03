@@ -8,3 +8,4 @@
 src/libs
 node_modules
 dist/
+css/app.css
