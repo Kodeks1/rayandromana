@@ -1,10 +1,21 @@
+@import "compass";
+
 .banner {
-    position: fixed;
-    top: 75px;
-    z-index: -1;
+    position: relative;
 }
 
-.welcome {
+.date-overlay {
+    width: 62.5em;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left:-31.25em;
+    text-align: center;
+    padding-top: 10px;
+    @include border-top-left-radius(10px);
+    @include border-top-right-radius(10px);
+    @include opacity(0.9);
 }
 
 .zigzag {
@@ -17,8 +28,14 @@
     padding-top: 8px;
 }
 
-.paper {
+body {
     background-image: url(../img/paper.png);
+}
+
+.maincol {
+    background-color: #fff;
+    @include border-bottom-left-radius(10px);
+    @include border-bottom-right-radius(10px);
 }
 
 .solid-section {
@@ -63,11 +80,18 @@ p {
 .padded-section {
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .padded-subdiv {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.bottom-space {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 

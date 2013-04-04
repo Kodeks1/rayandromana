@@ -59,24 +59,18 @@
         </nav>
     </div>
 
-    <section resize-banner>
-        <div class="banner">
-            <img src="content/imgs/savethedate.jpg" class="banner-img" width="{{width}}" height="{{height}}"/>
+    <section resize-banner class="banner">
+        <div>
+            <img src="content/imgs/savethedate.jpg" class="banner-img" width="{{width}}"/>
         </div>
-        <div style="{{heightStyle}}"></div>
+        <div class="date-overlay">
+            <img src="img/date2.png" height="90" width="400"/>
+        </div>
     </section>
 
-    <section class="paper">
+    <div class="row maincol small-12 columns">
 
-        <section class="zigzag">
-            <div class="row">
-                <div class="small-12 columns date-img">
-                    <img src="img/date.png" width="373" height="99"/>
-                </div>
-            </div>
-        </section>
-
-        <section class="welcome">
+        <section class="padded-section">
             <div class="row">
                 <h1 ngBindHtml>{{'_BigDay_' | i18n}}</h1>
                 <div class="small-9 columns" ng-bind-html="'_Greeting_' | i18n"></div>
@@ -86,146 +80,146 @@
             </div>
         </section>
 
-    </section>
-
-    <section class="solid-section padded-section">
-        <div class="row padded-subdiv">
-            <div class="small-4 columns">
-                <img src="img/chapel.jpg" width="291" height="328"/>
-            </div>
-            <div class="small-8 columns">
-                <h2>{{'_Ceremony_' | i18n}}</h2>
-                <p class="location">{{'_CeremonyWhere_' | i18n}}<br/>{{'_CeremonyWhen_' | i18n}}</p>
-                <p class="sublabel"><br/>{{'_CeremonyBus_' | i18n}}<p>
-            </div>
-        </div>
-        <div class="row padded-subdiv">
-            <div class="small-4 columns">
-                <img src="img/tavern.jpg" width="291" height="193"/>
-            </div>
-            <div class="small-8 columns">
-                <h2>{{'_Reception_' | i18n}}</h2>
-                <p class="location">{{'_ReceptionWhere_' | i18n}}<br/>{{'_ReceptionWhen_' | i18n}}</p>
-            </div>
-        </div>
-        <div class="row padded-subdiv">
-            <div class="small-4 columns">
-                <img src="img/cellar.jpg" width="291" height="193"/>
-            </div>
-            <div class="small-8 columns">
-                <h2>{{'_Winetasting_' | i18n}}</h2>
-                <p class="location">{{'_WinetastingWhere_' | i18n}}<br/>{{'_WinetastingWhen_' | i18n}}</p>
-                <p class="sublabel"><br/>{{'_WinetastingLabel_' | i18n}}<p>
-            </div>
-        </div>
-        <div class="row padded-subdiv">
-            <div class="small-4 columns">
-                <img src="img/openbar.jpg" width="291" height="206"/>
-            </div>
-            <div class="small-8 columns">
-                <h2>{{'_Party_' | i18n}}</h2>
-                <p class="location">{{'_PartyWhere_' | i18n}}<br/>{{'_PartyWhen_' | i18n}}</p>
-                <p class="sublabel"><br/>{{'_PartyLabel_' | i18n}}<p>
-            </div>
-        </div>
-    </section>
-
-    <section class="paper padded-section">
-        <div class="row">
-            <h1>{{'_Location_' | i18n}}</h1>
-            <div class="small-6 columns" ng-bind-html="'_LocationSpeil_' | i18n"></div>
-            <div class="small-6 columns">
-                <img src="img/map.jpg" width="435" height="352"/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-12 columns">
-                <img src="img/lovedivide.png" width="962" height="31">
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-6 columns">
-                abc
-            </div>
-            <div class="small-6 columns">
-                <h2>{{'_Accomm_' | i18n}}</h2>
-                <p ng-bind-html="'_AccommSpeil_' | i18n"></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="solid-section padded-section" ng-controller="PhotosController">
-        <div class="row">
-            <div class="small-12 columns">
-                <h1>Photos</h1>
-                <div class="main">
-                    <ul id="og-grid" class="og-grid">
-                        <li ng-repeat="photo in photos">
-                            <a href="" data-largesrc="content/imgs/lrg/{{photo.largesrc}}" data-title="My title" data-description="My desc">
-                                <img ng-src="content/imgs/thumb/{{photo.thumbsrc}}" alt="My title"/>
-                            </a>
-                        </li>
-                    </ul>
+        <section class="padded-section">
+            <div class="row padded-subdiv">
+                <div class="small-4 columns">
+                    <img src="img/chapel.jpg" width="291" height="328"/>
+                </div>
+                <div class="small-8 columns">
+                    <h2>{{'_Ceremony_' | i18n}}</h2>
+                    <p class="location">{{'_CeremonyWhere_' | i18n}}<br/>{{'_CeremonyWhen_' | i18n}}</p>
+                    <p class="sublabel"><br/>{{'_CeremonyBus_' | i18n}}<p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="paper padded-section">
-        <div class="row">
-            <div class="small-12 columns">
-                <h1>Czech this out!</h1>
-
-
+            <div class="row padded-subdiv">
+                <div class="small-4 columns">
+                    <img src="img/tavern.jpg" width="291" height="193"/>
+                </div>
+                <div class="small-8 columns">
+                    <h2>{{'_Reception_' | i18n}}</h2>
+                    <p class="location">{{'_ReceptionWhere_' | i18n}}<br/>{{'_ReceptionWhen_' | i18n}}</p>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="row padded-subdiv">
+                <div class="small-4 columns">
+                    <img src="img/cellar.jpg" width="291" height="193"/>
+                </div>
+                <div class="small-8 columns">
+                    <h2>{{'_Winetasting_' | i18n}}</h2>
+                    <p class="location">{{'_WinetastingWhere_' | i18n}}<br/>{{'_WinetastingWhen_' | i18n}}</p>
+                    <p class="sublabel"><br/>{{'_WinetastingLabel_' | i18n}}<p>
+                </div>
+            </div>
+            <div class="row padded-subdiv">
+                <div class="small-4 columns">
+                    <img src="img/openbar.jpg" width="291" height="206"/>
+                </div>
+                <div class="small-8 columns">
+                    <h2>{{'_Party_' | i18n}}</h2>
+                    <p class="location">{{'_PartyWhere_' | i18n}}<br/>{{'_PartyWhen_' | i18n}}</p>
+                    <p class="sublabel"><br/>{{'_PartyLabel_' | i18n}}<p>
+                </div>
+            </div>
+        </section>
 
-    <section class="solid-section padded-section">
-        <div class="row">
-            <div class="small-12 columns">
+        <section class="paper padded-section">
+            <div class="row">
+                <h1>{{'_Location_' | i18n}}</h1>
+                <div class="small-6 columns" ng-bind-html="'_LocationSpeil_' | i18n"></div>
+                <div class="small-6 columns">
+                    <img src="img/map.jpg" width="435" height="352"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <img src="img/lovedivide.png" width="962" height="31">
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-6 columns">
+                    abc
+                </div>
+                <div class="small-6 columns">
+                    <h2>{{'_Accomm_' | i18n}}</h2>
+                    <p ng-bind-html="'_AccommSpeil_' | i18n"></p>
+                </div>
+            </div>
+        </section>
 
-                <div class="small-3 columns">
-                    <a href="#" data-reveal-id="rsvpModal">
-                        <img src="img/rsvp.jpg" width="500" height="500">
-                    </a>
-                    <div class="panel">
-                        <p class="infopanel-label">{{'_RSVP_' | i18n}}</p>
+        <section class="padded-section" ng-controller="PhotosController">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1>Photos</h1>
+                    <div class="main">
+                        <ul id="og-grid" class="og-grid">
+                            <li ng-repeat="photo in photos">
+                                <a href="" data-largesrc="content/imgs/lrg/{{photo.largesrc}}" data-title="My title" data-description="My desc">
+                                    <img ng-src="content/imgs/thumb/{{photo.thumbsrc}}" alt="My title"/>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="small-3 columns">
-                    <a href="#" data-reveal-id="guestbookModal">
-                        <img src="img/guestbook.jpg">
-                    </a>
-                    <div class="panel">
-                        <p class="infopanel-label">{{'_Guestbook_' | i18n}}</p>
-                    </div>
-                </div>
-
-                <div class="small-3 columns">
-                    <a href="#" data-reveal-id="giftsModal">
-                        <img src="img/gifts.jpg">
-                    </a>
-                    <div class="panel">
-                        <p class="infopanel-label">{{'_Gifts_' | i18n}}</p>
-                    </div>
-                </div>
-
-                <div class="small-3 columns">
-                    <a href="#" data-reveal-id="contactModal">
-                        <img src="img/contact.jpg">
-                    </a>
-                    <div class="panel">
-                        <p class="infopanel-label">{{'_Contact_' | i18n}}</p>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="paper padded-section">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1>Czech this out!</h1>
 
 
+                </div>
+            </div>
+        </section>
+
+        <section class="padded-section">
+            <div class="row">
+                <div class="small-12 columns">
+
+                    <div class="small-3 columns">
+                        <a href="#" data-reveal-id="rsvpModal">
+                            <img src="img/rsvp.jpg" width="500" height="500">
+                        </a>
+                        <div class="panel">
+                            <p class="infopanel-label">{{'_RSVP_' | i18n}}</p>
+                        </div>
+                    </div>
+
+                    <div class="small-3 columns">
+                        <a href="#" data-reveal-id="guestbookModal">
+                            <img src="img/guestbook.jpg">
+                        </a>
+                        <div class="panel">
+                            <p class="infopanel-label">{{'_Guestbook_' | i18n}}</p>
+                        </div>
+                    </div>
+
+                    <div class="small-3 columns">
+                        <a href="#" data-reveal-id="giftsModal">
+                            <img src="img/gifts.jpg">
+                        </a>
+                        <div class="panel">
+                            <p class="infopanel-label">{{'_Gifts_' | i18n}}</p>
+                        </div>
+                    </div>
+
+                    <div class="small-3 columns">
+                        <a href="#" data-reveal-id="contactModal">
+                            <img src="img/contact.jpg">
+                        </a>
+                        <div class="panel">
+                            <p class="infopanel-label">{{'_Contact_' | i18n}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <p class="bottom-space">&nbsp;</p>
 
     <!-- Popup -->
 
