@@ -87,8 +87,8 @@
                 </div>
                 <div class="small-8 columns">
                     <h2>{{'_Ceremony_' | i18n}}</h2>
-                    <p class="location">{{'_CeremonyWhere_' | i18n}}<br/>{{'_CeremonyWhen_' | i18n}}</p>
-                    <p class="sublabel"><br/>{{'_CeremonyBus_' | i18n}}<p>
+                    <p class="location">{{'_CeremonyWhere_' | i18n}}<br>{{'_CeremonyWhen_' | i18n}}</p>
+                    <p class="sublabel"><br>{{'_CeremonyBus_' | i18n}}<p>
                 </div>
             </div>
             <div class="row padded-subdiv">
@@ -97,7 +97,7 @@
                 </div>
                 <div class="small-8 columns">
                     <h2>{{'_Reception_' | i18n}}</h2>
-                    <p class="location">{{'_ReceptionWhere_' | i18n}}<br/>{{'_ReceptionWhen_' | i18n}}</p>
+                    <p class="location">{{'_ReceptionWhere_' | i18n}}<br>{{'_ReceptionWhen_' | i18n}}</p>
                 </div>
             </div>
             <div class="row padded-subdiv">
@@ -106,8 +106,8 @@
                 </div>
                 <div class="small-8 columns">
                     <h2>{{'_Winetasting_' | i18n}}</h2>
-                    <p class="location">{{'_WinetastingWhere_' | i18n}}<br/>{{'_WinetastingWhen_' | i18n}}</p>
-                    <p class="sublabel"><br/>{{'_WinetastingLabel_' | i18n}}<p>
+                    <p class="location">{{'_WinetastingWhere_' | i18n}}<br>{{'_WinetastingWhen_' | i18n}}</p>
+                    <p class="sublabel"><br>{{'_WinetastingLabel_' | i18n}}<p>
                 </div>
             </div>
             <div class="row padded-subdiv">
@@ -116,13 +116,13 @@
                 </div>
                 <div class="small-8 columns">
                     <h2>{{'_Party_' | i18n}}</h2>
-                    <p class="location">{{'_PartyWhere_' | i18n}}<br/>{{'_PartyWhen_' | i18n}}</p>
-                    <p class="sublabel"><br/>{{'_PartyLabel_' | i18n}}<p>
+                    <p class="location">{{'_PartyWhere_' | i18n}}<br>{{'_PartyWhen_' | i18n}}</p>
+                    <p class="sublabel"><br>{{'_PartyLabel_' | i18n}}<p>
                 </div>
             </div>
         </section>
 
-        <section class="paper padded-section">
+        <section class="padded-section">
             <div class="row">
                 <h1>{{'_Location_' | i18n}}</h1>
                 <div class="small-6 columns" ng-bind-html="'_LocationSpeil_' | i18n"></div>
@@ -148,8 +148,8 @@
 
         <section class="padded-section solid-pale" ng-controller="PhotosController">
             <div class="row">
+                <h1>Photos</h1>
                 <div class="small-12 columns">
-                    <h1>Photos</h1>
                     <div class="main">
                         <ul id="og-grid" class="og-grid">
                             <li ng-repeat="photo in photos">
@@ -163,11 +163,82 @@
             </div>
         </section>
 
-        <section class="paper padded-section solid-dark">
+        <section class="padded-section nosidepad gradient-panel">
             <div class="row">
-                <div class="small-12 columns">
-                    <h1>Czech this out!</h1>
+                <h1 class="side-scroll-title">Czech this out!</h1>
 
+                <div class="small-12 columns side-scroll-div">
+
+                    <div class="side-scroll-container side-scroll-padd">
+
+                        <div class="side-scroll-box beer-text">
+                            <h2>Czech beer</h2>
+                            <p>Czech beer is world famous. The Czech Republic is the No. 1 beer drinking nation on the planet, with an annual per capita consummation of some 156 litres. Beer is served almost everywhere (even in breakfast cafes), it tastes terrific and it is cheap!<p>
+                            <p>The Czechs have been drinking beer since time immemorial. The secret for Czech beer brewing perfection is the agricultural conditions, which are ideal for growing hops. Chronicles place their cultivation in Bohemia as early as 859 A.D., while the first evidence of their export dates back to 903.<p>
+                            <p>Most Czech beers are lagers, brewed naturally from hand-picked hops. Czechs like their beer cellar temperature with a creamy, tall head. When ordering draught beer ask for “male pivo” (0.3l) or “pivo” (0.5l).<p>
+                            <p>The best known Czech beer is the original Pils beer, Pilsner Urquell, brewed in the town of Plzen and exported worldwide. Many Czechs also drink another Plzen brew, Gambrinus, while Bernard from Eastern Bohemia was recently voted best beer of the year. The most widely exported Czech Beer is Budvar (Budweiser in German), the name of which is also used by an unrelated American brew.</p>
+                        </div>
+                        <div class="side-scroll-box side-scroll-img">
+                            <img src="img/kozel.jpg" height="650"/>
+                        </div>
+
+                        <div class="side-scroll-box slivo-text">
+                            <h2>Slivovice</h2>
+                            <p>The legendary and much appreciated spirit Slivovice (plum brandy) is made from distilled plums.
+                                This beverage is mainly popular in Southern Moravia. Anyone who's been to Moravia will most
+                                probably have sampled a glass of slivovice, the potent clear spirit (between 45-60% alcohol),
+                                which is synonymous with the region and which the local inhabitants are extremely proud of.
+                                Although many Moravians distill their own slivovice, there are also a handful of Czech firms
+                                who sell it on the Czech market. You can ask Ray how much he loves to drink it :-P</p>
+                            <p>And don't worry, there will be plenty of good home-made "slivo" at our wedding for you to have a taste!</p>
+                            <p><a href="http://slivovice.org" target="_blank">http://slivovice.org</a></p>
+                        </div>
+                        <div class="side-scroll-box side-scroll-img">
+                            <img src="img/slivo.jpg" width="410"/>
+                        </div>
+
+                        <div class="side-scroll-box folklore-text">
+                            <h2>Moravian folklore</h2>
+                            <p>The Moravian Slovakia "Moravske Slovacko" is a region close to our hearts obviously as Romana comes from here. And you will spend a few days there while you are our guest. It is home to unique music, wine, folklore and traditions. It was the center of Great Moravian Empire more than 1000 years ago. It also has a number of historic palaces, gardens and castles, including the UNESCO Heritage Site of Lednice and Valtice (where our wedding ceremony takes place).</p>
+                            <p>Local wine is a visible part of the culture, many people have their own wine cellars and make wine for their own consumption, to share with friends and family. And Romana's family is no exception. Ray could tell you how much fun it is to be doing a "wine cellar crawl" tasting home-made wine, accompanied with plenty of ham and cheese :)</p>
+                            <p>The most significant aspect of the region's cultural heritage is its folklore. Folklore traditions are still celebrated regularly at festivals and special occasions. The traditional costumes of this region are ornate and differ from one village to another. On the picture you can see little Romana wearing a costume from her village :)</p>
+                            <p>Vineyards, meadows in bloom, castles, chateaux, folk architecture and centuries of folklore. All of this can be indulged in with a glass of delicious wine in your hand.</p>
+                        </div>
+                        <div class="side-scroll-box side-scroll-img">
+                            <img src="img/folklore.jpg" height="600"/>
+                        </div>
+
+                        <div class="side-scroll-box famous-text">
+                            <h2>Famous Czechs</h2>
+                            <p>Some of the famous Czechs you might have heard of include: tennis greats Martina Navrátilová and Ivan Lendl, NHL players Jaromír Jágr and Dominik Hašek, architect Jan Kaplický (West India Quay Bridge in London, Selfridges in Birmingham, Lord's Media Centre in London), Oscar winning director Miloš Forman, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodels Petra Němcová, Eva Herzigová and Karolína Kurková; composer Antonín Dvořák, writer Franz Kafka, and early geneticist Gregor Mendel.</p>
+                            <p>Although the groundwork that lead to the invention and creation of contact lenses was done elsewhere, modern soft contact lenses were the outcome of the work of two Czechs: Drahoslav Lim and Otto Wichterle.</p>
+                            <p>The word robot was invented by the Czech writer Karel Čapek, who later credited his brother Josef (a famous cartoonist) for coming up with it. Karel wrote the play Rossum’s Universal Robots about a factory producing robots and explained that he wanted a name for these creatures that had something to do with the latin labor (work) and his brother suggested roboti (from the Slavic word robota).</p>
+                            <p>Best of all, the polka tune “Roll Out The Barrels”, played during the 7th inning stretch at every Milwaukee Brewer game was written by a Czech Jaroslav Vejvoda.</p>
+                        </div>
+
+                        <div class="side-scroll-box castles-text">
+                            <h2>Castles</h2>
+                            <p>The Czech Republic is castle capital of the world! Given its location in the center of Europe, there were armies from all sides who always wanted to come through what is today the Czech Republic. As such, they built a lot of castles. Over 2,000 of them are in the country today which is the highest density of castles in the world. Prague castle is also the largest castle in the world by area at over 7 hectares (18 acres). On the picture you can see Lednice castle which is within the UNESCO heritage area "Lednice-Valtice" where the wedding takes place.</p>
+                            <p><a href="http://travelinos.com/castles/czech-castles" target="_blank">http://travelinos.com/castles/czech-castles</a><br>
+                               <a href="http://www.czechtourism.com/a/castles-chateaux" target="_blank">http://www.czechtourism.com/a/castles-chateaux</a></p>
+
+                            <h2>Always on our toes</h2>
+                            <p>The country has been split up and divided many times. A 100 year old person who spent their entire life in the same village in the Czech Republic may have been a citizen of many different countries depending on where in the country they lived. The Czech Republic, Czechoslovakia, Germany (annexed the Sudetenland), Poland (annexed the Zaolzie area), the Protectorate of Bohemia and Moravia (Nazi controlled) and the Austro-Hungarian Empire. Before that it was also part of the Holy Roman Empire, the Kingdom of Bohemia and Moravia.</p>
+                        </div>
+
+                        <div class="side-scroll-box language-text">
+                            <h2>And last but not least, a few Czech words for you to learn :)</h2>
+                            <p>Hello = Dobrý den<br>
+                                Hi = Ahoj<br>
+                                beer = pivo<br>
+                                water = voda<br>
+                                I don´t understand = Nerozumím<br>
+                                My name is = Jmenuji se</p>
+                            <p>See more here: <br>
+                                <a href="http://www.expats.cz/prague/article/czech-language/basic-czech/" target="_blank">http://www.expats.cz/prague/article/czech-language/basic-czech/</a></p>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>

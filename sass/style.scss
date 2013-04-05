@@ -5,12 +5,12 @@
 }
 
 .date-overlay {
-    width: 62.5em;
+    width: 60em;
     background-color: #fff;
     position: absolute;
     bottom: 0;
     left: 50%;
-    margin-left:-31.25em;
+    margin-left:-30em;
     text-align: center;
     padding-top: 10px;
     @include border-top-left-radius(10px);
@@ -44,14 +44,14 @@ body {
 
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: normal;
     padding-left: 16px;
 }
 
 h2 {
     font-family: 'Lora', serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: normal;
 }
 
@@ -84,6 +84,11 @@ p {
     padding-right: 40px;
 }
 
+.nosidepad {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .padded-subdiv {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -101,6 +106,58 @@ p {
 .solid-dark {
     background-color: #F4F4F4;
 }
+
+.gradient-panel {
+    @include background-image(linear-gradient(white, white 93%, #FAFAFA));
+}
+
+.side-scroll-div {
+    width: 60em;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.side-scroll-title {
+    padding-left: 46px;
+}
+
+.side-scroll-padd {
+    padding-left: 30px;
+}
+
+.side-scroll-container {
+    width: 6000px;
+}
+
+.side-scroll-box {
+    float: left;
+    margin-right: 30px;
+}
+
+.side-scroll-img {
+    padding-right: 30px;
+}
+
+.slivo-text {
+    width: 650px;
+}
+
+.beer-text,
+.folklore-text,
+{
+    width: 500px;
+}
+
+.famous-text,
+.castles-text,
+.toes-text,
+.language-text {
+    width: 500px;
+    padding-right: 30px;
+}
+
+
+
 
 
 

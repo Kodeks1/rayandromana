@@ -125,7 +125,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 60em;
   *zoom: 1;
 }
 /* line 184, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.7/scss/foundation/_foundation-global.scss */
@@ -3625,7 +3625,7 @@ form.custom .custom.disabled {
 
   /* line 342, ../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.7/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 62.5em;
+    max-width: 60em;
     margin: 0 auto;
   }
 
