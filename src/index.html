@@ -80,7 +80,7 @@
             </div>
         </section>
 
-        <section class="padded-section solid-pale">
+        <section class="padded-section gradient-pale">
             <div class="row padded-subdiv">
                 <div class="small-4 columns">
                     <img src="img/chapel.jpg" width="291" height="328"/>
@@ -137,16 +137,29 @@
             </div>
             <div class="row padded-subdiv">
                 <div class="small-6 columns">
-
-                </div>
-                <div class="small-6 columns">
                     <h2>{{'_Accomm_' | i18n}}</h2>
+                    <ul data-orbit>
+                        <li>
+                            <img src="content/imgs/winery/IMG_4815.jpg" />
+                        </li>
+                        <li>
+                            <img src="content/imgs/winery/IMG_4794.jpg" />
+                        </li>
+                        <li>
+                            <img src="content/imgs/winery/IMG_4801.jpg" />
+                        </li>
+                        <li>
+                            <img src="content/imgs/winery/IMG_4828.jpg" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="small-6 columns accom-speil">
                     <p ng-bind-html="'_AccommSpeil_' | i18n"></p>
                 </div>
             </div>
         </section>
 
-        <section class="padded-section solid-pale" ng-controller="PhotosController">
+        <section class="padded-section gradient-pale" ng-controller="PhotosController">
             <div class="row">
                 <h1>Photos</h1>
                 <div class="small-12 columns">
@@ -154,7 +167,7 @@
                         <ul id="og-grid" class="og-grid">
                             <li ng-repeat="photo in photos">
                                 <a href="" data-largesrc="content/imgs/lrg/{{photo.largesrc}}" data-title="My title" data-description="My desc">
-                                    <img ng-src="content/imgs/thumb/{{photo.thumbsrc}}" alt="My title"/>
+                                    <img ng-src="content/imgs/thumb/{{photo.thumbsrc}}" alt="My title" width="210" height="210"/>
                                 </a>
                             </li>
                         </ul>
@@ -166,7 +179,6 @@
         <section class="padded-section nosidepad gradient-panel">
             <div class="row">
                 <h1 class="side-scroll-title">Czech this out!</h1>
-
                 <div class="small-12 columns side-scroll-div">
 
                     <div class="side-scroll-container side-scroll-padd">
@@ -205,7 +217,7 @@
                             <p>Vineyards, meadows in bloom, castles, chateaux, folk architecture and centuries of folklore. All of this can be indulged in with a glass of delicious wine in your hand.</p>
                         </div>
                         <div class="side-scroll-box side-scroll-img">
-                            <img src="img/folklore.jpg" height="600"/>
+                            <img src="img/folklore.jpg" height="600" width="395"/>
                         </div>
 
                         <div class="side-scroll-box famous-text">
@@ -345,9 +357,9 @@
     <script src="libs/foundation/js/foundation/foundation.dropdown.js"></script>
    <!-- <script src="libs/foundation/js/foundation/foundation.forms.js"></script>
     <script src="libs/foundation/js/foundation/foundation.joyride.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="libs/foundation/js/foundation/foundation.magellan.js"></script>-->
     <script src="libs/foundation/js/foundation/foundation.orbit.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.placeholder.js"></script>-->
+    <!--<script src="libs/foundation/js/foundation/foundation.placeholder.js"></script>-->
     <script src="libs/foundation/js/foundation/foundation.reveal.js"></script>
     <!--<script src="libs/foundation/js/foundation/foundation.section.js"></script>
     <script src="libs/foundation/js/foundation/foundation.tooltips.js"></script>-->

@@ -18,11 +18,6 @@
     @include opacity(0.9);
 }
 
-.zigzag {
-    background-image: url(../img/zigzag.png);
-    height: 119px;
-}
-
 .date-img {
     text-align: center;
     padding-top: 8px;
@@ -77,6 +72,7 @@ p {
     font-size: 0.8em;
 }
 
+
 .padded-section {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -107,14 +103,19 @@ p {
     background-color: #F4F4F4;
 }
 
+.gradient-pale {
+    @include background-image(linear-gradient(#FAFAFA, #FAFAFA 90%, #F4F4F4));
+}
+
 .gradient-panel {
-    @include background-image(linear-gradient(white, white 93%, #FAFAFA));
+    @include background-image(linear-gradient(white, white 93%, #F4F4F4));
 }
 
 .side-scroll-div {
     width: 60em;
     overflow-x: auto;
     overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .side-scroll-title {
@@ -139,7 +140,7 @@ p {
 }
 
 .slivo-text {
-    width: 650px;
+    width: 500px;
 }
 
 .beer-text,
@@ -156,12 +157,61 @@ p {
     padding-right: 30px;
 }
 
+.accom-speil {
+    padding-top: 35px;
+}
+
+
+
+.box-shadow
+{
+    position: relative;
+    width: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow:before, .box-shadow:after
+{
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    content: ' ';
+    left: 12px;
+    bottom: 12px;
+    background: transparent;
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -o-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.box-shadow:after
+{
+    left: auto;
+    right: 12px;
+    -webkit-transform: skew(5deg) rotate(5deg);
+    -moz-transform: skew(5deg) rotate(5deg);
+    -ms-transform: skew(5deg) rotate(5deg);
+    -o-transform: skew(5deg) rotate(5deg);
+    transform: skew(5deg) rotate(5deg);
+}
 
 
 
 
 
 /* Photo Grid */
+
 
 .og-grid {
     list-style: none;

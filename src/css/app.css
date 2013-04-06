@@ -3806,7 +3806,7 @@ form.custom .custom.disabled {
 .orbit-container .orbit-timer .orbit-progress {
   height: 100%;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   display: block;
   width: 0%;
 }
