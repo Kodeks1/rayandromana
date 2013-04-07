@@ -92,6 +92,10 @@
         "value":"Czech this out!"
     },
     {
+        "key":"_ScrollSideways_",
+        "value":"Scroll sideways >>"
+    },
+    {
         "key":"_RSVP_",
         "value":"Potvrďte účast"
     },
