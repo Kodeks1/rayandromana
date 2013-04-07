@@ -174,5 +174,13 @@
     {
         "key":"_LanguageText_",
         "value":"<p>Hello = Dobrý den<br>Hi = Ahoj<br>beer = pivo<br>water = voda<br>I don´t understand = Nerozumím<br>My name is = Jmenuji se</p><p>See more here: <br><a href='http://www.expats.cz/prague/article/czech-language/basic-czech/' target='_blank'>http://www.expats.cz/prague/article/czech-language/basic-czech/</a></p>"
+    },
+    {
+        "key":"_ContactIntro_",
+        "value":"We know that many of you are traveling a long way to get to our wedding so we’re here to help with any questions you may have! We can offer travel tips on Prague and the country in general, give you details about the wedding day or anything else you might need. Or just say hi!"
+    },
+    {
+        "key":"_ContactWisper_",
+        "value":"Yes, the email address isn't clickable, that's to stop spammers getting the address!<br>You can also fill in a contact form <a href='http://www.mywedding.com/apps/public/mysite/contact.php?s=rayandromana' target='_blank'>here</a> :)"
     }
 ]

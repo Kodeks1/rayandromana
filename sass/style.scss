@@ -102,14 +102,23 @@ p {
     font-weight: normal;
 }
 
+.wisper {
+    font-size: 0.6em;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
 .top-padd {
     padding-top: 20px;
 }
 
 .gift-speil {
-    font-size: 1em;
-    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    font-family: 'Lora', serif;
     font-weight: normal;
+    text-align: center;
+    padding-top: 70px;
 }
 
 .padded-section {
@@ -130,8 +139,8 @@ p {
 }
 
 .bottom-space {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .solid-pale {
@@ -224,6 +233,19 @@ p {
 .photo-guide {
     padding-top: 15px;
     padding-left: 5px;
+}
+
+.modal-ribbon {
+    margin-left: -40px;
+    clear: both;
+}
+
+.modal-tight {
+    width: 500px;
+}
+
+.address {
+    text-align: center;
 }
 
 
