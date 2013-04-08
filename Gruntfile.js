@@ -15,9 +15,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-ngmin');
-    grunt.loadNpmTasks('grunt-cdn');
-    //grunt.loadNpmTasks('grunt-google-cdn');
+    grunt.loadNpmTasks('grunt-text-replace');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.initConfig({
 
@@ -47,12 +46,11 @@ module.exports = function(grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
-                        'img/**/*',
-                        'libs/**/*',
-                        'content/**/*',
+                        'content/photos.json',
                         'templates/**/*',
                         'lang/**/*',
-                        'analytics.js',
+                        'libs/foundation/js/vendor/custom.modernizr.js',
+                        'libs/foundation/js/foundation.min.js',
                         'index.html'
                     ]
                 }]
@@ -88,34 +86,62 @@ module.exports = function(grunt) {
                     dest: '<%= config.dist %>'
                 }]
             }
-        }
+        },
 
-        /*ngmin: {
+        imagemin: {
             dist: {
+                options: {
+                    optimizationLevel: 3
+                },
                 files: [{
                     expand: true,
-                    cwd: '<%= config.dist %>/js',
-                    src: '*.js',
-                    dest: '<%= config.dist %>/js'
+                    cwd: '<%= config.app %>/content/imgs/lrg',
+                    src: '{,}*.{png,jpg,jpeg}',
+                    dest: '<%= config.dist %>/content/imgs/lrg'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= config.app %>/content/imgs/thumb',
+                    src: '{,}*.{png,jpg,jpeg}',
+                    dest: '<%= config.dist %>/content/imgs/thumb'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= config.app %>/content/imgs/winery',
+                    src: '{,}*.{png,jpg,jpeg}',
+                    dest: '<%= config.dist %>/content/imgs/winery'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= config.app %>/img',
+                    src: '{,}*.{png,jpg,jpeg}',
+                    dest: '<%= config.dist %>/img'
                 }]
             }
-        }*/
+        },
 
-        /*cdnify: {
+        replace: {
             dist: {
-                html: ['<%= config.dist %>*//*.html']
+                src: '<%= config.dist %>/index.html',
+                dest: '<%= config.dist %>/index.html',
+                replacements: [{
+                    from: '<script src="libs/jquery-1.9.1.js"></script>',
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>'
+                },
+                {
+                    from: '<script src="libs/angular.js">',
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js">'
+                },
+                {
+                    from: '<script src="libs/angular-resource.js"></script>',
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>'
+                },
+                {
+                    from: '<script src="libs/angular-sanitize.js"></script>',
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-sanitize.min.js"></script>'
+                }]
             }
-        }*/
-
-        /*cdn: {
-            options: {
-                cdn: '//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js'
-            },
-            dist: {
-                src: ['<%= config.dist %>/index.html'],
-                dest: './dist/static/'
-            }
-        }*/
+        }
 
     });
 
@@ -133,14 +159,13 @@ module.exports = function(grunt) {
         //'test',
         'useminPrepare',
         'concat',
-        //'ngmin',
         'uglify',
-        //'cdnify',
         'cssmin',
         'copy',
+        'replace',
         'usemin',
-        //'cdn',
-        'htmlmin'
+        'htmlmin',
+        'imagemin'
     ]);
 
     grunt.registerTask('default', ['build']);

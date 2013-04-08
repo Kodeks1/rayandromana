@@ -7,30 +7,19 @@
     <title>Ray and Romana</title>
     <meta name="description" content="Ray and Romana :)">
 
-    <!--TEMP-->
-    <meta name="robots" content="noindex,nofollow">
-
-    <link href='http://fonts.googleapis.com/css?family=Lora|Dancing+Script' rel='stylesheet' type='text/css'>
-
     <!-- build:css css/styles.css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css">
     <!-- endbuild -->
 
-    <!--<script src="libs/jquery-1.9.1.js"></script>-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-    <script src="libs/modernizr-latest.js"></script>
-    <!--<script src="libs/foundation/js/vendor/custom.modernizr.js"></script>-->
-
-    <!--<script src="libs/angular.js"></script>
+    <script src="libs/jquery-1.9.1.js"></script>
+    <script src="libs/foundation/js/vendor/custom.modernizr.js"></script>
+    <script src="libs/angular.js"></script>
     <script src="libs/angular-resource.js"></script>
-    <script src="libs/angular-sanitize.js"></script>-->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-sanitize.min.js"></script>
+    <script src="libs/angular-sanitize.js"></script>
 
+    <link href='http://fonts.googleapis.com/css?family=Lora|Dancing+Script' rel='stylesheet' type='text/css'>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdWtsmDga179niJdIZ-q_c9K_DcJ7d7ns&sensor=false"></script>
 
 </head>
@@ -319,12 +308,15 @@
         <p><br>&nbsp;</p>
         <p ng-bind-html="'_ContactIntro_' | i18n"></p>
         <p class="address">
-            <img src="img/obfuscate.gif" width="300" height="52">
+            <img src="img/obfuscate.png" width="300" height="52">
         </p>
         <p class="wisper" ng-bind-html="'_ContactWisper_' | i18n"></p>
     </div>
 
 
+
+
+    <script src="libs/foundation/js/foundation.min.js"></script>
 
     <!-- build:js js/rayandromana.min.js -->
     <script src="js/services/services.js"></script>
@@ -335,18 +327,17 @@
     <script src="js/app.js"></script>
     <script src="js/directives/directives.js"></script>
     <script src="js/utils/localize.js"></script>
-    <!-- endbuild -->
+    <script src="js/utils/analytics.js"></script>
 
-    <script src="libs/foundation/js/foundation.min.js"></script>
     <script src="libs/foundation/js/foundation/foundation.orbit.js"></script>
     <script src="libs/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="libs/foundation/js/foundation/foundation.topbar.js"></script>
     <script src="libs/foundation/js/foundation/foundation.clearing.js"></script>
+    <!-- endbuild -->
+
     <script>
         $(document).foundation();
     </script>
-
-    <script src="analytics.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-define(['jquery', 'underscore'], function ($, _) {
+define(['jquery'], function ($) {
 
     describe('Hello World', function () {
 
