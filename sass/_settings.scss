@@ -833,12 +833,12 @@ $sub-nav-list-margin: emCalc(3px) 0 emCalc(3px);
 // $sub-nav-font-color: #999;
 // $sub-nav-font-weight: normal;
 // $sub-nav-text-decoration: none;
-// $sub-nav-border-radius: 1000px;
+$sub-nav-border-radius: 3px;
 
 // We use these to control the active item styles
-// $sub-nav-active-font-weight: bold;
-$sub-nav-active-bg: #EFAC47;
-// $sub-nav-active-color: #fff;
+$sub-nav-active-font-weight: normal;
+$sub-nav-active-bg: #ffec96;
+$sub-nav-active-color: #888;
 // $sub-nav-active-padding: emCalc(3px) emCalc(9px);
 // $sub-nav-active-cursor: default;
 

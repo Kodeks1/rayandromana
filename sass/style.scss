@@ -1,5 +1,67 @@
 @import "compass";
 
+$ribbon-h1-color-start: #98D0DA;
+$ribbon-h1-color-end: #7BBECC;
+$ribbon-h1-color-shadow: #5197A7;
+
+$logo-ribbon-start: #F29966;
+$logo-ribbon-end: #e08964;
+$logo-ribbon-stitch-start: #a5664b;
+$logo-ribbon-stitch-end: #c8c5c1;
+
+
+body {
+    background-image: url(../img/paper.png);
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
+    font-weight: normal;
+    color: white;
+    float:left;
+    clear: both;
+    text-align: center;
+    position: relative;
+    margin: 0 -35px 30px -35px;
+    padding-left: 53px;
+    padding-right: 20px;
+    text-shadow: 0 1px rgba(41, 113, 107, 0.80);
+    @include background-image(linear-gradient($ribbon-h1-color-start, $ribbon-h1-color-end));
+}
+
+h1:before
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+    bottom: -10px;
+    border-width: 0 10px 10px 0;
+    border-right-color: $ribbon-h1-color-shadow;
+    left: 0;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+
 .banner {
     position: relative;
 }
@@ -23,10 +85,6 @@
     padding-top: 8px;
 }
 
-body {
-    background-image: url(../img/paper.png);
-}
-
 .maincol {
     background-color: #fff;
     @include border-bottom-left-radius(10px);
@@ -35,52 +93,6 @@ body {
 
 .solid-section {
     background-color: #fff;
-}
-
-h1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.8em;
-    font-weight: normal;
-    color: white;
-    float:left;
-    clear: both;
-    text-align: center;
-    position: relative;
-    margin: 0 -35px 30px -35px;
-    padding-left: 53px;
-    padding-right: 20px;
-    text-shadow: 0 1px rgba(0,0,0,.8);
-    @include background-image(linear-gradient(#4CBEB7, #31ADA6));
-}
-
-h1:before
-{
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-color: transparent;
-    bottom: -10px;
-    border-width: 0 10px 10px 0;
-    border-right-color: #4A5966;
-    left: 0;
-}
-
-h2 {
-    font-family: 'Lora', serif;
-    font-size: 1.3em;
-    font-weight: normal;
-}
-
-h3 {
-    font-family: 'Lora', serif;
-    font-size: 1em;
-    font-weight: 700;
-}
-
-p {
-    font-family: 'Lora', serif;
-    font-size: 1em;
-    font-weight: normal;
 }
 
 .infopanel-label {
@@ -347,7 +359,7 @@ p {
     margin: 0 auto 0;
     position: absolute;
     overflow: hidden;
-    left: 5px;
+    left: 3px;
 }
 
 #ribbon .container {
@@ -362,7 +374,7 @@ p {
     top: -5px;
     height: 54px;
     width: 180px;
-    @include background-image(linear-gradient(rgb(255, 107, 59) 0%, rgb(227, 99, 55) 100% ));
+    @include background-image(linear-gradient($logo-ribbon-start 0%, $logo-ribbon-end 100%));
     position: relative;
     z-index: 2;
 }
@@ -373,9 +385,9 @@ p {
     top: 0;
     width: 167px;
     left: 6px;
-    height: 60px;
-    border-left: 1px dashed #C74B4B;
-    border-right: 1px dashed #C74B4B;
+    height: 56px;
+    border-left: 1px dashed $logo-ribbon-stitch-start;
+    border-right: 1px dashed $logo-ribbon-stitch-start;
 }
 
 #ribbon .base:before {
@@ -384,15 +396,15 @@ p {
     top: 0;
     width: 167px;
     left: 7px;
-    height: 60px;
-    border-left: 1px dashed #f29966;
-    border-right: 1px dashed #f29966;
+    height: 56px;
+    border-left: 1px dashed $logo-ribbon-stitch-end;
+    border-right: 1px dashed $logo-ribbon-stitch-end;
 }
 
 #ribbon .left_corner {
     width: 110px;
     height: 110px;
-    background: #E36337;
+    background: $logo-ribbon-end;
     position: absolute;
     bottom: 20px;
     left: -25px;
@@ -405,7 +417,7 @@ p {
 #ribbon .right_corner {
     width: 110px;
     height: 110px;
-    background: #E36337;
+    background: $logo-ribbon-end;
     position: absolute;
     bottom: 20px;
     right: -23px;
