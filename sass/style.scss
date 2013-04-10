@@ -89,13 +89,6 @@ p {
     font-size: 1.5em;
 }
 
-.logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.8em;
-    font-weight: normal;
-    padding-left: 8px;
-}
-
 .sublabel {
     font-size: 0.8em;
     font-family: 'Lora', serif;
@@ -227,7 +220,8 @@ p {
 }
 
 .lang-nav {
-    padding-top: 10px
+    padding-top: 10px;
+    margin-right: 5px;
 }
 
 .photo-guide {
@@ -332,4 +326,91 @@ p {
     outline: none;
     display: block;
     position: relative;
+}
+
+
+
+/*logo ribbon*/
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+#ribbon {
+    width: 180px;
+    height: 65px;
+    margin: 0 auto 0;
+    position: absolute;
+    overflow: hidden;
+    left: 5px;
+}
+
+#ribbon .container {
+    position: relative;
+    width: 180px;
+    height: 74px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#ribbon .base {
+    top: -5px;
+    height: 54px;
+    width: 180px;
+    @include background-image(linear-gradient(rgb(255, 107, 59) 0%, rgb(227, 99, 55) 100% ));
+    position: relative;
+    z-index: 2;
+}
+
+#ribbon .base:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 167px;
+    left: 6px;
+    height: 60px;
+    border-left: 1px dashed #C74B4B;
+    border-right: 1px dashed #C74B4B;
+}
+
+#ribbon .base:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 167px;
+    left: 7px;
+    height: 60px;
+    border-left: 1px dashed #f29966;
+    border-right: 1px dashed #f29966;
+}
+
+#ribbon .left_corner {
+    width: 110px;
+    height: 110px;
+    background: #E36337;
+    position: absolute;
+    bottom: 20px;
+    left: -25px;
+    z-index: 1;
+
+    @include rotate(85deg);
+    @include single-box-shadow(black, 0, 0, 5px);
+}
+
+#ribbon .right_corner {
+    width: 110px;
+    height: 110px;
+    background: #E36337;
+    position: absolute;
+    bottom: 20px;
+    right: -23px;
+    z-index: 1;
+
+    @include rotate(5deg);
+    @include single-box-shadow(black, 0, 0, 5px);
 }
