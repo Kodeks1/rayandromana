@@ -1,11 +1,11 @@
 [
     {
         "key":"_BigDay_",
-        "value":"The Big Day"
+        "value":"Svatební den"
     },
     {
         "key":"_Greeting_",
-        "value":"<p>Vítejte na našich stránkách. Vše co potřebujete vědět o našem svatebním dni najdete tady, ale nejen to, také spoustu dalších informací. Jsme moc šťastní, že tento jedinečný žážitek strávíme s rodinou a kamarády, kteří jsou blízcí našemu srdci.</p><p>Už se na vás moc těšíme!<br/>S láskou<br/>Ray & Romana</p>"
+        "value":"<p>Vítejte na našich stránkách. Vše co potřebujete vědět o našem svatebním dni najdete tady, ale nejen to, také spoustu dalších informací. Jsme moc šťastní, že tento jedinečný žážitek strávíme s rodinou a kamarády, kteří jsou blízcí našemu srdci.</p><p>Rozhodli jsme se vzít v místě nedaleko rodného města Romany, oblasti bohaté na víno, folklór a dobrosrdečné lidi. Pokud máte zájem se dozvědět pár zábavných informací podívejte se na „Czech this out!“ sekci.</p><p>Už se na vás moc těšíme!</p><p> S láskou<br> Ray & Romana</p>"
     },
     {
         "key":"_Ceremony_",
@@ -17,7 +17,7 @@
     },
     {
         "key":"_CeremonyWhen_",
-        "value":"Saturday, September 28, 2013 | 13:00 - 13:30"
+        "value":"Sobota, 28. září 2013 | 13:00 - 13:30"
     },
     {
         "key":"_CeremonyBus_",
@@ -33,7 +33,7 @@
     },
     {
         "key":"_ReceptionWhen_",
-        "value":"Saturday, September 28, 2013 | 14:30 - 16:30"
+        "value":"Sobota, 28. září 2013 | 14:30 - 16:30"
     },
     {
         "key":"_Winetasting_",
@@ -45,11 +45,11 @@
     },
     {
         "key":"_WinetastingWhen_",
-        "value":"Saturday, September 28, 2013 | 17:30 - 18:30"
+        "value":"Sobota, 28. září 2013 | 17:30 - 18:30"
     },
     {
         "key":"_WinetastingLabel_",
-        "value":"While we are taking our wedding photos, you can enjoy some fine wine."
+        "value":"Zatímco se budeme fotit, můžete ochutnat různé druhy místního vína"
     },
     {
         "key":"_Party_",
@@ -61,19 +61,19 @@
     },
     {
         "key":"_PartyWhen_",
-        "value":"Saturday, September 28, 2013 | All night long"
+        "value":"Sobota, 28. září 2013 | All night long"
     },
     {
         "key":"_PartyLabel_",
-        "value":"The newlyweds will open the party with their first dance and then we will all dance 'til we drop! Around 9pm there will also be a buffet dinner available in the Moravian wine cellar."
+        "value":"Party odstartuje první tanec novomanželů a pak budeme všichni pařit celou noc! Po deváté hodině bude k dispozici večeře formou bufetu v moravském vinném sklípku."
     },
     {
         "key":"_Location_",
-        "value":"Location / Travel / Ubytování"
+        "value":"Místo / Doprava / Ubytování"
     },
     {
         "key":"_LocationSpeil_",
-        "value":"<p>The wedding venue is in the lovely countryside in the south of the Czech Republic. It is quite remote, and not very close to any major city, so you will need to plan your transportation carefully.</p><p>You can fly to Prague or Brno Airport in Czech Republic, but also Vienna in Austria is very close. Romana will help you to find the best option how to get from the airport, please get in touch :)</p><h3>From Prague or Brno</h3><p>You can take train from Prague to Brno, it takes approx. 2.5 hours. Then in Brno train station you just change to a train to Zajeci. There are frequent trains from Brno to Zajeci which take 30 mins. Please contact Romana who will help you to find your best connection as there are some trains that have more stops and take longer.</p><p>When you arrive to Zajeci train station, we would arrange a pick up for you.</p><h3>From Vienna</h3><p>If you fly to Vienna, take a train from Vienna to Breclav. And then in Breclav change for a train to Zajeci. All together it takes 2 hours. When you arrive to Zajeci train station, we would arrange a pick up for you.</p><p>You could also rent a car from Vienna, which is only about an hour away by road.</p>"
+        "value":"<p>Svatba bude v malebném vinařství na jihu České republiky. Je to místo poměrně vzdálené a ne velmi blízko nějakého velkého města, takže si dobře naplánujte cestu.</p><p>Můžete letět do Prahy nebo do Brna v České republice, ale i Vídeň v Rakousku je velmi blízko. Romana vám pomůže najít nejlepší způsob, jak se dostat z letiště, prosím, napište nám :)</p><h3>Z Prahy nebo z Brna</h3><p>Můžete jet vlakem z Prahy do Brna, cesta trvá asi 2,5 hodiny. Pak na nádraží v Brně stačí přestoupit na vlak do Zaječí. Vlaky z Brna do Zaječí jedou často, trvá to 30 min. Prosím, kontaktujte Romanu, která vám pomůže najít nejlepší spojení.</p><p>Po příjezdu na vlakové nádraží v Zaječí bychom vám zajistili odvoz do Vinařství.</p><h3>Z Vídně</h3><p>Pokud poletíte do Vídně, tak pak sedněte na vlak z Vídně do Břeclavi. A pak musíte přesednout v Břeclavi na vlak do Zaječí. Celá cesta dohromady trvá 2 hodiny. Po příjezdu na vlakové nádraží v Zaječí bychom vám zajistili odvoz do Vinařství.</p><p>Můžete si také pronajmout auto z Vídně, neboť je to pouze hodinu jízdou po silnici.</p>"
     },
     {
         "key":"_Accomm_",
@@ -81,7 +81,7 @@
     },
     {
         "key":"_AccommSpeil_",
-        "value":"<p>Ubytování vám zamluvíme ve Vinařství u Kapličky. Dejte nám prosím vědět kolik nocí potřebujete, když budete potvrzovat účast na příští stránce.<br/><br/>1 noc - sobota<br/>2 noci - pátek a sobota</p>"
+        "value":"<p>Vinařství má ubytování, restauraci, wellness centrum, stejně jako 'Retro disco' klub s bowlingem, vše na jednom místě. Takže i když je to vzdálené, je zde vše, abychom si to mohli pořádně užít.</p><p>Ubytování vám zamluvíme ve Vinařství u Kapličky. Dejte nám prosím vědět kolik nocí potřebujete a jakékoliv jiné požadavky, když budete potvrzovat účast formulářem viz níže.</p><p>  1 noc - sobota<br> 2 noci - pátek a sobota</p>"
     },
     {
         "key":"_Photos_",
@@ -97,7 +97,7 @@
     },
     {
         "key":"_RSVP_",
-        "value":"Potvrďte účast"
+        "value":"Potvrdte účast"
     },
     {
         "key":"_Guestbook_",
@@ -117,19 +117,19 @@
     },
     {
         "key":"_PhotoTag_",
-        "value":"We will post photos of the wedding here after the big day."
+        "value":"Později sem také dáme fotky ze svatby."
     },
     {
         "key":"_PhotoGuide_",
-        "value":"Click for larger images."
+        "value":"Klikněte na obrázek pro zvětšení."
     },
     {
         "key":"_BeerTitle_",
-        "value":"Czech beer"
+        "value":"Pivo"
     },
     {
         "key":"_BeerText_",
-        "value":"<p>Czech beer is world famous. The Czech Republic is the No. 1 beer drinking nation on the planet, with an annual per capita consummation of some 156 litres. Beer is served almost everywhere (even in breakfast cafes), it tastes terrific and it is cheap!<p><p>The Czechs have been drinking beer since time immemorial. The secret for Czech beer brewing perfection is the agricultural conditions, which are ideal for growing hops. Chronicles place their cultivation in Bohemia as early as 859 A.D., while the first evidence of their export dates back to 903.<p><p>Most Czech beers are lagers, brewed naturally from hand-picked hops. Czechs like their beer cellar temperature with a creamy, tall head. When ordering draught beer ask for “male pivo” (0.3l) or “pivo” (0.5l).<p><p>The best known Czech beer is the original Pils beer, Pilsner Urquell, brewed in the town of Plzen and exported worldwide. Many Czechs also drink another Plzen brew, Gambrinus, while Bernard from Eastern Bohemia was recently voted best beer of the year. The most widely exported Czech Beer is Budvar (Budweiser in German), the name of which is also used by an unrelated American brew.</p>"
+        "value":"<p>České pivo je světoznámé. Česká republika je na prvním místě v pití piva na světě, s roční konzumací na obyvatele přibližně 156l. Češi pili pivo od nepaměti. Tajemstvím dokonalosti českého pivovarnictví jsou zemědělské podmínky, které jsou ideální pro pěstování chmele. Kroniky datují jeho pěstování v Čechách již v roce 859 našeho letopočtu, zatímco první důkaz jejich vývozu se datuje do roku 903. Většina českých piv jsou ležáky, které se vaří přirozeně z ručně sklízeného chmele. Češi mají pivo rádi o sklepní teplotě s krémovou vysokou pěnou. Při objednávání si řekněte o \"malé pivo\" (0,3 l) nebo \"pivo\" (0,5 l).</p><p>Nejznámější české pivo je původní plzeňské pivo Pilsner Urquell, které se vaří ve městě Plzeň a vyváží do celého světa. Mnoho Čechů také pije další plzeňské pivo Gambrinus, zatímco Bernard z východních Čech, byl nedávno zvolen nejlepším pivem roku. Nejvíce vyváženým českým pivem je Budvar (Budweiser v němčině), jehož jméno je také používáno pro nespřízněné americké pivo.</p>"
     },
     {
         "key":"_SlivoTitle_",
@@ -137,31 +137,31 @@
     },
     {
         "key":"_SlivoText_",
-        "value":"<p>The legendary and much appreciated spirit Slivovice (plum brandy) is made from distilled plums. This beverage is mainly popular in Southern Moravia. Anyone who's been to Moravia will most probably have sampled a glass of slivovice, the potent clear spirit (between 45-60% alcohol), which is synonymous with the region and which the local inhabitants are extremely proud of. Although many Moravians distill their own slivovice, there are also a handful of Czech firms who sell it on the Czech market. You can ask Ray how much he loves to drink it :-P</p><p>And don't worry, there will be plenty of good home-made 'slivo' at our wedding for you to have a taste!</p><p><a href='http://slivovice.org' target='_blank'>http://slivovice.org</a></p>"
+        "value":"<p>Legendární slivovice je vyrobena z destilovaných švestek. Tento nápoj je oblíben především na jižní Moravě. Každý, kdo byl na Moravě, pravděpodobně ochutnal štamprli slivovice, silnou čirou lihovinu (mezi 45-60% alkoholu), která je synonymem regionu a na kterou jsou místní obyvatelé velmi hrdí. Ačkoli mnoho Moraváků pálí vlastní slivovici, je zde i několik českých firem, které ji prodávají na českém trhu. Můžete se zeptat Raye, jak moc rád ji pije :-P</p><p>Nic se nebojte, i na naší svatbě bude spousta výborné domácí slivovice!<p><p><a href='http://slivovice.org' target='_blank'>http://slivovice.org</a></p>"
     },
     {
         "key":"_FolkloreTitle_",
-        "value":"Moravian folklore"
+        "value":"Moravský folklór"
     },
     {
         "key":"_FolkloreText_",
-        "value":"<p>The Moravian Slovakia 'Moravske Slovacko' is a region close to our hearts obviously as Romana comes from here. And you will spend a few days there while you are our guest. It is home to unique music, wine, folklore and traditions. It was the center of Great Moravian Empire more than 1000 years ago. It also has a number of historic palaces, gardens and castles, including the UNESCO Heritage Site of Lednice and Valtice (where our wedding ceremony takes place).</p><p>Local wine is a visible part of the culture, many people have their own wine cellars and make wine for their own consumption, to share with friends and family. And Romana's family is no exception. Ray could tell you how much fun it is to be doing a 'wine cellar crawl' tasting home-made wine, accompanied with plenty of ham and cheese :)</p><p>The most significant aspect of the region's cultural heritage is its folklore. Folklore traditions are still celebrated regularly at festivals and special occasions. The traditional costumes of this region are ornate and differ from one village to another. On the picture you can see little Romana wearing a costume from her village :)</p><p>Vineyards, meadows in bloom, castles, chateaux, folk architecture and centuries of folklore. All of this can be indulged in with a glass of delicious wine in your hand.</p>"
+        "value":"<p>Moravské Slovácko je oblast blízká našemu srdci, neboť Romana odtud pochází. A vy tam také strávíte několik dní, když přijedete na naši svatbu. Je to domov unikátní hudby, vína, folklóru a tradic. Je zde řada historických zahrad, hradů a zámků, včetně Lednicko-valtického areálu spadajícího pod UNESCO. <a href='http://www.czechtourism.com/c/lednice-valtice-area-unesco' target='_blank'>http://www.czechtourism.com/c/lednice-valtice-area-unesco</a></p><p>Místní víno je viditelná část kultury, mnoho lidí má své vlastní vinné sklepy a vyrábí víno pro vlastní spotřebu, pro přátele a rodinu. A Romany rodina není výjimkou. Ray může potvrdit, jak si sám užil chození od sklepa ke sklepu spojeného s ochutnávkou domácího vína, a k vínu nesmí chybět ani spousta šunky a sýru :)</p><p>Nejvýznamnějším aspektem kulturního dědictví tohoto regionu je folklór. Folklórní tradice se stále slaví pravidelně na festivalech a při zvláštních příležitostech. Tradiční kroje jsou nazdobené a liší se od vesnice k vesnici. Na obrázku můžete vidět Romanu jakou malou oblečenou v místním kroji :)</p>"
     },
     {
         "key":"_FamousTitle_",
-        "value":"Famous Czechs"
+        "value":"Slavní Češi"
     },
     {
         "key":"_FamousText_",
-        "value":"<p>Some of the famous Czechs you might have heard of include: tennis greats Martina Navrátilová and Ivan Lendl, NHL players Jaromír Jágr and Dominik Hašek, architect Jan Kaplický (West India Quay Bridge in London, Selfridges in Birmingham, Lord's Media Centre in London), Oscar winning director Miloš Forman, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodels Petra Němcová, Eva Herzigová and Karolína Kurková; composer Antonín Dvořák, writer Franz Kafka, and early geneticist Gregor Mendel.</p><p>Although the groundwork that lead to the invention and creation of contact lenses was done elsewhere, modern soft contact lenses were the outcome of the work of two Czechs: Drahoslav Lim and Otto Wichterle.</p><p>The word robot was invented by the Czech writer Karel Čapek, who later credited his brother Josef (a famous cartoonist) for coming up with it. Karel wrote the play Rossum’s Universal Robots about a factory producing robots and explained that he wanted a name for these creatures that had something to do with the latin labor (work) and his brother suggested roboti (from the Slavic word robota).</p><p>Best of all, the polka tune “Roll Out The Barrels”, played during the 7th inning stretch at every Milwaukee Brewer game was written by a Czech Jaroslav Vejvoda.</p>"
+        "value":"<p>Možná jste již o některých slyšeli, mezi slavné Čechy patří: tenisová esa Martina Navrátilová a Ivan Lendl, NHL hráči Jaromír Jágr a Dominik Hašek, architekt Jan Kaplický (West India Quay Bridge v Londýně, obchodní dům Selfridges v Birminghamu, Lord's Media Centre v Londýně), oskarový režisér Miloše Formana, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodelky Petra Němcová, Eva Herzigová a Karolína Kurková; skladatel Antonín Dvořák, spisovatel Franz Kafka, a genetik Gregor Mendel.</p><p>Moderní měkké kontaktní čočky byly výsledkem práce dvou Čechů: Drahoslav Lim a Otto Wichterle.</p><p>Slovo robot bylo vynalezeno českým spisovatelem Karlem Čapkem, který později připsal zásluhy za vymysleni tohoto slova svému bratru Josefovi (slavný karikaturista). Karel napsal hru Rossumovi univerzální roboti (R.U.R.) o továrně na výrobu robotů a vysvětlil, že chtěl název pro tyto tvory, kteří měli co do činění s prací v latině a jeho bratr navrhl Roboti (od slovanského slova robota).</p>"
     },
     {
         "key":"_CastleTitle_",
-        "value":"Castles"
+        "value":"Hrady a zámky"
     },
     {
         "key":"_CastleText_",
-        "value":"<p>The Czech Republic is castle capital of the world! Given its location in the center of Europe, there were armies from all sides who always wanted to come through what is today the Czech Republic. As such, they built a lot of castles. Over 2,000 of them are in the country today which is the highest density of castles in the world. Prague castle is also the largest castle in the world by area at over 7 hectares (18 acres). On the picture you can see Lednice castle which is within the UNESCO heritage area 'Lednice-Valtice' where the wedding takes place.</p><p><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
+        "value":"<p>Česká republika je hlavním městem zámků na světě! Vzhledem ke své poloze v centru Evropy, spousta různých armád vždy chtěla projít skrze to, co je dnes Česká republika. Proto bylo postaveno mnoho hradů. Nachází se jich zde přes 2000, což je nejvyšší hustota hradů na světě. Pražský hrad je také největší hrad na světě podle rozlohy, která činí více než 7 hektarů (18 akrů). Na obrázku můžete vidět hrad Lednice, který je součástí UNESCO chráněného \"Lednicko-valtického areálu\", kde se koná naše svatba.</p><p><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
     },
     {
         "key":"_ToesTitle_",
@@ -173,11 +173,11 @@
     },
     {
         "key":"_LanguageTitle_",
-        "value":"And last but not least, a few Czech words for you to learn :)"
+        "value":""
     },
     {
         "key":"_LanguageText_",
-        "value":"<p>Hello = Dobrý den<br>Hi = Ahoj<br>beer = pivo<br>water = voda<br>I don´t understand = Nerozumím<br>My name is = Jmenuji se</p><p>See more here: <br><a href='http://www.expats.cz/prague/article/czech-language/basic-czech/' target='_blank'>http://www.expats.cz/prague/article/czech-language/basic-czech/</a></p>"
+        "value":""
     },
     {
         "key":"_ContactIntro_",

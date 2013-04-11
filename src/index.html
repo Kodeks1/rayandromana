@@ -42,7 +42,6 @@
             </ul>
 
             <section class="top-bar-section">
-                <!--<img src="img/flags.gif" width="84" height="34"/>-->
                 <dl class="right sub-nav lang-nav">
                     <dd class="{{isActiveLang('en')}}"><a href="" ng-click="setEnglishLanguage()">English</a></dd>
                     <dd class="{{isActiveLang('cz')}}"><a href="" ng-click="setCzechLanguage()">Čeština</a></dd>
@@ -112,7 +111,7 @@
             </div>
             <div class="row padded-subdiv">
                 <div class="small-4 columns">
-                    <img src="img/openbar.jpg" width="291" height="206"/>
+                    <img src="img/party.jpg" width="291" height="194"/>
                 </div>
                 <div class="small-8 columns">
                     <h2>{{'_Party_' | i18n}}</h2>
@@ -131,17 +130,17 @@
 
             <div class="row">
                 <div class="small-6 columns" ng-bind-html="'_LocationSpeil_' | i18n"></div>
-                <div id="map-canvas" class="small-6 columns" ng-controller="MapController" ng-init="initializeMap()" />
+                <div class="small-6 columns" id="map-canvas" ng-controller="MapController" ng-init="initializeMap()" />
             </div>
 
-            <div class="row padded-subdiv">
-                <div class="small-12 columns">
-                    <img src="img/lovedivide.png" width="962" height="31">
+            <div class="row">
+                <div class="small-12 columns padded-subdiv">
+                    <img src="img/lovedivide.png">
                 </div>
             </div>
 
-            <div class="row padded-subdiv">
-                <div class="small-6 columns">
+            <div class="row winery-orbit">
+                <div class="small-6 columns padded-subdiv">
                     <h2>{{'_Accomm_' | i18n}}</h2>
                     <ul data-orbit>
                         <li>
@@ -157,12 +156,13 @@
                             <img src="content/imgs/winery/IMG_4828.jpg" />
                         </li>
                     </ul>
+                    <a href='http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html'
+                       class="sublabel" target="_blank">http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html</a>
                 </div>
                 <div class="small-6 columns accom-speil">
                     <p ng-bind-html="'_AccommSpeil_' | i18n"></p>
                 </div>
             </div>
-
         </section>
 
         <!--Photos-->
@@ -203,8 +203,8 @@
                             <h2>{{'_BeerTitle_' | i18n}}</h2>
                             <span ng-bind-html="'_BeerText_' | i18n"></span>
                         </div>
-                        <div class="side-scroll-box side-scroll-img">
-                            <img src="img/kozel.jpg" height="650"/>
+                        <div class="side-scroll-box side-scroll-img beer-img">
+                            <img src="img/kozel.jpg" width="480"/>
                         </div>
 
                         <div class="side-scroll-box slivo-text">
@@ -212,7 +212,7 @@
                             <span ng-bind-html="'_SlivoText_' | i18n"></span>
                         </div>
                         <div class="side-scroll-box side-scroll-img">
-                            <img src="img/slivo.jpg" width="410"/>
+                            <img src="img/slivo.jpg" width="335"/>
                         </div>
 
                         <div class="side-scroll-box folklore-text">
@@ -221,7 +221,7 @@
                         </div>
                         <div class="side-scroll-box side-scroll-img">
                             <div class="box-shadow folklore-image">
-                                <img src="img/folklore.jpg" height="600" width="395" class="shadow-subject"/>
+                                <img src="img/folklore.jpg" height="600" width="280" class="shadow-subject"/>
                             </div>
                         </div>
 
@@ -233,12 +233,14 @@
                         <div class="side-scroll-box castles-text">
                             <h2>{{'_CastleTitle_' | i18n}}</h2>
                             <span ng-bind-html="'_CastleText_' | i18n"></span>
-
-                            <h2>{{'_ToesTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_ToesText_' | i18n"></span>
+                            <img src="img/valtice.jpg" width="440" />
                         </div>
 
                         <div class="side-scroll-box language-text">
+
+                            <h2>{{'_ToesTitle_' | i18n}}</h2>
+                            <span ng-bind-html="'_ToesText_' | i18n"></span>
+
                             <h2>{{'_LanguageTitle_' | i18n}}</h2>
                             <span ng-bind-html="'_LanguageText_' | i18n"></span>
                         </div>
@@ -299,13 +301,13 @@
 
     <!-- Popup -->
 
-    <div class="reveal-modal medium modal-medium" id="giftsModal">
+    <div class="reveal-modal medium" style="width:650px" id="giftsModal">
         <h1 class="modal-ribbon">{{'_Gifts_' | i18n}}</h1>
         <a href="#" class="close-reveal-modal">&times;</a>
         <p class="gift-speil" ng-bind-html="'_GiftsSpeil_' | i18n"></p>
     </div>
 
-    <div class="reveal-modal small modal-small" id="contactModal">
+    <div class="reveal-modal small" style="width:500px" id="contactModal">
         <h1 class="modal-ribbon">{{'_Contact_' | i18n}}</h1>
         <a href="#" class="close-reveal-modal">&times;</a>
         <p><br>&nbsp;</p>

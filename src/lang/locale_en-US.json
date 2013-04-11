@@ -5,7 +5,7 @@
     },
     {
         "key":"_Greeting_",
-        "value":"<p>Welcome to our wedding website. This is the place you’ll find every piece of information you will need regarding our wedding celebration and much more. We are so excited to be spending this special time with friends and family we hold so dear to our hearts.</p><p>We decided to get married in a place close to Romana’s hometown, area rich in wine, folklore and warm-hearted people. If you are interested to learn some fun facts go to the “Czech this out!” link.</p><p>We can’t wait to see you on our Big Day!</p><p>Lots of love,<br/>Ray & Romana</p>"
+        "value":"<p>Welcome to our wedding website. This is the place you’ll find every piece of information you will need regarding our wedding celebration and much more. We are so excited to be spending this special time with friends and family we hold so dear to our hearts.</p><p>We decided to get married in a place close to Romana’s hometown, an area rich in wine, folklore and warm-hearted people. If you are interested to learn some fun facts go to the “Czech this out!” section.</p><p>We can’t wait to see you on our Big Day!</p><p>Lots of love,<br/>Ray & Romana</p>"
     },
     {
         "key":"_Ceremony_",
@@ -81,7 +81,7 @@
     },
     {
         "key":"_AccommSpeil_",
-        "value":"<p>The winery has the accommodation, main reception room, a spa/wellness centre for relaxting on Sunday, as well as a ‘Retro disco’ club with a cool bowling ally, all in the one location. So although remote, it has everything there for the weekend of celebrations.</p><p>We will book accommodation for you at the wedding venue. Please go to RSVP link to let us know how many nights you need and any requirements you have.</p><p>1 night - Saturday (28 Sept)<br/>2 nights - Friday and Saturday (27 and 28 Sept)<br/>3 nights - Thursday, Friday and Saturday (26, 27, 28 Sep)</p>"
+        "value":"<p>The winery has the accommodation, main reception room, a spa/wellness centre for relaxing on Sunday, as well as a ‘Retro disco’ club with a cool bowling ally, all in one location. So although remote, it has everything there for the weekend of celebrations.</p><p>We will book accommodation for you at the wedding venue. Please go to RSVP link below to let us know how many nights you need and any requirements you have.</p><p>1 night - Saturday (28 Sept)<br> 2 nights - Friday and Saturday (27 and 28 Sept)<br> 3 nights - Thursday, Friday and Saturday (26, 27, 28 Sep)</p>"
     },
     {
         "key":"_Photos_",
@@ -129,7 +129,7 @@
     },
     {
         "key":"_BeerText_",
-        "value":"<p>Czech beer is world famous. The Czech Republic is the No. 1 beer drinking nation on the planet, with an annual per capita consummation of some 156 litres. Beer is served almost everywhere (even in breakfast cafes), it tastes terrific and it is cheap!<p><p>The Czechs have been drinking beer since time immemorial. The secret for Czech beer brewing perfection is the agricultural conditions, which are ideal for growing hops. Chronicles place their cultivation in Bohemia as early as 859 A.D., while the first evidence of their export dates back to 903.<p><p>Most Czech beers are lagers, brewed naturally from hand-picked hops. Czechs like their beer cellar temperature with a creamy, tall head. When ordering draught beer ask for “male pivo” (0.3l) or “pivo” (0.5l).<p><p>The best known Czech beer is the original Pils beer, Pilsner Urquell, brewed in the town of Plzen and exported worldwide. Many Czechs also drink another Plzen brew, Gambrinus, while Bernard from Eastern Bohemia was recently voted best beer of the year. The most widely exported Czech Beer is Budvar (Budweiser in German), the name of which is also used by an unrelated American brew.</p>"
+        "value":"<p>Czech beer is world famous. The Czech Republic is the No. 1 beer drinking nation on the planet, with an annual per capita consummation of some 156 litres. The Czechs have been drinking beer since time immemorial. The secret for Czech beer brewing perfection is the agricultural conditions, which are ideal for growing hops. Chronicles place their cultivation in Bohemia as early as 859 A.D., while the first evidence of their export dates back to 903. Most Czech beers are lagers, brewed naturally from hand-picked hops. Czechs like their beer cellar temperature with a creamy, tall head. When ordering draught beer ask for “male pivo” (0.3l) or “pivo” (0.5l).</p><p>The best known Czech beer is the original Pils beer, Pilsner Urquell, brewed in the town of Plzen and exported worldwide. Many Czechs also drink another Plzen brew, Gambrinus, while Bernard from Eastern Bohemia was recently voted best beer of the year. The most widely exported Czech Beer is Budvar (Budweiser in German), the name of which is also used by an unrelated American brew.</p>"
     },
     {
         "key":"_SlivoTitle_",
@@ -145,7 +145,7 @@
     },
     {
         "key":"_FolkloreText_",
-        "value":"<p>The Moravian Slovakia 'Moravske Slovacko' is a region close to our hearts obviously as Romana comes from here. And you will spend a few days there while you are our guest. It is home to unique music, wine, folklore and traditions. It was the center of Great Moravian Empire more than 1000 years ago. It also has a number of historic palaces, gardens and castles, including the UNESCO Heritage Site of Lednice and Valtice (where our wedding ceremony takes place).</p><p>Local wine is a visible part of the culture, many people have their own wine cellars and make wine for their own consumption, to share with friends and family. And Romana's family is no exception. Ray could tell you how much fun it is to be doing a 'wine cellar crawl' tasting home-made wine, accompanied with plenty of ham and cheese :)</p><p>The most significant aspect of the region's cultural heritage is its folklore. Folklore traditions are still celebrated regularly at festivals and special occasions. The traditional costumes of this region are ornate and differ from one village to another. On the picture you can see little Romana wearing a costume from her village :)</p><p>Vineyards, meadows in bloom, castles, chateaux, folk architecture and centuries of folklore. All of this can be indulged in with a glass of delicious wine in your hand.</p>"
+        "value":"<p>The Moravian Slovakia 'Moravske Slovacko' is a region close to our hearts obviously as Romana comes from here. And you will spend a few days there while you are our guest. It is home to unique music, wine, folklore and traditions. It also has a number of historic palaces, gardens and castles, including the UNESCO Heritage Site of Lednice and Valtice (where our wedding ceremony takes place). <a href='http://www.czechtourism.com/c/lednice-valtice-area-unesco' target='_blank'>http://www.czechtourism.com/c/lednice-valtice-area-unesco</a></p><p>Local wine is a visible part of the culture, many people have their own wine cellars and make wine for their own consumption, to share with friends and family. And Romana's family is no exception. Ray could tell you how much fun it is to be doing a 'wine cellar crawl' tasting home-made wine, accompanied with plenty of ham and cheese :)</p><p>The most significant aspect of the region's cultural heritage is its folklore. Folklore traditions are still celebrated regularly at festivals and special occasions. The traditional costumes of this region are ornate and differ from one village to another. On the picture you can see little Romana wearing a local costume :)</p>"
     },
     {
         "key":"_FamousTitle_",
@@ -153,7 +153,7 @@
     },
     {
         "key":"_FamousText_",
-        "value":"<p>Some of the famous Czechs you might have heard of include: tennis greats Martina Navrátilová and Ivan Lendl, NHL players Jaromír Jágr and Dominik Hašek, architect Jan Kaplický (West India Quay Bridge in London, Selfridges in Birmingham, Lord's Media Centre in London), Oscar winning director Miloš Forman, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodels Petra Němcová, Eva Herzigová and Karolína Kurková; composer Antonín Dvořák, writer Franz Kafka, and early geneticist Gregor Mendel.</p><p>Although the groundwork that lead to the invention and creation of contact lenses was done elsewhere, modern soft contact lenses were the outcome of the work of two Czechs: Drahoslav Lim and Otto Wichterle.</p><p>The word robot was invented by the Czech writer Karel Čapek, who later credited his brother Josef (a famous cartoonist) for coming up with it. Karel wrote the play Rossum’s Universal Robots about a factory producing robots and explained that he wanted a name for these creatures that had something to do with the latin labor (work) and his brother suggested roboti (from the Slavic word robota).</p><p>Best of all, the polka tune “Roll Out The Barrels”, played during the 7th inning stretch at every Milwaukee Brewer game was written by a Czech Jaroslav Vejvoda.</p>"
+        "value":"<p>Some of the famous Czechs you might have heard of include: tennis greats Martina Navrátilová and Ivan Lendl, NHL players Jaromír Jágr and Dominik Hašek, architect Jan Kaplický (West India Quay Bridge in London, Selfridges in Birmingham, Lord's Media Centre in London), Oscar winning director Miloš Forman, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodels Petra Němcová, Eva Herzigová and Karolína Kurková; composer Antonín Dvořák, writer Franz Kafka, and early geneticist Gregor Mendel.</p><p>Modern soft contact lenses were the outcome of the work of two Czechs: Drahoslav Lim and Otto Wichterle.</p><p>The word robot was invented by the Czech writer Karel Čapek, who later credited his brother Josef (a famous cartoonist) for coming up with it. Karel wrote the play Rossum’s Universal Robots (R.U.R.) about a factory producing robots and explained that he wanted a name for these creatures that had something to do with the latin labor (work) and his brother suggested roboti (from the Slavic word robota).</p>"
     },
     {
         "key":"_CastleTitle_",
@@ -161,7 +161,7 @@
     },
     {
         "key":"_CastleText_",
-        "value":"<p>The Czech Republic is castle capital of the world! Given its location in the center of Europe, there were armies from all sides who always wanted to come through what is today the Czech Republic. As such, they built a lot of castles. Over 2,000 of them are in the country today which is the highest density of castles in the world. Prague castle is also the largest castle in the world by area at over 7 hectares (18 acres). On the picture you can see Lednice castle which is within the UNESCO heritage area 'Lednice-Valtice' where the wedding takes place.</p><p><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
+        "value":"<p>The Czech Republic is castle capital of the world! Given its location in the center of Europe, there were armies from all sides who always wanted to come through what is today the Czech Republic. As such, they built a lot of castles. Over 2,000 of them are in the country today which is the highest density of castles in the world. Prague castle is also the largest castle in the world by area at over 7 hectares (18 acres). On the picture you can see Lednice castle which is within the UNESCO heritage area 'Lednice-Valtice' where the wedding takes place.<br><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
     },
     {
         "key":"_ToesTitle_",
@@ -177,7 +177,7 @@
     },
     {
         "key":"_LanguageText_",
-        "value":"<p>Hello = Dobrý den<br>Hi = Ahoj<br>beer = pivo<br>water = voda<br>I don´t understand = Nerozumím<br>My name is = Jmenuji se</p><p>See more here: <br><a href='http://www.expats.cz/prague/article/czech-language/basic-czech/' target='_blank'>http://www.expats.cz/prague/article/czech-language/basic-czech/</a></p>"
+        "value":"<p>Hello = Dobrý den<br>Hi = Ahoj<br>beer = pivo<br>water = voda<br>I don´t understand = Nerozumím<br>My name is = Jmenuji se<br><a href='http://www.expats.cz/prague/article/czech-language/basic-czech/' target='_blank'>Click here to see more</a></p>"
     },
     {
         "key":"_ContactIntro_",

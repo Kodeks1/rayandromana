@@ -8,9 +8,10 @@ var MapController = ['$scope', function($scope) {
     $scope.initializeMap = function() {
 
         var myLatlng = new google.maps.LatLng(48.876571, 16.766338);
+        var myLatlngOffset = new google.maps.LatLng(47.768868,14.699707);
 
         var map = new google.maps.Map(document.getElementById("map-canvas"), {
-            center: myLatlng,
+            center: myLatlngOffset,
             zoom: 6,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             panControl: true,

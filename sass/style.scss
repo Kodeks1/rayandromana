@@ -4,15 +4,20 @@ $ribbon-h1-color-start: #98D0DA;
 $ribbon-h1-color-end: #7BBECC;
 $ribbon-h1-color-shadow: #5197A7;
 
-$logo-ribbon-start: #F29966;
-$logo-ribbon-end: #e08964;
-$logo-ribbon-stitch-start: #a5664b;
-$logo-ribbon-stitch-end: #c8c5c1;
+$logo-ribbon-start: #ebe8dc;
+$logo-ribbon-end: #ebe2cf;
+$logo-ribbon-stitch-start: #c8c7c3;
+$logo-ribbon-stitch-end: #f2f1ed;
+
+$logo-text-color: #474348;
 
 
 body {
     background-image: url(../img/paper.png);
 }
+
+
+/*Text classes*/
 
 h1{
     font-family: 'Dancing Script', cursive;
@@ -60,6 +65,21 @@ p {
     font-weight: normal;
 }
 
+.sublabel {
+    font-size: 0.8em;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
+
+.wisper {
+    font-size: 0.6em;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
 
 
 .banner {
@@ -99,19 +119,6 @@ p {
     font-family: 'Dancing Script', cursive;
     font-weight: normal;
     font-size: 1.5em;
-}
-
-.sublabel {
-    font-size: 0.8em;
-    font-family: 'Lora', serif;
-    font-weight: normal;
-}
-
-.wisper {
-    font-size: 0.6em;
-    font-family: 'Lora', serif;
-    font-weight: normal;
-    font-style: italic;
 }
 
 .top-padd {
@@ -171,7 +178,7 @@ p {
 }
 
 .accom-speil {
-    padding-top: 35px;
+    padding-top: 45px;
 }
 
 #map-canvas {
@@ -206,18 +213,25 @@ p {
 
 .side-scroll-box {
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .side-scroll-img {
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .slivo-text {
-    width: 500px;
+    width: 430px;
 }
 
-.beer-text,
+.beer-text {
+    width: 570px;
+}
+
+.beer-image {
+    margin-left: 0;
+}
+
 .folklore-text,
 {
     width: 500px;
@@ -233,7 +247,7 @@ p {
 
 .lang-nav {
     padding-top: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .photo-guide {
@@ -262,6 +276,10 @@ p {
     position: absolute;
     text-align: right;
     margin-top: -50px;
+}
+
+.winery-orbit {
+    padding-left: 15px;
 }
 
 
@@ -309,6 +327,10 @@ p {
     transform: skew(5deg) rotate(5deg);
 }
 
+.folklore-image {
+    margin-top: 45px;
+}
+
 .folklore-image:before, .folklore-image:after {
     bottom: 9px;
 }
@@ -349,8 +371,9 @@ p {
     font-size: 1.5em;
     font-weight: normal;
     text-align: center;
-    color: white;
+    color: $logo-text-color;
     padding-top: 10px;
+/*    text-shadow: 0 1px rgba(165, 102, 75, 0.80);*/
 }
 
 #ribbon {
@@ -359,7 +382,8 @@ p {
     margin: 0 auto 0;
     position: absolute;
     overflow: hidden;
-    left: 3px;
+    left: 20px;
+/*    border-left: solid 1px #888;*/
 }
 
 #ribbon .container {
@@ -411,7 +435,7 @@ p {
     z-index: 1;
 
     @include rotate(85deg);
-    @include single-box-shadow(black, 0, 0, 5px);
+    @include single-box-shadow(#888, 0, 0, 7px);
 }
 
 #ribbon .right_corner {
@@ -424,5 +448,5 @@ p {
     z-index: 1;
 
     @include rotate(5deg);
-    @include single-box-shadow(black, 0, 0, 5px);
+    @include single-box-shadow(#888, 0, 0, 7px);
 }
