@@ -51,7 +51,8 @@ module.exports = function(grunt) {
                         'lang/**/*',
                         'libs/foundation/js/vendor/custom.modernizr.js',
                         'libs/foundation/js/foundation.min.js',
-                        'index.html'
+                        'index.html',
+                        'favicon.ico'
                     ]
                 }]
             }
