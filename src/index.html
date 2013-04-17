@@ -236,11 +236,7 @@
                             <img src="img/valtice.jpg" width="440" />
                         </div>
 
-                        <div class="side-scroll-box language-text">
-
-                            <h2>{{'_ToesTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_ToesText_' | i18n"></span>
-
+                        <div class="side-scroll-box language-text" ng-show="!!('_LanguageTitle_' | i18n)">
                             <h2>{{'_LanguageTitle_' | i18n}}</h2>
                             <span ng-bind-html="'_LanguageText_' | i18n"></span>
                         </div>
