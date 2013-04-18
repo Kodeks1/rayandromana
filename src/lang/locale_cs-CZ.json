@@ -49,7 +49,7 @@
     },
     {
         "key":"_WinetastingLabel_",
-        "value":"Zatímco se budeme fotit, můžete ochutnat různé druhy místního vína"
+        "value":"Zatímco se budeme fotit, můžete ochutnat různé druhy místního vína."
     },
     {
         "key":"_Party_",
@@ -153,7 +153,7 @@
     },
     {
         "key":"_FamousText_",
-        "value":"<p>Možná jste již o některých slyšeli, mezi slavné Čechy patří: tenisová esa Martina Navrátilová a Ivan Lendl, NHL hráči Jaromír Jágr a Dominik Hašek, architekt Jan Kaplický (West India Quay Bridge v Londýně, obchodní dům Selfridges v Birminghamu, Lord's Media Centre v Londýně), oskarový režisér Miloše Formana, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodelky Petra Němcová, Eva Herzigová a Karolína Kurková; skladatel Antonín Dvořák, spisovatel Franz Kafka, a genetik Gregor Mendel.</p><p>Moderní měkké kontaktní čočky byly výsledkem práce dvou Čechů: Drahoslav Lim a Otto Wichterle.</p><p>Slovo robot bylo vynalezeno českým spisovatelem Karlem Čapkem, který později připsal zásluhy za vymysleni tohoto slova svému bratru Josefovi (slavný karikaturista). Karel napsal hru Rossumovi univerzální roboti (R.U.R.) o továrně na výrobu robotů a vysvětlil, že chtěl název pro tyto tvory, kteří měli co do činění s prací v latině a jeho bratr navrhl Roboti (od slovanského slova robota).</p>"
+        "value":"<p>Možná jste již o některých slyšeli, mezi slavné Čechy patří: tenisová esa Martina Navrátilová a Ivan Lendl, NHL hráči Jaromír Jágr a Dominik Hašek, architekt Jan Kaplický (West India Quay Bridge v Londýně, obchodní dům Selfridges v Birminghamu, Lord's Media Centre v Londýně), oskarový režisér Miloš Forman, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodelky Petra Němcová, Eva Herzigová a Karolína Kurková; skladatel Antonín Dvořák, spisovatel Franz Kafka, a genetik Gregor Mendel.</p><p>Moderní měkké kontaktní čočky byly výsledkem práce dvou Čechů: Drahoslav Lim a Otto Wichterle.</p><p>Slovo robot bylo vynalezeno českým spisovatelem Karlem Čapkem, který později připsal zásluhy za vymyšlení tohoto slova svému bratru Josefovi (slavný karikaturista). Karel napsal hru Rossumovi univerzální roboti (R.U.R.) o továrně na výrobu robotů a vysvětlil, že chtěl název pro tyto tvory, kteří měli co do činění s prací v latině a jeho bratr navrhl Roboti (od slovanského slova robota).</p>"
     },
     {
         "key":"_CastleTitle_",
@@ -161,15 +161,7 @@
     },
     {
         "key":"_CastleText_",
-        "value":"<p>Česká republika je hlavním městem zámků na světě! Vzhledem ke své poloze v centru Evropy, spousta různých armád vždy chtěla projít skrze to, co je dnes Česká republika. Proto bylo postaveno mnoho hradů. Nachází se jich zde přes 2000, což je nejvyšší hustota hradů na světě. Pražský hrad je také největší hrad na světě podle rozlohy, která činí více než 7 hektarů (18 akrů). Na obrázku můžete vidět hrad Valtice, který je součástí UNESCO chráněného \"Lednicko-valtického areálu\", kde se koná naše svatba.</p><p><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
-    },
-    {
-        "key":"_ToesTitle_",
-        "value":"Always on our toes"
-    },
-    {
-        "key":"_ToesText_",
-        "value":"<p>The country has been split up and divided many times. A 100 year old person who spent their entire life in the same village in the Czech Republic may have been a citizen of many different countries depending on where in the country they lived. The Czech Republic, Czechoslovakia, Germany (annexed the Sudetenland), Poland (annexed the Zaolzie area), the Protectorate of Bohemia and Moravia (Nazi controlled) and the Austro-Hungarian Empire. Before that it was also part of the Holy Roman Empire, the Kingdom of Bohemia and Moravia.</p>"
+        "value":"<p>Česká republika je hlavním městem zámků na světě! Vzhledem ke své poloze v centru Evropy, spousta různých armád vždy chtěla projít skrze to, co je dnes Česká republika. Proto bylo postaveno mnoho hradů. Nachází se jich zde přes 2000, což je nejvyšší hustota hradů na světě. Pražský hrad je také největší hrad na světě podle rozlohy, která činí více než 7 hektarů (18 akrů). Na obrázku můžete vidět zámek Valtice, který je součástí UNESCO chráněného \"Lednicko-valtického areálu\", kde se koná naše svatba.</p><p><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
     },
     {
         "key":"_LanguageTitle_",
@@ -181,10 +173,10 @@
     },
     {
         "key":"_ContactIntro_",
-        "value":"We know that many of you are traveling a long way to get to our wedding so we’re here to help with any questions you may have! We can offer travel tips on Prague and the country in general, give you details about the wedding day or anything else you might need. Or just say hi!"
+        "value":"Víme, že mnozí z Vás cestují z velké dálky, takže jsme tu pro Vás a rádi zodpovíme jakékoliv dotazy! Můžeme nabídnout tipy ohledně návštěvy Prahy a vůbec České republiky obecně, upřesnit detaily ohledně svatebního dne, nebo cokoliv jiného. Nebo nás můžete přes email jen pozdravit!"
     },
     {
-        "key":"_ContactWisper_",
-        "value":"Yes, the email address isn't clickable, that's to stop spammers getting the address!<br>You can also fill in a contact form <a href='http://www.mywedding.com/apps/public/mysite/contact.php?s=rayandromana' target='_blank'>here</a> :)"
+        "key":"_IPhoneApp_",
+        "value":"Check out the iPhone app!"
     }
 ]
