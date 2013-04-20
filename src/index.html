@@ -22,6 +22,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lora|Dancing+Script' rel='stylesheet' type='text/css'>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdWtsmDga179niJdIZ-q_c9K_DcJ7d7ns&sensor=false"></script>
 
+    <link rel='shortcut icon' href='favicon.ico'>
+
 </head>
 
 <body ng-controller="AppController" ng-cloak>
@@ -201,11 +203,23 @@
 
         <!--Czech this out-->
 
-        <section class="padded-section nosidepad gradient-panel">
+        <section class="padded-section nosidepad gradient-panel" ng-controller="CzechOutController">
             <div class="row">
                 <h1 class="side-scroll-title">{{'_CzechThis_' | i18n}}</h1>
-                <div class="small-12 columns wisper sideways-label">{{'_ScrollSideways_' | i18n}}</div>
-                <div class="small-12 columns side-scroll-div">
+
+                <div class="small-12 columns right-content">
+                    <dl class="sub-nav right sublabel sideways-menu">
+                        <dd><a href="" ng-click="setSelected('beer')" class="sideways-menuitem">{{'_BeerTitleShort_' | i18n}}</a></dd>
+                        <dd><a href="" ng-click="setSelected('slivo')" class="sideways-menuitem">{{'_SlivoTitleShort_' | i18n}}</a></dd>
+                        <dd><a href="" ng-click="setSelected('folk')" class="sideways-menuitem">{{'_FolkloreTitleShort_' | i18n}}</a></dd>
+                        <dd><a href="" ng-click="setSelected('famous')" class="sideways-menuitem">{{'_FamousTitleShort_' | i18n}}</a></dd>
+                        <dd><a href="" ng-click="setSelected('castles')" class="sideways-menuitem">{{'_CastleTitleShort_' | i18n}}</a></dd>
+                        <dd><a href="" ng-click="setSelected('lang')" class="sideways-menuitem">{{'_LanguageTitleShort_' | i18n}}</a></dd>
+                    </dl>
+                    <div class="wisper sideways-label">{{'_ScrollSideways_' | i18n}}</div>
+                </div>
+
+                <div class="small-12 columns side-scroll-div" horizontal-scroll-to>
 
                     <div class="side-scroll-container side-scroll-padd">
                         <div class="side-scroll-box beer-text">
@@ -332,6 +346,7 @@
     <script src="js/controllers/AppController.js"></script>
     <script src="js/controllers/PhotosController.js"></script>
     <script src="js/controllers/MapController.js"></script>
+    <script src="js/controllers/CzechOutController.js"></script>
     <script src="js/filters/filters.js"></script>
     <script src="js/app.js"></script>
     <script src="js/directives/directives.js"></script>

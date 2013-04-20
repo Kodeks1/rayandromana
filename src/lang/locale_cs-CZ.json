@@ -93,7 +93,7 @@
     },
     {
         "key":"_ScrollSideways_",
-        "value":"Scroll sideways >>"
+        "value":"Přejděte na stranu >>"
     },
     {
         "key":"_RSVP_",
@@ -128,11 +128,19 @@
         "value":"Pivo"
     },
     {
+        "key":"_BeerTitleShort_",
+        "value":"Pivo"
+    },
+    {
         "key":"_BeerText_",
         "value":"<p>České pivo je světoznámé. Česká republika je na prvním místě v pití piva na světě, s roční konzumací na obyvatele přibližně 156l. Češi pili pivo od nepaměti. Tajemstvím dokonalosti českého pivovarnictví jsou zemědělské podmínky, které jsou ideální pro pěstování chmele. Kroniky datují jeho pěstování v Čechách již v roce 859 našeho letopočtu, zatímco první důkaz jejich vývozu se datuje do roku 903. Většina českých piv jsou ležáky, které se vaří přirozeně z ručně sklízeného chmele. Češi mají pivo rádi o sklepní teplotě s krémovou vysokou pěnou. Při objednávání si řekněte o \"malé pivo\" (0,3 l) nebo \"pivo\" (0,5 l).</p><p>Nejznámější české pivo je původní plzeňské pivo Pilsner Urquell, které se vaří ve městě Plzeň a vyváží do celého světa. Mnoho Čechů také pije další plzeňské pivo Gambrinus, zatímco Bernard z východních Čech, byl nedávno zvolen nejlepším pivem roku. Nejvíce vyváženým českým pivem je Budvar (Budweiser v němčině), jehož jméno je také používáno pro nespřízněné americké pivo.</p>"
     },
     {
         "key":"_SlivoTitle_",
+        "value":"Slivovice"
+    },
+    {
+        "key":"_SlivoTitleShort_",
         "value":"Slivovice"
     },
     {
@@ -144,11 +152,19 @@
         "value":"Moravský folklór"
     },
     {
+        "key":"_FolkloreTitleShort_",
+        "value":"Folklór"
+    },
+    {
         "key":"_FolkloreText_",
         "value":"<p>Moravské Slovácko je oblast blízká našemu srdci, neboť Romana odtud pochází. A vy tam také strávíte několik dní, když přijedete na naši svatbu. Je to domov unikátní hudby, vína, folklóru a tradic. Je zde řada historických zahrad, hradů a zámků, včetně Lednicko-valtického areálu spadajícího pod UNESCO. <a href='http://www.czechtourism.com/c/lednice-valtice-area-unesco' target='_blank'>http://www.czechtourism.com/c/lednice-valtice-area-unesco</a></p><p>Místní víno je viditelná část kultury, mnoho lidí má své vlastní vinné sklepy a vyrábí víno pro vlastní spotřebu, pro přátele a rodinu. A Romany rodina není výjimkou. Ray může potvrdit, jak si sám užil chození od sklepa ke sklepu spojeného s ochutnávkou domácího vína, a k vínu nesmí chybět ani spousta šunky a sýru :)</p><p>Nejvýznamnějším aspektem kulturního dědictví tohoto regionu je folklór. Folklórní tradice se stále slaví pravidelně na festivalech a při zvláštních příležitostech. Tradiční kroje jsou nazdobené a liší se od vesnice k vesnici. Na obrázku můžete vidět Romanu jakou malou oblečenou v místním kroji :)</p>"
     },
     {
         "key":"_FamousTitle_",
+        "value":"Slavní Češi"
+    },
+    {
+        "key":"_FamousTitleShort_",
         "value":"Slavní Češi"
     },
     {
@@ -160,11 +176,19 @@
         "value":"Hrady a zámky"
     },
     {
+        "key":"_CastleTitleShort_",
+        "value":"Hrady"
+    },
+    {
         "key":"_CastleText_",
         "value":"<p>Česká republika je hlavním městem zámků na světě! Vzhledem ke své poloze v centru Evropy, spousta různých armád vždy chtěla projít skrze to, co je dnes Česká republika. Proto bylo postaveno mnoho hradů. Nachází se jich zde přes 2000, což je nejvyšší hustota hradů na světě. Pražský hrad je také největší hrad na světě podle rozlohy, která činí více než 7 hektarů (18 akrů). Na obrázku můžete vidět zámek Valtice, který je součástí UNESCO chráněného \"Lednicko-valtického areálu\", kde se koná naše svatba.</p><p><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
     },
     {
         "key":"_LanguageTitle_",
+        "value":""
+    },
+    {
+        "key":"_LanguageTitleShort_",
         "value":""
     },
     {

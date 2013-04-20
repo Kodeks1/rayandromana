@@ -31,15 +31,4 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
         }
     };
 
-    /**
-     * Initialize google map
-     */
-    $scope.initializeMap = function() {
-        var map = new google.maps.Map(document.getElementById("map-canvas"), {
-            center: new google.maps.LatLng(48.876571, 16.766338),
-            zoom: 8,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
-    }
-
 }];

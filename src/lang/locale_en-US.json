@@ -128,11 +128,19 @@
         "value":"Czech beer"
     },
     {
+        "key":"_BeerTitleShort_",
+        "value":"Beer"
+    },
+    {
         "key":"_BeerText_",
         "value":"<p>Czech beer is world famous. The Czech Republic is the No. 1 beer drinking nation on the planet, with an annual per capita consummation of some 156 litres. The Czechs have been drinking beer since time immemorial. The secret for Czech beer brewing perfection is the agricultural conditions, which are ideal for growing hops. Chronicles place their cultivation in Bohemia as early as 859 A.D., while the first evidence of their export dates back to 903. Most Czech beers are lagers, brewed naturally from hand-picked hops. Czechs like their beer cellar temperature with a creamy, tall head. When ordering draught beer ask for “male pivo” (0.3l) or “pivo” (0.5l).</p><p>The best known Czech beer is the original Pils beer, Pilsner Urquell, brewed in the town of Plzen and exported worldwide. Many Czechs also drink another Plzen brew, Gambrinus, while Bernard from Eastern Bohemia was recently voted best beer of the year. The most widely exported Czech Beer is Budvar (Budweiser in German), the name of which is also used by an unrelated American brew.</p>"
     },
     {
         "key":"_SlivoTitle_",
+        "value":"Slivovice"
+    },
+    {
+        "key":"_SlivoTitleShort_",
         "value":"Slivovice"
     },
     {
@@ -144,11 +152,19 @@
         "value":"Moravian folklore"
     },
     {
+        "key":"_FolkloreTitleShort_",
+        "value":"Folklore"
+    },
+    {
         "key":"_FolkloreText_",
         "value":"<p>The Moravian Slovakia 'Moravske Slovacko' is a region close to our hearts obviously as Romana comes from here. And you will spend a few days there while you are our guest. It is home to unique music, wine, folklore and traditions. It also has a number of historic palaces, gardens and castles, including the UNESCO Heritage Site of Lednice and Valtice (where our wedding ceremony takes place). <a href='http://www.czechtourism.com/c/lednice-valtice-area-unesco' target='_blank'>http://www.czechtourism.com/c/lednice-valtice-area-unesco</a></p><p>Local wine is a visible part of the culture, many people have their own wine cellars and make wine for their own consumption, to share with friends and family. And Romana's family is no exception. Ray could tell you how much fun it is to be doing a 'wine cellar crawl' tasting home-made wine, accompanied with plenty of ham and cheese :)</p><p>The most significant aspect of the region's cultural heritage is its folklore. Folklore traditions are still celebrated regularly at festivals and special occasions. The traditional costumes of this region are ornate and differ from one village to another. On the picture you can see little Romana wearing a local costume :)</p>"
     },
     {
         "key":"_FamousTitle_",
+        "value":"Famous Czechs"
+    },
+    {
+        "key":"_FamousTitleShort_",
         "value":"Famous Czechs"
     },
     {
@@ -160,12 +176,20 @@
         "value":"Castles"
     },
     {
+        "key":"_CastleTitleShort_",
+        "value":"Castles"
+    },
+    {
         "key":"_CastleText_",
         "value":"<p>The Czech Republic is castle capital of the world! Given its location in the center of Europe, there were armies from all sides who always wanted to come through what is today the Czech Republic. As such, they built a lot of castles. Over 2,000 of them are in the country today which is the highest density of castles in the world. Prague castle is also the largest castle in the world by area at over 7 hectares (18 acres). In the picture you can see Valtice castle which is within the UNESCO heritage area 'Lednice-Valtice' where the wedding takes place.<br><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
     },
     {
         "key":"_LanguageTitle_",
         "value":"And last but not least, a few Czech words for you to learn :)"
+    },
+    {
+        "key":"_LanguageTitleShort_",
+        "value":"Language"
     },
     {
         "key":"_LanguageText_",

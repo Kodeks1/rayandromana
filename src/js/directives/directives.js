@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('rrDirectives', [])
+angular.module('rr.directives', [])
 
     /**
      * Window resize
@@ -9,22 +9,24 @@ angular.module('rrDirectives', [])
         return function (scope) {
             scope.width = $window.innerWidth;
             scope.height = $window.innerHeight;
-            scope.heightStyle = 'height:' + ($window.innerHeight - 125) + 'px';
             angular.element($window).bind('resize', function () {
                 scope.$apply(function () {
                     scope.width = $window.innerWidth;
                     scope.height = $window.innerHeight;
-                    scope.heightStyle = 'height:' + ($window.innerHeight - 125) + 'px';
                 });
             });
         };
     }])
 
-    .directive('ajaxPost', [function() {
+    /**
+     * Animate to horizontal scroll position
+     */
+    .directive('horizontalScrollTo', [function() {
         return function(scope, elem, attrs) {
-            $('#' + attrs.id).submit(function() {
-                $('#' + attrs.id).ajaxSubmit({dataType: 'jsonp'});
-                return false;
-            });
+            scope.$watch("scrollPos", function () {
+                if (typeof scope.scrollPos !== 'undefined') {
+                    $(elem).animate({scrollLeft: scope.scrollPos}, 600);
+                }
+            }, true);
         };
     }]);

@@ -265,9 +265,25 @@ p {
 }
 
 .sideways-label {
+    margin-top: -50px;
+}
+
+.right-content {
     position: absolute;
     text-align: right;
-    margin-top: -50px;
+}
+
+.sideways-menu {
+    margin-top: -35px;
+}
+
+.sideways-menuitem {
+    padding-left: 1px;
+    padding-right: 0;
+}
+
+.sideways-menuitem:hover {
+    color: black;
 }
 
 .winery-orbit {
@@ -279,7 +295,6 @@ p {
 }
 
 .iphone-app {
-    font-size: 0.95em;
     font-family: 'Lora', serif;
     font-weight: normal;
     text-align: right;
