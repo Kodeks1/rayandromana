@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<s:Group
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:spicefactory="http://www.spicefactory.org/parsley"
+    width="100%"
+    height="330">
+
+    <fx:Script>
+        <![CDATA[
+        import com.rayandromana.model.presentation.ApplicationPM;
+
+        import flashx.textLayout.conversion.TextConverter;
+
+        [Bindable]
+        public var model:ApplicationPM;
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+        <spicefactory:FastInject objectId="applicationPM" property="model"/>
+    </fx:Declarations>
+
+    <s:Image
+        source="assets/img/mugs.jpg"
+        top="50"
+        right="50"
+        />
+
+    <s:RichText
+        textFlow="{TextConverter.importToFlow(model.content.greeting, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+        width="680"
+        x="40"
+        y="50"
+        />
+
+</s:Group>

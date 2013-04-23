@@ -1,0 +1,46 @@
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/halo";
+
+/*
+//------------------------------
+//  FONTS
+//------------------------------
+*/
+
+@font-face
+{
+    src: url('/assets/fonts/DancingScript-Regular.ttf');
+    font-family: "Dancing Script";
+    fontWeight: normal;
+    embed-as-cff: true;
+}
+
+@font-face
+{
+    src: url('/assets/fonts/Lora-Regular.ttf');
+    font-family: "Lora";
+    fontWeight: normal;
+    embed-as-cff: true;
+}
+
+.main-container {
+    backgroundImage: url('img/paper.png');
+
+}
+
+/*
+//------------------------------
+//  GLOBAL
+//------------------------------
+*/
+
+global
+{
+    font-family: "Lora";
+    font-size: 16px;
+}
+
+s|RichText {
+    paragraphSpaceBefore: 12;
+    paragraphSpaceAfter: 12;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<s:VGroup
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:spicefactory="http://www.spicefactory.org/parsley"
+    width="100%">
+
+    <fx:Script>
+        <![CDATA[
+        import com.rayandromana.model.presentation.ApplicationPM;
+
+        import flashx.textLayout.conversion.TextConverter;
+
+        [Bindable]
+        public var model:ApplicationPM;
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+        <spicefactory:FastInject objectId="applicationPM" property="model"/>
+    </fx:Declarations>
+
+    <s:Label text="{model.content.czechThis}"/>
+
+    <s:Scroller width="100%" height="620" verticalScrollPolicy="off">
+
+        <s:HGroup>
+
+            <s:VGroup>
+                <s:Label text="{model.content.beerTitle}"/>
+                <s:RichText
+                    textFlow="{TextConverter.importToFlow(model.content.beerText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+                    width="570"/>
+            </s:VGroup>
+            <s:Image source="assets/img/kozel.jpg" width="480"/>
+
+            <s:VGroup>
+                <s:Label text="{model.content.slivoTitle}"/>
+                <s:RichText
+                    textFlow="{TextConverter.importToFlow(model.content.slivoText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+                    width="570"/>
+            </s:VGroup>
+            <s:Image source="assets/img/slivo.jpg" width="335"/>
+
+            <s:VGroup>
+                <s:Label text="{model.content.folkloreTitle}"/>
+                <s:RichText
+                    textFlow="{TextConverter.importToFlow(model.content.folkloreText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+                    width="500"/>
+            </s:VGroup>
+            <s:Image source="assets/img/folklore.jpg" height="600" width="280"/>
+
+            <s:VGroup>
+                <s:Label text="{model.content.famousTitle}"/>
+                <s:RichText
+                    textFlow="{TextConverter.importToFlow(model.content.famousText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+                    width="500"/>
+            </s:VGroup>
+
+            <s:VGroup>
+                <s:Label text="{model.content.castleTitle}"/>
+                <s:RichText
+                    textFlow="{TextConverter.importToFlow(model.content.castleText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+                    width="500"/>
+                <s:Image source="assets/img/valtice.jpg" height="440"/>
+            </s:VGroup>
+
+            <s:VGroup visible="{model.content.languageText != ''}" includeInLayout="{model.content.languageText != ''}">
+                <s:Label text="{model.content.languageTitle}"/>
+                <s:RichText
+                    textFlow="{TextConverter.importToFlow(model.content.languageText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+                    width="500"/>
+            </s:VGroup>
+
+        </s:HGroup>
+
+    </s:Scroller>
+
+</s:VGroup>

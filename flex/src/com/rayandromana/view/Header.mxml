@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<s:SkinnableContainer
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:spicefactory="http://www.spicefactory.org/parsley"
+    backgroundColor="#CCCCCC">
+
+    <fx:Script>
+        <![CDATA[
+        import com.rayandromana.model.presentation.HeaderPM;
+
+        [Bindable]
+        public var model:HeaderPM;
+
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+        <spicefactory:FastInject objectId="headerPM" property="model"/>
+    </fx:Declarations>
+
+    <s:Group width="1000" horizontalCenter="0">
+
+        <s:Label
+            text="Ray and Romana"/>
+
+        <s:HGroup right="0">
+            <s:Button
+                label="English"
+                click="model.setLang('EN')"
+                />
+            <s:Button
+                label="Czech"
+                click="model.setLang('CZ')"
+                />
+        </s:HGroup>
+
+    </s:Group>
+
+
+</s:SkinnableContainer>

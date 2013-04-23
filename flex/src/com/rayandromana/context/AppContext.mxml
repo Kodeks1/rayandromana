@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Objects
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns="http://www.spicefactory.org/parsley"
+    xmlns:presentation="com.rayandromana.model.presentation.*"
+    xmlns:domain="com.rayandromana.model.domain.*">
+
+    <fx:Script>
+        <![CDATA[
+        import com.rayandromana.control.command.LoadPhotosCommand;
+        import com.rayandromana.control.command.SetLanguageCommand;
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+
+        <MapCommand type="{SetLanguageCommand}"/>
+        <MapCommand type="{LoadPhotosCommand}"/>
+
+        <presentation:HeaderPM id="headerPM"/>
+        <presentation:ApplicationPM id="applicationPM"/>
+        <presentation:PhotosPM id="photosPM"/>
+        <presentation:InfoPM id="infoPM"/>
+
+        <domain:Content/>
+
+    </fx:Declarations>
+
+</Objects>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<s:VGroup
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:spicefactory="http://www.spicefactory.org/parsley"
+    xmlns:mx="library://ns.adobe.com/flex/mx"
+    width="100%"
+    height="1200">
+
+    <fx:Script>
+        <![CDATA[
+        import com.rayandromana.model.presentation.ApplicationPM;
+
+        import flashx.textLayout.conversion.TextConverter;
+
+        [Bindable]
+        public var model:ApplicationPM;
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+        <spicefactory:FastInject objectId="applicationPM" property="model"/>
+    </fx:Declarations>
+
+    <s:Label text="{model.content.location}"/>
+
+    <s:HGroup width="100%">
+
+        <s:RichText
+            width="50%"
+            textFlow="{TextConverter.importToFlow(model.content.locationSpeil, TextConverter.TEXT_FIELD_HTML_FORMAT)}"/>
+
+        <s:Image
+            source="assets/img/map.jpg"/>
+
+    </s:HGroup>
+
+    <s:Image source="assets/img/lovedivide.png"/>
+
+    <s:Label text="{model.content.accomm}"/>
+
+    <s:HGroup width="100%">
+
+        <s:Image
+            source="content/img/IMG_4815.jpg"
+            width="450"/>
+
+        <s:RichText
+            width="50%"
+            textFlow="{TextConverter.importToFlow(model.content.accommSpeil, TextConverter.TEXT_FIELD_HTML_FORMAT)}"/>
+
+    </s:HGroup>
+
+    <mx:LinkButton
+        label="http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html"
+        />
+
+
+
+</s:VGroup>

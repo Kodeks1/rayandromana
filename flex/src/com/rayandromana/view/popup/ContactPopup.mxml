@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<s:SkinnableContainer
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:spicefactory="http://www.spicefactory.org/parsley"
+    width="700"
+    height="700"
+    backgroundColor="#FFFFFF"
+    click="clickHandler()">
+
+    <fx:Script>
+        <![CDATA[
+        import com.rayandromana.model.presentation.ApplicationPM;
+
+        import flashx.textLayout.conversion.TextConverter;
+
+        import mx.managers.PopUpManager;
+
+        [Bindable]
+        public var model:ApplicationPM;
+
+        private function clickHandler():void
+        {
+            PopUpManager.removePopUp(this);
+        }
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+        <spicefactory:FastInject objectId="applicationPM" property="model"/>
+    </fx:Declarations>
+
+    <s:Label text="{model.content.contact}"/>
+
+    <s:RichText
+        textFlow="{TextConverter.importToFlow(model.content.contactIntro, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
+        textAlign="center"
+        width="100%"
+        y="60"
+        x="40"
+        />
+
+</s:SkinnableContainer>
