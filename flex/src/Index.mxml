@@ -4,6 +4,7 @@
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
     xmlns:view="com.rayandromana.view.*"
+    skinClass="com.rayandromana.view.skin.ApplicationSkin"
     width="100%">
 
     <fx:Metadata>
@@ -24,10 +25,10 @@
         </spicefactory:ContextBuilder>
     </fx:Declarations>
 
-    <s:Scroller width="100%" height="100%" top="35">
+    <s:Scroller width="100%" height="100%">
         <view:MainView width="100%"/>
     </s:Scroller>
 
-    <view:Header width="100%" height="35"/>
+    <view:Header width="100%" height="40"/>
 
 </s:Application>

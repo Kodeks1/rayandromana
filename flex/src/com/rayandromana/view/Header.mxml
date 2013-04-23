@@ -3,7 +3,7 @@
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
-    backgroundColor="#CCCCCC">
+    alpha="0.9">
 
     <fx:Script>
         <![CDATA[
@@ -18,6 +18,15 @@
     <fx:Declarations>
         <spicefactory:FastInject objectId="headerPM" property="model"/>
     </fx:Declarations>
+
+    <s:Rect width="100%" height="100%">
+        <s:fill>
+            <s:LinearGradient>
+                <s:GradientEntry color="#ffffff"/>
+                <s:GradientEntry color="#fafafa"/>
+            </s:LinearGradient>
+        </s:fill>
+    </s:Rect>
 
     <s:Group width="1000" horizontalCenter="0">
 

@@ -6,7 +6,7 @@
     styleName="main-container">
 
     <s:layout>
-        <s:BasicLayout/>
+        <s:VerticalLayout/>
     </s:layout>
 
     <view:Banner width="100%"/>
