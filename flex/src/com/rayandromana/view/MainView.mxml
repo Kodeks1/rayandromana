@@ -5,18 +5,15 @@
     xmlns:view="com.rayandromana.view.*"
     styleName="main-container">
 
-    <s:layout>
-        <s:VerticalLayout/>
-    </s:layout>
+    <view:Banner id="banner"/>
 
-    <view:Banner width="100%"/>
-
-    <s:BorderContainer
-        width="1000"
-        horizontalCenter="0">
+    <s:SkinnableContainer
+        width="960"
+        horizontalCenter="0"
+        y="{banner.imgHeight}">
 
         <s:layout>
-            <s:VerticalLayout/>
+            <s:VerticalLayout gap="0"/>
         </s:layout>
 
         <view:Greeting/>
@@ -31,6 +28,6 @@
 
         <view:Info/>
 
-    </s:BorderContainer>
+    </s:SkinnableContainer>
 
 </s:Group>

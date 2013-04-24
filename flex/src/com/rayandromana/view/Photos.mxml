@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<s:VGroup
+<s:SkinnableContainer
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
     width="100%"
-    height="800">
+    height="830"
+    backgroundColor="#FAFAFA">
 
     <fx:Script>
         <![CDATA[
@@ -19,22 +20,30 @@
         <spicefactory:FastInject objectId="photosPM" property="model"/>
     </fx:Declarations>
 
-    <s:Label text="{model.content.photos}"/>
+    <s:layout>
+        <s:VerticalLayout gap="15"/>
+    </s:layout>
+
+    <s:Label text="{model.content.photos}" paddingLeft="40" paddingTop="30" styleName="h1"/>
 
     <s:DataGroup
         dataProvider="{model.content.photosCollection}"
         itemRenderer="com.rayandromana.view.renderer.PhotoRenderer"
-        width="100%"
-        >
+        width="100%">
 
         <s:layout>
-            <s:TileLayout/>
+            <s:TileLayout paddingLeft="40" horizontalGap="10" verticalGap="10"/>
         </s:layout>
 
     </s:DataGroup>
 
-    <s:Label text="{model.content.photoGuide}"/>
-    <s:Label text="{model.content.photoTag}"/>
-    <s:Button label="{model.content.iPhoneApp}"/>
+    <s:Group width="100%">
 
-</s:VGroup>
+        <s:Label text="{model.content.photoGuide}" styleName="sublabel" x="40"/>
+        <s:Label text="{model.content.photoTag}" styleName="sublabel" y="20" x="40"/>
+
+        <s:Button label="{model.content.iPhoneApp}" styleName="sublabel" right="45"/>
+
+    </s:Group>
+
+</s:SkinnableContainer>

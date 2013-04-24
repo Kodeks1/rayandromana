@@ -10,17 +10,17 @@
 @font-face
 {
     src: url('/assets/fonts/DancingScript-Regular.ttf');
-    font-family: "Dancing Script";
+    fontFamily: "Dancing Script";
     fontWeight: normal;
-    embed-as-cff: true;
+    embedAsCFF: true;
 }
 
 @font-face
 {
     src: url('/assets/fonts/Lora-Regular.ttf');
-    font-family: "Lora";
+    fontFamily: "Lora";
     fontWeight: normal;
-    embed-as-cff: true;
+    embedAsCFF: true;
 }
 
 .main-container {
@@ -43,4 +43,28 @@ global
 s|RichText {
     paragraphSpaceBefore: 12;
     paragraphSpaceAfter: 12;
+    lineHeight: 25;
 }
+
+.h1 {
+    font-family: "Dancing Script";
+    font-size: 24px;
+    color: #5197A7;
+}
+
+.h2 {
+    font-family: "Lora";
+    font-size: 20px;
+}
+
+/*
+//------------------------------
+//  TEXT
+//------------------------------
+*/
+
+.sublabel {
+    font-family: "Lora";
+    font-size: 12px;
+}
+

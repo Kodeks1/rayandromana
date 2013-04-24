@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
-<s:VGroup
+<s:SkinnableContainer
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
     xmlns:mx="library://ns.adobe.com/flex/mx"
     width="100%"
-    height="1200">
+    height="1320"
+    backgroundColor="#FFFFFF">
 
     <fx:Script>
         <![CDATA[
@@ -22,39 +23,43 @@
         <spicefactory:FastInject objectId="applicationPM" property="model"/>
     </fx:Declarations>
 
-    <s:Label text="{model.content.location}"/>
+    <s:layout>
+        <s:VerticalLayout/>
+    </s:layout>
 
-    <s:HGroup width="100%">
+    <s:Label text="{model.content.location}" styleName="h1" paddingTop="40" paddingBottom="20" paddingLeft="40"/>
+
+    <s:HGroup width="100%" paddingLeft="40" paddingBottom="30" gap="30">
 
         <s:RichText
-            width="50%"
+            width="440"
             textFlow="{TextConverter.importToFlow(model.content.locationSpeil, TextConverter.TEXT_FIELD_HTML_FORMAT)}"/>
 
-        <s:Image
-            source="assets/img/map.jpg"/>
+        <s:Image source="assets/img/map.jpg"/>
 
     </s:HGroup>
 
-    <s:Image source="assets/img/lovedivide.png"/>
+    <s:HGroup width="100%" paddingLeft="40" paddingRight="40">
+        <s:Image source="assets/img/lovedivide.png" width="100%"/>
+    </s:HGroup>
 
-    <s:Label text="{model.content.accomm}"/>
+    <s:Label text="{model.content.accomm}" styleName="h2" paddingLeft="40" paddingTop="15"/>
 
-    <s:HGroup width="100%">
+    <s:HGroup width="100%" paddingLeft="40" gap="30" paddingTop="15">
 
-        <s:Image
-            source="content/img/IMG_4815.jpg"
-            width="450"/>
+        <s:Group>
+            <s:Image source="content/img/IMG_4815.jpg" width="420" verticalAlign="top"/>
+            <s:Button
+                label="http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html"
+                y="300"
+                includeInLayout="false"
+                />
+        </s:Group>
 
         <s:RichText
-            width="50%"
+            width="420"
             textFlow="{TextConverter.importToFlow(model.content.accommSpeil, TextConverter.TEXT_FIELD_HTML_FORMAT)}"/>
 
     </s:HGroup>
 
-    <mx:LinkButton
-        label="http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html"
-        />
-
-
-
-</s:VGroup>
+</s:SkinnableContainer>

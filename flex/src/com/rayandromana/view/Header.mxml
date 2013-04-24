@@ -3,7 +3,7 @@
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
-    alpha="0.9">
+    alpha="0.95">
 
     <fx:Script>
         <![CDATA[
@@ -19,16 +19,20 @@
         <spicefactory:FastInject objectId="headerPM" property="model"/>
     </fx:Declarations>
 
+    <s:filters>
+        <s:DropShadowFilter color="#888888" blurY="1" alpha="0.3"/>
+    </s:filters>
+
     <s:Rect width="100%" height="100%">
         <s:fill>
-            <s:LinearGradient>
-                <s:GradientEntry color="#ffffff"/>
-                <s:GradientEntry color="#fafafa"/>
+            <s:LinearGradient rotation="90">
+                <s:GradientEntry color="#ffffff" ratio="0.8"/>
+                <s:GradientEntry color="#fafafa" ratio="1"/>
             </s:LinearGradient>
         </s:fill>
     </s:Rect>
 
-    <s:Group width="1000" horizontalCenter="0">
+    <s:Group width="960" horizontalCenter="0">
 
         <s:Label
             text="Ray and Romana"/>
@@ -45,6 +49,5 @@
         </s:HGroup>
 
     </s:Group>
-
 
 </s:SkinnableContainer>
