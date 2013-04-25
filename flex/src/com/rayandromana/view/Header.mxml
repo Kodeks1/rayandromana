@@ -3,6 +3,7 @@
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
+    xmlns:mx="library://ns.adobe.com/flex/mx"
     alpha="0.95">
 
     <fx:Script>
@@ -35,17 +36,33 @@
     <s:Group width="960" horizontalCenter="0">
 
         <s:Label
-            text="Ray and Romana"/>
+            text="Ray and Romana"
+            styleName="logo"
+            paddingTop="8"/>
 
-        <s:HGroup right="0">
-            <s:Button
-                label="English"
+        <s:HGroup right="10" top="13" gap="7">
+
+            <s:Label
+                text="English"
                 click="model.setLang('EN')"
+                useHandCursor="true"
+                buttonMode="true"
+                mouseChildren="false"
+                fontSize="16"
+                color="{model.content.currentLanguage == 'EN' ?  0x5197A7 : 0x000000}"
                 />
-            <s:Button
-                label="Czech"
+
+            <s:Label
+                text="Čeština"
                 click="model.setLang('CZ')"
+                useHandCursor="true"
+                buttonMode="true"
+                mouseChildren="false"
+                paddingTop="4"
+                fontSize="16"
+                color="{model.content.currentLanguage == 'CZ' ? 0x5197A7 : 0x000000}"
                 />
+
         </s:HGroup>
 
     </s:Group>

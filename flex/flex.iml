@@ -12,6 +12,9 @@
           <sdk name="sdk" />
         </dependencies>
         <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="false" />
+          </map>
           <option name="additionalOptions" value="-locale=en_US,cs_CZ -source-path=locale/{locale}" />
         </compiler-options>
         <packaging-air-desktop />

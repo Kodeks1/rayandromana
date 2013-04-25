@@ -16,6 +16,11 @@
 
         [Bindable]
         public var model:ApplicationPM;
+
+        private function venuClickHandler():void
+        {
+            navigateToURL(new URLRequest("http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html"), "_blank");
+        }
         ]]>
     </fx:Script>
 
@@ -49,10 +54,12 @@
 
         <s:Group>
             <s:Image source="content/img/IMG_4815.jpg" width="420" verticalAlign="top"/>
-            <s:Button
-                label="http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html"
+            <s:Label
+                text="http://www.vinarstviukaplicky.cz/d334-ubytovani-vinarstvi.html"
                 y="300"
-                includeInLayout="false"
+                styleName="sublabel"
+                click="venuClickHandler()"
+                color="#5197A7"
                 />
         </s:Group>
 

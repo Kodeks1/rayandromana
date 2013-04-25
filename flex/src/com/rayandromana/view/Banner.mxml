@@ -41,8 +41,8 @@
         width="960"
         height="100"
         horizontalCenter="0"
-        topLeftRadiusX="10"
-        topRightRadiusX="10">
+        topLeftRadiusX="12"
+        topRightRadiusX="12">
 
         <s:fill>
             <s:SolidColor alpha="0.9" color="#FFFFFF"/>

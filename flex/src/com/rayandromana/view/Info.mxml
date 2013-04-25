@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<s:HGroup
+<s:Group
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
     width="100%"
-    height="400">
+    height="380"
+    >
 
     <fx:Script>
         <![CDATA[
@@ -19,56 +20,85 @@
         <spicefactory:FastInject objectId="infoPM" property="model"/>
     </fx:Declarations>
 
-    <s:VGroup>
-        <s:Image
-            width="190"
-            height="190"
-            source="assets/img/rsvp.jpg"
-            click="model.gotoRsvp()"
-            />
-        <s:Group>
-            <s:Label text="{model.content.rsvp}"/>
-        </s:Group>
-    </s:VGroup>
+    <s:Rect
+        id="dateRect"
+        width="960"
+        height="340"
+        horizontalCenter="0"
+        bottomLeftRadiusX="12"
+        bottomRightRadiusX="12">
 
-    <s:VGroup>
-        <s:Image
-            width="190"
-            height="190"
-            source="assets/img/guestbook.jpg"
-            click="model.gotoGuestbook()"
-            />
-        <s:Group>
-            <s:Label text="{model.content.guestbook}"/>
-        </s:Group>
-    </s:VGroup>
+        <s:fill>
+            <s:SolidColor alpha="1" color="#FFFFFF"/>
+        </s:fill>
 
-    <s:VGroup>
-        <s:Image
-            width="190"
-            height="190"
-            source="assets/img/gifts.jpg"
-            click="model.launchGiftsPopup()"
-            useHandCursor="true"
-            buttonMode="true"
-            />
-        <s:Group>
-            <s:Label text="{model.content.gifts}"/>
-        </s:Group>
-    </s:VGroup>
+    </s:Rect>
 
-    <s:VGroup>
-        <s:Image
-            width="190"
-            height="190"
-            source="assets/img/contact.jpg"
-            click="model.launchContactPopup()"
-            useHandCursor="true"
-            buttonMode="true"
-            />
-        <s:Group>
-            <s:Label text="{model.content.contact}"/>
-        </s:Group>
-    </s:VGroup>
+    <s:HGroup
+        paddingLeft="60"
+        paddingTop="40"
+        gap="28">
 
-</s:HGroup>
+        <s:VGroup gap="2" click="model.gotoRsvp()" buttonMode="true" useHandCursor="true" mouseChildren="false">
+            <s:Image
+                width="190"
+                height="190"
+                source="assets/img/rsvp.jpg"/>
+            <s:BorderContainer borderColor="#CCCCCC" backgroundColor="#F2F2F2" width="100%">
+                <s:Label
+                    text="{model.content.rsvp}"
+                    paddingTop="20"
+                    paddingBottom="20"
+                    paddingLeft="20"
+                    styleName="infoLabel"/>
+            </s:BorderContainer>
+        </s:VGroup>
+
+        <s:VGroup gap="2" click="model.gotoGuestbook()" buttonMode="true" useHandCursor="true" mouseChildren="false">
+            <s:Image
+                width="190"
+                height="190"
+                source="assets/img/guestbook.jpg"/>
+            <s:BorderContainer borderColor="#CCCCCC" backgroundColor="#F2F2F2" width="100%">
+                <s:Label
+                    text="{model.content.guestbook}"
+                    paddingTop="20"
+                    paddingBottom="20"
+                    paddingLeft="20"
+                    styleName="infoLabel"/>
+            </s:BorderContainer>
+        </s:VGroup>
+
+        <s:VGroup gap="2" click="model.launchGiftsPopup()" buttonMode="true" useHandCursor="true" mouseChildren="false">
+            <s:Image
+                width="190"
+                height="190"
+                source="assets/img/gifts.jpg"/>
+            <s:BorderContainer borderColor="#CCCCCC" backgroundColor="#F2F2F2" width="100%">
+                <s:Label
+                    text="{model.content.gifts}"
+                    paddingTop="20"
+                    paddingBottom="20"
+                    paddingLeft="20"
+                    styleName="infoLabel"/>
+            </s:BorderContainer>
+        </s:VGroup>
+
+        <s:VGroup gap="2" click="model.launchContactPopup()" buttonMode="true" useHandCursor="true" mouseChildren="false">
+            <s:Image
+                width="190"
+                height="190"
+                source="assets/img/contact.jpg"/>
+            <s:BorderContainer borderColor="#CCCCCC" backgroundColor="#F2F2F2" width="100%">
+                <s:Label
+                    text="{model.content.contact}"
+                    paddingTop="20"
+                    paddingBottom="20"
+                    paddingLeft="20"
+                    styleName="infoLabel"/>
+            </s:BorderContainer>
+        </s:VGroup>
+
+    </s:HGroup>
+
+</s:Group>

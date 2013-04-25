@@ -3,8 +3,8 @@
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
-    width="700"
-    height="700"
+    width="400"
+    height="330"
     backgroundColor="#FFFFFF"
     click="clickHandler()">
 
@@ -23,6 +23,11 @@
         {
             PopUpManager.removePopUp(this);
         }
+
+        private function openMailTo():void
+        {
+            navigateToURL(new URLRequest("mailto:wedding@rayandromana.com"));
+        }
         ]]>
     </fx:Script>
 
@@ -30,14 +35,25 @@
         <spicefactory:FastInject objectId="applicationPM" property="model"/>
     </fx:Declarations>
 
-    <s:Label text="{model.content.contact}"/>
+    <s:Label text="{model.content.contact}" paddingLeft="40" paddingTop="20" styleName="h1"/>
 
     <s:RichText
         textFlow="{TextConverter.importToFlow(model.content.contactIntro, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
         textAlign="center"
-        width="100%"
-        y="60"
+        width="320"
+        y="70"
         x="40"
         />
+
+    <s:Label
+        text="wedding@rayandromana.com"
+        click="openMailTo()"
+        bottom="40"
+        textAlign="center"
+        width="100%"
+        fontSize="20"
+        />
+
+    <s:Button label="Close" click="clickHandler()" right="20" top="20"/>
 
 </s:SkinnableContainer>

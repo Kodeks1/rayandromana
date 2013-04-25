@@ -13,6 +13,11 @@
 
         [Bindable]
         public var model:PhotosPM;
+
+        private function iPhoneClickHandler():void
+        {
+            navigateToURL(new URLRequest("http://www.mywedding.com/rayandromana/photostream.html"), "_blank");
+        }
         ]]>
     </fx:Script>
 
@@ -39,10 +44,10 @@
 
     <s:Group width="100%">
 
-        <s:Label text="{model.content.photoGuide}" styleName="sublabel" x="40"/>
-        <s:Label text="{model.content.photoTag}" styleName="sublabel" y="20" x="40"/>
+        <!--<s:Label text="{model.content.photoGuide}" styleName="sublabel" x="40"/>-->
+        <s:Label text="{model.content.photoTag}" styleName="sublabel" y="0" x="40"/>
 
-        <s:Button label="{model.content.iPhoneApp}" styleName="sublabel" right="45"/>
+        <s:Button label="{model.content.iPhoneApp}" styleName="sublabel" right="45" click="iPhoneClickHandler()"/>
 
     </s:Group>
 

@@ -19,7 +19,7 @@ body {
 
 /*Text classes*/
 
-h1{
+h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 1.6em;
     font-weight: normal;
@@ -35,8 +35,7 @@ h1{
     @include background-image(linear-gradient($ribbon-h1-color-start, $ribbon-h1-color-end));
 }
 
-h1:before
-{
+h1:before {
     content: '';
     position: absolute;
     border-style: solid;

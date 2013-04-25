@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<s:VGroup
+<s:SkinnableContainer
     xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
-    width="100%">
+    width="100%"
+    backgroundColor="#FFFFFF">
 
     <fx:Script>
         <![CDATA[
@@ -20,19 +21,19 @@
         <spicefactory:FastInject objectId="applicationPM" property="model"/>
     </fx:Declarations>
 
-    <s:Label text="{model.content.czechThis}"/>
+    <s:Label text="{model.content.czechThis}" styleName="h1" paddingLeft="40" paddingTop="30"/>
 
-    <s:Scroller width="100%" height="620" verticalScrollPolicy="off">
+    <s:Scroller width="100%" height="620" verticalScrollPolicy="off" y="85">
 
-        <s:HGroup>
+        <s:HGroup gap="40">
 
-            <s:VGroup>
+            <s:VGroup paddingLeft="40">
                 <s:Label text="{model.content.beerTitle}"/>
                 <s:RichText
                     textFlow="{TextConverter.importToFlow(model.content.beerText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
                     width="570"/>
             </s:VGroup>
-            <s:Image source="assets/img/kozel.jpg" width="480"/>
+            <s:Image source="assets/img/kozel.jpg" width="480" verticalAlign="top"/>
 
             <s:VGroup>
                 <s:Label text="{model.content.slivoTitle}"/>
@@ -40,7 +41,7 @@
                     textFlow="{TextConverter.importToFlow(model.content.slivoText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
                     width="570"/>
             </s:VGroup>
-            <s:Image source="assets/img/slivo.jpg" width="335"/>
+            <s:Image source="assets/img/slivo.jpg" width="335" verticalAlign="top"/>
 
             <s:VGroup>
                 <s:Label text="{model.content.folkloreTitle}"/>
@@ -48,7 +49,7 @@
                     textFlow="{TextConverter.importToFlow(model.content.folkloreText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
                     width="500"/>
             </s:VGroup>
-            <s:Image source="assets/img/folklore.jpg" height="600" width="280"/>
+            <s:Image source="assets/img/folklore.jpg" height="600" width="280" verticalAlign="top"/>
 
             <s:VGroup>
                 <s:Label text="{model.content.famousTitle}"/>
@@ -62,7 +63,7 @@
                 <s:RichText
                     textFlow="{TextConverter.importToFlow(model.content.castleText, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
                     width="500"/>
-                <s:Image source="assets/img/valtice.jpg" height="440"/>
+                <s:Image source="assets/img/valtice.jpg" height="440" verticalAlign="top"/>
             </s:VGroup>
 
             <s:VGroup visible="{model.content.languageText != ''}" includeInLayout="{model.content.languageText != ''}">
@@ -76,4 +77,4 @@
 
     </s:Scroller>
 
-</s:VGroup>
+</s:SkinnableContainer>

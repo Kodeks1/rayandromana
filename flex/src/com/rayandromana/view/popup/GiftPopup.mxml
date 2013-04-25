@@ -4,7 +4,7 @@
     xmlns:s="library://ns.adobe.com/flex/spark"
     xmlns:spicefactory="http://www.spicefactory.org/parsley"
     width="700"
-    height="700"
+    height="570"
     backgroundColor="#FFFFFF"
     click="clickHandler()">
 
@@ -30,14 +30,17 @@
         <spicefactory:FastInject objectId="applicationPM" property="model"/>
     </fx:Declarations>
 
-    <s:Label text="{model.content.gifts}"/>
+    <s:Label text="{model.content.gifts}" paddingLeft="40" paddingTop="20" styleName="h1"/>
 
     <s:RichText
         textFlow="{TextConverter.importToFlow(model.content.giftsSpeil, TextConverter.TEXT_FIELD_HTML_FORMAT)}"
         textAlign="center"
         width="100%"
-        y="60"
+        y="70"
         x="40"
+        fontSize="20"
         />
+
+    <s:Button label="Close" click="clickHandler()" right="20" top="20"/>
 
 </s:SkinnableContainer>

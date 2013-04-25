@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ng-app="rayandromana"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="rayandromana"> <!--<![endif]-->
+<!--[if lte IE 8]><html class="no-js lt-ie9" lang="en" id="ng-app" ng-app="rayandromana"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" id="ng-app" ng-app="rayandromana"> <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css">
     <!-- endbuild -->
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <script src="libs/json3.min.js"></script>
+    <![endif]-->
 
     <script src="libs/jquery-1.9.1.js"></script>
     <script src="libs/foundation/js/vendor/custom.modernizr.js"></script>
@@ -28,8 +36,11 @@
 
 <body ng-controller="AppController" ng-cloak>
 
-    <!--[if lt IE 9]>
-    <p class="chromeframe">You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <!--[if lte IE 8]>
+    <p class="chromeframe">You are using an outdated browser. Please <a href="http://www.rayandromana.com/ie">click here</a> for an alternative site.</p>
+    <script type="text/javascript">
+        window.location = "http://www.rayandromana.com/ie";
+    </script>
     <![endif]-->
 
     <!--Top Bar-->

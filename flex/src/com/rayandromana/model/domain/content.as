@@ -6,6 +6,8 @@ package com.rayandromana.model.domain
     [Bindable]
     public class Content
     {
+        public var currentLanguage:String;
+
         public var photosCollection:ArrayList;
 
         public var bigDay:String;

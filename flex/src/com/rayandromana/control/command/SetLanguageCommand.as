@@ -21,10 +21,12 @@ package com.rayandromana.control.command
             if (message.lang == "CZ")
             {
                 loadLangFile('content/locale_cs-CZ.json');
+                content.currentLanguage = "CZ";
             }
             else
             {
                 loadLangFile('content/locale_en-US.json');
+                content.currentLanguage = "EN";
             }
         }
 

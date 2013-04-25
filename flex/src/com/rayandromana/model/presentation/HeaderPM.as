@@ -9,6 +9,7 @@ package com.rayandromana.model.presentation
         public var dispatcher:Function;
 
         [Inject]
+        [Bindable]
         public var content:Content;
 
         public function setLang(lang:String):void
