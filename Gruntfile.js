@@ -4,7 +4,8 @@ module.exports = function(grunt) {
 
     var gruntConfig = {
         app: 'src',
-        dist: 'dist'
+        dist: 'dist',
+        root: '.'
     };
 
     grunt.loadNpmTasks('grunt-contrib-clean');
@@ -56,6 +57,25 @@ module.exports = function(grunt) {
                         'favicon.ico',
                         'css/ie.css'
                     ]
+                },
+                {
+                    dest: '<%= config.dist %>/ie/',
+                    expand: true,
+                    flatten: true,
+                    filter: 'isFile',
+                    src: [
+                        'flex/out/production/flex/*'
+                    ]/*,
+                    rename: function(dest, src) {
+                        return dest.replace('Application.html', 'index.html');
+                    }*/
+                },
+                {
+                    dest: '<%= config.dist %>/ie/content/',
+                    expand: true,
+                    flatten: false,
+                    cwd: 'flex/out/production/flex/content',
+                    src: '**/*'
                 }]
             }
         },
