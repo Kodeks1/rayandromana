@@ -76,6 +76,13 @@ module.exports = function(grunt) {
                     flatten: false,
                     cwd: 'flex/out/production/flex/content',
                     src: '**/*'
+                },
+                {
+                    dest: '<%= config.dist %>/ie/assets/img',
+                    expand: true,
+                    flatten: false,
+                    cwd: 'flex/out/production/flex/assets/img',
+                    src: '**/*'
                 }]
             }
         },
