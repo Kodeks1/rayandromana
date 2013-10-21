@@ -202,5 +202,10 @@
     {
         "key":"_IPhoneApp_",
         "value":"Check out the iPhone app!"
+    },
+
+    {
+        "key":"_UserPhotos_",
+        "value":"Your photos"
     }
 ]

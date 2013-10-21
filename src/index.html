@@ -74,7 +74,7 @@
             <img src="img/feet.jpg" class="banner-img" width="{{width}}"/>
         </div>
         <div class="date-overlay">
-            <img src="img/date2.png" height="90" width="400"/>
+            <img src="img/date3.png" height="90" width="400"/>
         </div>
     </section>
 
@@ -91,200 +91,60 @@
             </div>
         </section>
 
-        <!--The Big Day-->
+        <!--Your photos-->
 
         <section class="padded-section gradient-pale">
             <div class="row">
-                <h1>{{'_BigDay_' | i18n}}</h1>
+                <h1>{{'_UserPhotos_' | i18n}}</h1>
             </div>
             <div class="row padded-subdiv">
-                <div class="small-4 columns">
-                    <img src="img/chapel.jpg" width="291" height="328"/>
-                </div>
-                <div class="small-8 columns">
-                    <h2>{{'_Ceremony_' | i18n}}</h2>
-                    <p class="location">{{'_CeremonyWhere_' | i18n}}<br>{{'_CeremonyWhen_' | i18n}}</p>
-                    <p class="sublabel"><br>{{'_CeremonyBus_' | i18n}}<p>
-                </div>
-            </div>
-            <div class="row padded-subdiv">
-                <div class="small-4 columns">
-                    <img src="img/tavern.jpg" width="291" height="193"/>
-                </div>
-                <div class="small-8 columns">
-                    <h2>{{'_Reception_' | i18n}}</h2>
-                    <p class="location">{{'_ReceptionWhere_' | i18n}}<br>{{'_ReceptionWhen_' | i18n}}</p>
-                </div>
-            </div>
-            <div class="row padded-subdiv">
-                <div class="small-4 columns">
-                    <img src="img/cellar.jpg" width="291" height="193"/>
-                </div>
-                <div class="small-8 columns">
-                    <h2>{{'_Winetasting_' | i18n}}</h2>
-                    <p class="location">{{'_WinetastingWhere_' | i18n}}<br>{{'_WinetastingWhen_' | i18n}}</p>
-                    <p class="sublabel"><br>{{'_WinetastingLabel_' | i18n}}<p>
-                </div>
-            </div>
-            <div class="row padded-subdiv">
-                <div class="small-4 columns">
-                    <img src="img/party.jpg" width="291" height="194"/>
-                </div>
-                <div class="small-8 columns">
-                    <h2>{{'_Party_' | i18n}}</h2>
-                    <p class="location">{{'_PartyWhere_' | i18n}}<br>{{'_PartyWhen_' | i18n}}</p>
-                    <p class="sublabel"><br>{{'_PartyLabel_' | i18n}}<p>
-                </div>
+
+                <iframe src="http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420"
+                        width="100%" height="700" frameborder="0" allowtransparency="true">
+                </iframe>
+
             </div>
         </section>
 
-        <!--Location-->
+
+
+
 
         <section class="padded-section">
             <div class="row">
-                <h1>{{'_Location_' | i18n}}</h1>
+                <h1>Professional Photos</h1>
             </div>
 
+        </section>
+
+
+        <section class="padded-section gradient-pale">
             <div class="row">
-                <div class="small-6 columns" ng-bind-html="'_LocationSpeil_' | i18n"></div>
-                <div class="small-6 columns" id="map-canvas" ng-controller="MapController" ng-init="initializeMap()" />
+                <h1>Wine tasting</h1>
             </div>
 
+        </section>
+
+
+        <section class="padded-section gradient-panel">
             <div class="row">
-                <div class="small-12 columns padded-subdiv">
-                    <img src="img/lovedivide.png">
-                </div>
-            </div>
+                <h1>Videos</h1>
 
-            <div class="row winery-orbit">
-                <div class="small-6 columns padded-subdiv">
-                    <h2>{{'_Accomm_' | i18n}}</h2>
-                    <ul data-orbit>
-                        <li>
-                            <img src="content/imgs/winery/IMG_4815.jpg" />
-                        </li>
-                        <li>
-                            <img src="content/imgs/winery/IMG_4794.jpg" />
-                        </li>
-                        <li>
-                            <img src="content/imgs/winery/IMG_4801.jpg" />
-                        </li>
-                        <li>
-                            <img src="content/imgs/winery/IMG_4828.jpg" />
-                        </li>
-                    </ul>
-                    <a href='http://www.vinarstviukaplicky.cz/penzion/ubytovani/cenik.html'
-                       class="sublabel" target="_blank">http://www.vinarstviukaplicky.cz</a>
-                </div>
-                <div class="small-6 columns accom-speil">
-                    <p ng-bind-html="'_AccommSpeil_' | i18n"></p>
-                </div>
             </div>
         </section>
 
-        <!--Photos-->
-
-        <section class="padded-section gradient-pale" ng-controller="PhotosController">
-            <div class="row">
-                <h1>Photos</h1>
-                <div class="small-12 columns">
-                    <div class="main">
-                        <ul class="clearing-thumbs img-grid" data-clearing>
-                            <li ng-repeat="photo in photos">
-                                <a href="content/imgs/lrg/{{photo.largesrc}}">
-                                    <img ng-src="content/imgs/thumb/{{photo.thumbsrc}}"
-                                        data-caption="{{photo.description}}"
-                                        alt="My title"
-                                        width="210"
-                                        height="210"
-                                        />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="small-8 columns">
-                    <p class="sublabel photo-guide">{{'_PhotoGuide_' | i18n}}<br>{{'_PhotoTag_' | i18n}}</p>
-                </div>
-                <div class="small-4 columns">
-                    <p class="sublabel iphone-app">
-                        <a href="http://www.mywedding.com/rayandromana/photostream.html" target="_blank">{{'_IPhoneApp_' | i18n}}</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!--Czech this out-->
-
-        <section class="padded-section nosidepad gradient-panel" ng-controller="CzechOutController">
-            <div class="row">
-                <h1 class="side-scroll-title">{{'_CzechThis_' | i18n}}</h1>
-
-                <div class="small-12 columns right-content">
-                    <dl class="sub-nav right sublabel sideways-menu">
-                        <dd><a href="" ng-click="setSelected('beer')" class="sideways-menuitem">{{'_BeerTitleShort_' | i18n}}</a></dd>
-                        <dd><a href="" ng-click="setSelected('slivo')" class="sideways-menuitem">{{'_SlivoTitleShort_' | i18n}}</a></dd>
-                        <dd><a href="" ng-click="setSelected('folk')" class="sideways-menuitem">{{'_FolkloreTitleShort_' | i18n}}</a></dd>
-                        <dd><a href="" ng-click="setSelected('famous')" class="sideways-menuitem">{{'_FamousTitleShort_' | i18n}}</a></dd>
-                        <dd><a href="" ng-click="setSelected('castles')" class="sideways-menuitem">{{'_CastleTitleShort_' | i18n}}</a></dd>
-                        <dd><a href="" ng-click="setSelected('lang')" class="sideways-menuitem">{{'_LanguageTitleShort_' | i18n}}</a></dd>
-                    </dl>
-                    <div class="wisper sideways-label">{{'_ScrollSideways_' | i18n}}</div>
-                </div>
-
-                <div class="small-12 columns side-scroll-div" horizontal-scroll-to>
-
-                    <div class="side-scroll-container side-scroll-padd">
-                        <div class="side-scroll-box beer-text">
-                            <h2>{{'_BeerTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_BeerText_' | i18n"></span>
-                        </div>
-                        <div class="side-scroll-box side-scroll-img beer-img">
-                            <img src="img/kozel.jpg" width="480"/>
-                        </div>
-
-                        <div class="side-scroll-box slivo-text">
-                            <h2>{{'_SlivoTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_SlivoText_' | i18n"></span>
-                        </div>
-                        <div class="side-scroll-box side-scroll-img">
-                            <img src="img/slivo.jpg" width="335"/>
-                        </div>
-
-                        <div class="side-scroll-box folklore-text">
-                            <h2>{{'_FolkloreTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_FolkloreText_' | i18n"></span>
-                        </div>
-                        <div class="side-scroll-box side-scroll-img">
-                            <div class="box-shadow folklore-image">
-                                <img src="img/folklore.jpg" height="600" width="280" class="shadow-subject"/>
-                            </div>
-                        </div>
-
-                        <div class="side-scroll-box famous-text">
-                            <h2>{{'_FamousTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_FamousText_' | i18n"></span>
-                        </div>
-
-                        <div class="side-scroll-box castles-text">
-                            <h2>{{'_CastleTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_CastleText_' | i18n"></span>
-                            <img src="img/valtice.jpg" width="440" />
-                        </div>
-
-                        <div class="side-scroll-box language-text" ng-show="!!('_LanguageTitle_' | i18n)">
-                            <h2>{{'_LanguageTitle_' | i18n}}</h2>
-                            <span ng-bind-html="'_LanguageText_' | i18n"></span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!--Info panels-->
+
+        <!--<section class="padded-section">
+            <div class="row top-padd">
+                <div class="small-12 columns">
+
+                    <p>More photos coming soon!</p>
+
+                </div>
+            </div>
+        </section>-->
 
         <section class="padded-section">
             <div class="row top-padd">
@@ -295,7 +155,7 @@
                             <img src="img/rsvp.jpg" width="500" height="500">
                         </a>
                         <div class="panel hand" onclick="window.open('http://www.mywedding.com/apps/public/mysite/rsvp.php?s=rayandromana','_blank')">
-                            <p class="infopanel-label">{{'_RSVP_' | i18n}}</p>
+                            <p class="infopanel-label">Photographers</p>
                         </div>
                     </div>
 
@@ -304,16 +164,16 @@
                             <img src="img/guestbook.jpg">
                         </a>
                         <div class="panel hand" onclick="window.open('http://www.mywedding.com/apps/public/mysite/guestbook_sign.php?s=rayandromana','_blank')">
-                            <p class="infopanel-label">{{'_Guestbook_' | i18n}}</p>
+                            <p class="infopanel-label">Videos</p>
                         </div>
                     </div>
 
                     <div class="small-3 columns">
-                        <a href="#" data-reveal-id="giftsModal">
+                        <a href="#" data-reveal-id="winetastingModal">
                             <img src="img/gifts.jpg">
                         </a>
-                        <div class="panel hand" data-reveal-id="giftsModal">
-                            <p class="infopanel-label">{{'_Gifts_' | i18n}}</p>
+                        <div class="panel hand" data-reveal-id="winetastingModal">
+                            <p class="infopanel-label">Wine tasting</p>
                         </div>
                     </div>
 
@@ -351,27 +211,34 @@
         </p>
     </div>
 
+    <div class="reveal-modal expand" id="winetastingModal">
+        <iframe src="http://rayandromana.smugmug.com/Sample-Gallery/"
+                width="100%" height="600" frameborder="0" allowtransparency="true">
+        </iframe>
+    </div>
 
 
 
-    <script src="libs/foundation/js/foundation.min.js"></script>
+
+    <!--<script src="libs/foundation/js/foundation.min.js"></script>-->
 
     <!-- build:js js/rayandromana.min.js -->
     <script src="js/services/services.js"></script>
     <script src="js/controllers/AppController.js"></script>
-    <script src="js/controllers/PhotosController.js"></script>
+    <!--<script src="js/controllers/PhotosController.js"></script>
     <script src="js/controllers/MapController.js"></script>
     <script src="js/controllers/CzechOutController.js"></script>
-    <script src="js/filters/filters.js"></script>
+    <script src="js/filters/filters.js"></script>-->
     <script src="js/app.js"></script>
     <script src="js/directives/directives.js"></script>
     <script src="js/utils/localize.js"></script>
     <script src="js/utils/analytics.js"></script>
 
-    <script src="libs/foundation/js/foundation/foundation.orbit.js"></script>
+    <!--<script src="libs/foundation/js/foundation/foundation.orbit.js"></script>-->
+    <script src="libs/foundation/js/foundation/foundation.js"></script>
     <script src="libs/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="libs/foundation/js/foundation/foundation.topbar.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.clearing.js"></script>
+    <!--<script src="libs/foundation/js/foundation/foundation.clearing.js"></script>-->
     <!-- endbuild -->
 
     <script>
