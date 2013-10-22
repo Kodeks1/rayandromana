@@ -1,0 +1,11 @@
+{
+    "name": "Ray and Romana",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "~1.10.2",
+        "sass-bootstrap-compass": "~3.0.17",
+        "angular-latest": "~1.0.8"
+    },
+    "devDependencies": {
+    }
+}

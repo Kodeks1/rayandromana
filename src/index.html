@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if lte IE 8]><html class="no-js lt-ie9" lang="en" id="ng-app" ng-app="rayandromana"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" id="ng-app" ng-app="rayandromana"> <!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" id="ng-app" ng-app="rayandromana"> <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -8,9 +8,8 @@
     <meta name="description" content="Ray and Romana :)">
 
     <!-- build:css css/styles.css -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- endbuild -->
 
     <!--[if lte IE 9]>
@@ -21,8 +20,7 @@
     <script src="libs/json3.min.js"></script>
     <![endif]-->
 
-    <script src="libs/jquery-1.9.1.js"></script>
-    <script src="libs/foundation/js/vendor/custom.modernizr.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/angular.js"></script>
     <script src="libs/angular-resource.js"></script>
     <script src="libs/angular-sanitize.js"></script>
@@ -36,16 +34,67 @@
 
 <body ng-controller="AppController" ng-cloak>
 
-    <!--[if lte IE 8]>
-    <p class="chromeframe">You are using an outdated browser. Please <a href="http://www.rayandromana.com/ie">click here</a> for an alternative site.</p>
-    <script type="text/javascript">
-        window.location = "http://www.rayandromana.com/ie";
-    </script>
+    <!--[if lt IE 8]>
+    <p class="chromeframe">Unfortunately your browser is too old to display the site properly.</p>
     <![endif]-->
 
     <!--Top Bar-->
 
-    <div class="fixed contain-to-grid top-bar-custom">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../navbar/">Default</a></li>
+                    <li><a href="../navbar-static-top/">Static top</a></li>
+                    <li class="active"><a href="./">Fixed top</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+
+    <!--<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <ul class="title-area">
+                <div id="ribbon">
+                    <div class="container">
+                        <div class="base logo">Ray & Romana</div>
+                        <div class="left_corner"></div>
+                        <div class="right_corner"></div>
+                    </div>
+                </div>
+            </ul>
+
+
+        </div>
+
+
 
         <nav class="top-bar">
             <ul class="title-area">
@@ -65,7 +114,7 @@
                 </dl>
             </section>
         </nav>
-    </div>
+    </div>-->
 
     <!--Banner-->
 
@@ -73,177 +122,79 @@
         <div>
             <img src="img/feet.jpg" class="banner-img" width="{{width}}"/>
         </div>
-        <div class="date-overlay">
-            <img src="img/date3.png" height="90" width="400"/>
-        </div>
     </section>
 
-    <div class="row maincol small-12 columns">
-
-        <!--Greeting-->
-
-        <section class="padded-section">
-            <div class="row top-padd">
-                <div class="small-9 columns" ng-bind-html="'_Greeting_' | i18n"></div>
-                <div class="small-3 columns box-shadow">
-                    <img src="content/imgs/thumb/IMG_9273.jpg" width="210" height="210" class="shadow-subject">
-                </div>
-            </div>
-        </section>
-
-        <!--Your photos-->
-
-        <section class="padded-section gradient-pale">
-            <div class="row">
-                <h1>{{'_UserPhotos_' | i18n}}</h1>
-            </div>
-            <div class="row padded-subdiv">
-
-                <iframe src="http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420"
-                        width="100%" height="700" frameborder="0" allowtransparency="true">
-                </iframe>
-
-            </div>
-        </section>
 
 
+    <div class="row">
 
-
-
-        <section class="padded-section">
-            <div class="row">
-                <h1>Professional Photos</h1>
-            </div>
-
-        </section>
-
-
-        <section class="padded-section gradient-pale">
-            <div class="row">
-                <h1>Wine tasting</h1>
-            </div>
-
-        </section>
-
-
-        <section class="padded-section gradient-panel">
-            <div class="row">
-                <h1>Videos</h1>
-
-            </div>
-        </section>
-
-
-        <!--Info panels-->
-
-        <!--<section class="padded-section">
-            <div class="row top-padd">
-                <div class="small-12 columns">
-
-                    <p>More photos coming soon!</p>
-
-                </div>
-            </div>
-        </section>-->
-
-        <section class="padded-section">
-            <div class="row top-padd">
-                <div class="small-12 columns">
-
-                    <div class="small-3 columns">
-                        <a href="http://www.mywedding.com/apps/public/mysite/rsvp.php?s=rayandromana" target="_blank">
-                            <img src="img/rsvp.jpg" width="500" height="500">
-                        </a>
-                        <div class="panel hand" onclick="window.open('http://www.mywedding.com/apps/public/mysite/rsvp.php?s=rayandromana','_blank')">
-                            <p class="infopanel-label">Photographers</p>
-                        </div>
-                    </div>
-
-                    <div class="small-3 columns">
-                        <a href="http://www.mywedding.com/apps/public/mysite/guestbook_sign.php?s=rayandromana" target="_blank">
-                            <img src="img/guestbook.jpg">
-                        </a>
-                        <div class="panel hand" onclick="window.open('http://www.mywedding.com/apps/public/mysite/guestbook_sign.php?s=rayandromana','_blank')">
-                            <p class="infopanel-label">Videos</p>
-                        </div>
-                    </div>
-
-                    <div class="small-3 columns">
-                        <a href="#" data-reveal-id="winetastingModal">
-                            <img src="img/gifts.jpg">
-                        </a>
-                        <div class="panel hand" data-reveal-id="winetastingModal">
-                            <p class="infopanel-label">Wine tasting</p>
-                        </div>
-                    </div>
-
-                    <div class="small-3 columns">
-                        <a href="#" data-reveal-id="contactModal">
-                            <img src="img/contact.jpg">
-                        </a>
-                        <div class="panel hand" data-reveal-id="contactModal">
-                            <p class="infopanel-label">{{'_Contact_' | i18n}}</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <p class="bottom-space">&nbsp;</p>
-
-    <!-- Popup -->
-
-    <div class="reveal-modal medium" style="width: 650px; margin-left: -325px" id="giftsModal">
-        <h1 class="modal-ribbon">{{'_Gifts_' | i18n}}</h1>
-        <a href="#" class="close-reveal-modal">&times;</a>
-        <p class="gift-speil" ng-bind-html="'_GiftsSpeil_' | i18n"></p>
-    </div>
-
-    <div class="reveal-modal small" style="width: 500px; margin-left: -250px" id="contactModal">
-        <h1 class="modal-ribbon">{{'_Contact_' | i18n}}</h1>
-        <a href="#" class="close-reveal-modal">&times;</a>
-        <p><br>&nbsp;</p>
-        <p ng-bind-html="'_ContactIntro_' | i18n"></p>
-        <p class="address">
-            <img src="img/obfuscate.png" width="300" height="52">
-        </p>
-    </div>
-
-    <div class="reveal-modal expand" id="winetastingModal">
-        <iframe src="http://rayandromana.smugmug.com/Sample-Gallery/"
-                width="100%" height="600" frameborder="0" allowtransparency="true">
-        </iframe>
+        <div class="large-12 columns">abc</div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
     </div>
 
 
 
 
-    <!--<script src="libs/foundation/js/foundation.min.js"></script>-->
+
+
 
     <!-- build:js js/rayandromana.min.js -->
     <script src="js/services/services.js"></script>
     <script src="js/controllers/AppController.js"></script>
-    <!--<script src="js/controllers/PhotosController.js"></script>
-    <script src="js/controllers/MapController.js"></script>
-    <script src="js/controllers/CzechOutController.js"></script>
-    <script src="js/filters/filters.js"></script>-->
     <script src="js/app.js"></script>
     <script src="js/directives/directives.js"></script>
     <script src="js/utils/localize.js"></script>
     <script src="js/utils/analytics.js"></script>
 
-    <!--<script src="libs/foundation/js/foundation/foundation.orbit.js"></script>-->
-    <script src="libs/foundation/js/foundation/foundation.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.reveal.js"></script>
-    <script src="libs/foundation/js/foundation/foundation.topbar.js"></script>
-    <!--<script src="libs/foundation/js/foundation/foundation.clearing.js"></script>-->
     <!-- endbuild -->
-
-    <script>
-        $(document).foundation();
-    </script>
 
 </body>
 </html>

@@ -6,9 +6,10 @@ cd scripts
 
 gem install sass
 gem install compass
-gem install zurb-foundation
 
 npm install -g grunt-cli
+
+bower install
 
 
 TEST...................................................
