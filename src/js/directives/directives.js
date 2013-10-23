@@ -29,4 +29,23 @@ angular.module('rr.directives', [])
                 }
             }, true);
         };
+    }])
+
+    /**
+     *
+     */
+    .directive('parallaxBanner', ["$window", function ($window) {
+        return function($scope) {
+            angular.element($window).bind('scroll', function() {
+                $scope.$apply(function () {
+
+                    var scrollTop = $(document).scrollTop(),
+                        opacity = 1 - (scrollTop / 350),
+                        offset = -(30 - (opacity * 50));
+
+                    $scope.bannerStyle = {opacity: Math.max(opacity, 0), backgroundPositionY: offset};
+
+                });
+            });
+        };
     }]);
