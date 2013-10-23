@@ -21,16 +21,25 @@ body {
     background: url(../img/feet.jpg) no-repeat top center fixed;
 }
 
-.main-title {
-    text-align: center;
+h1 {
     font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.decor {
     font-family: 'Didot';
     font-style: italic;
+}
+
+.txt-center {
+    text-align: center;
 }
 
 .sub-title {
     text-align: center;
     font-size: 12px;
-    width: 50%;
 }
 

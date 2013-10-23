@@ -8,8 +8,8 @@
     <meta name="description" content="Ray and Romana :)">
 
     <!-- build:css css/styles.css -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- endbuild -->
 
     <!--[if lte IE 9]>
@@ -71,35 +71,76 @@
     <!--title-->
 
     <section class="row">
-        <h1 class="main-title">
-            Ray &amp; Romana
-        </h1>
-        <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="container">
+            <h1 class="decor txt-center">Ray &amp; Romana</h1>
+            <div class="col-md-6 col-md-offset-3">
+                <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
     </section>
 
     <hr>
 
     <section class="row">
-        <h2>Professional photos</h2>
+        <h2 class="decor txt-center">Professional photos</h2>
+
+        <div class="col-md-6 col-md-offset-3">
+
+
+            <div id="carousel-example-generic" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/svatba/CAS-014.jpg" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/svatba/CAS-056.jpg" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+
+        </div>
+
     </section>
 
     <hr>
 
     <section class="row">
-        <h2>Your photos</h2>
+        <h2 class="decor txt-center">Your photos</h2>
         <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">View photos</a>
     </section>
 
     <hr>
 
     <section class="row">
-        <h2>Videos</h2>
+        <h2 class="decor txt-center">Videos</h2>
     </section>
 
     <hr>
 
     <section class="row">
-        <h2>Our photos</h2>
+        <h2 class="decor txt-center">Our photos</h2>
     </section>
 
 
@@ -114,7 +155,9 @@
                     <h4 class="modal-title">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <iframe src="http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420"
+                            width="100%" height="700" frameborder="0" allowtransparency="true">
+                    </iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -176,6 +219,8 @@
     <script src="js/utils/analytics.js"></script>
 
     <script src="libs/sass-bootstrap-compass/js/modal.js"></script>
+    <script src="libs/sass-bootstrap-compass/js/carousel.js"></script>
+    <script src="libs/sass-bootstrap-compass/js/transition.js"></script>
 
     <!-- endbuild -->
 
