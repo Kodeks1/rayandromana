@@ -4,7 +4,7 @@ angular.module('rayandromana', ['rr.services', 'rr.directives', 'localization', 
 
 //jQuery Helpers
 
-$('#myModal').on('show.bs.modal', function () {
+$('.full-window-modal').on('show.bs.modal', function () {
     $(this).find('.modal-dialog').css({
         width:'auto',
         height:'auto',

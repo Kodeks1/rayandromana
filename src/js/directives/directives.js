@@ -38,9 +38,8 @@ angular.module('rr.directives', [])
         return function($scope) {
             angular.element($window).bind('scroll', function() {
                 $scope.$apply(function () {
-
                     var scrollTop = $(document).scrollTop(),
-                        opacity = 1 - (scrollTop / 350),
+                        opacity = 1 - (scrollTop / 550),
                         offset = -(30 - (opacity * 50));
 
                     $scope.bannerStyle = {opacity: Math.max(opacity, 0), backgroundPositionY: offset};

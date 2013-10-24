@@ -15,9 +15,13 @@ body {
     background-color: #F9F9F9;
 }
 
+.logo {
+    font-size: 1.5em;
+}
+
 .banner-bg {
     width: 100%;
-    height: 400px;
+    height: 550px;
     background: url(../img/feet.jpg) no-repeat top center fixed;
 }
 
@@ -41,5 +45,15 @@ h2 {
 .sub-title {
     text-align: center;
     font-size: 12px;
+}
+
+.padded-row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer {
+    background-color: #fff;
+    height: 70px;
 }
 
