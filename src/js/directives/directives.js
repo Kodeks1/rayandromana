@@ -21,7 +21,7 @@ angular.module('rr.directives', [])
     /**
      * Animate to horizontal scroll position
      */
-    .directive('horizontalScrollTo', [function() {
+    /*.directive('horizontalScrollTo', [function() {
         return function(scope, elem, attrs) {
             scope.$watch("scrollPos", function () {
                 if (typeof scope.scrollPos !== 'undefined') {
@@ -29,7 +29,7 @@ angular.module('rr.directives', [])
                 }
             }, true);
         };
-    }])
+    }])*/
 
     /**
      *
