@@ -1,5 +1,7 @@
 @import "compass";
 
+/*Fonts*/
+
 @font-face {
     font-family: 'Didot';
     src: url('../fonts/Didot.eot');
@@ -22,8 +24,12 @@
     font-style: normal;
 }
 
+/*Reusable*/
+
 body {
     background-color: #F9F9F9;
+    font-family: 'Gotham Narrow';
+    font-style: normal;
 }
 
 .font-heading {
@@ -31,14 +37,76 @@ body {
     font-style: italic;
 }
 
-.font-primary {
-    font-family: 'Gotham Narrow';
-    font-style: normal;
+h2 {
+    font-size: 3em;
+}
+
+.txt-center {
+    text-align: center;
+}
+.txt-center-margin {
+    margin: 0 auto;
+}
+
+.padded-row {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.link-button-1 {
+    font-size: 1.250em;
+}
+
+.link-button-2 {
+    font-size: 1.5em;
+}
+
+.padd-v20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padd-v10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+hr {
+    color: #ddd;
+    background-color: #ddd;
+}
+
+.expanded-lines {
+    line-height: 220%;
+}
+
+/*Specific*/
+
+.logo {
+    font-size: 1.5em;
+    color: #aaa !important;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.banner-bg {
+    width: 100%;
+    height: 550px;
+    background: url(../img/1382778144147_CAS-318.jpg) no-repeat top center fixed;
+    //background: url(../img/feet.jpg) no-repeat top center fixed;
+    background-size: 100%;
 }
 
 
 .heading {
-    font-size: 5em;
+    font-size: 6.5em;
     position: absolute;
 
     &.heading-a {
@@ -46,59 +114,22 @@ body {
         left: 10px;
     }
     &.heading-b {
-        font-size: 3.75em;
-        top: 31px;
-        left: 124px;
+        font-size: 5em;
+        top: 45px;
+        left: 160px;
     }
     &.heading-c {
-        top: 61px;
-        left: 31px;
+        top: 80px;
+        left: 35px;
     }
-}
-
-.logo {
-    font-size: 1.5em;
-}
-
-.banner-bg {
-    width: 100%;
-    height: 550px;
-    //background: url(../img/1382778144147_CAS-318.jpg) no-repeat top center fixed;
-    background: url(../img/feet.jpg) no-repeat top center fixed;
-    //background-size: auto 300px;
-}
-
-h2 {
-    font-size: 50px;
-}
-
-.txt-center {
-    text-align: center;
-}
-
-.sub-title {
-    text-align: center;
-    font-size: 1.250em;
 }
 
 .logo-container {
     position: relative;
     margin: 0 auto;
-    width: 280px;
-    height: 160px;
+    width: 360px;
+    height: 210px;
 }
-
-.padded-row {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.footer {
-    background-color: #fff;
-    height: 70px;
-}
-
-
 
 .full-window-modal {
     width: auto;
@@ -112,8 +143,13 @@ h2 {
     }
 }
 
-.full-height {
-    height: 100%;
+.modal-800 {
+    width: 800px;
+    margin: 0 auto;
+
+    .modal-dialog {
+        width: 800px;
+    }
 }
 
 .modal-absolute-close {
@@ -122,3 +158,11 @@ h2 {
     right: 10px;
     top: 5px
 }
+
+.footer {
+    background-color: #fff;
+    height: 40px;
+    color: #aaa;
+    padding-top: 10px;
+}
+

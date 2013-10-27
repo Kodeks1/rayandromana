@@ -19,28 +19,15 @@ angular.module('rr.directives', [])
     }])
 
     /**
-     * Animate to horizontal scroll position
-     */
-    /*.directive('horizontalScrollTo', [function() {
-        return function(scope, elem, attrs) {
-            scope.$watch("scrollPos", function () {
-                if (typeof scope.scrollPos !== 'undefined') {
-                    $(elem).animate({scrollLeft: scope.scrollPos}, 600);
-                }
-            }, true);
-        };
-    }])*/
-
-    /**
-     *
+     * Set the properties for the banner as the body scrolls
      */
     .directive('parallaxBanner', ["$window", function ($window) {
         return function($scope) {
             angular.element($window).bind('scroll', function() {
                 $scope.$apply(function () {
                     var scrollTop = $(document).scrollTop(),
-                        opacity = 1 - (scrollTop / 550),
-                        offset = -(30 - (opacity * 50));
+                        opacity = 1 - (scrollTop / 450),
+                        offset = -(30 - (opacity * 70));
 
                     $scope.bannerStyle = {opacity: Math.max(opacity, 0), backgroundPositionY: offset};
 
