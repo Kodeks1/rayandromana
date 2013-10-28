@@ -47,42 +47,12 @@ module.exports = function(grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
-                        'content/photos.json',
-                        'templates/**/*',
                         'lang/**/*',
-                        'libs/foundation/js/vendor/custom.modernizr.js',
-                        'libs/foundation/js/foundation.min.js',
+                        'fonts/**/*',
                         'libs/json3.min.js',
                         'index.html',
-                        'favicon.ico',
-                        'css/ie.css'
+                        'favicon.ico'
                     ]
-                },
-                {
-                    dest: '<%= config.dist %>/ie/',
-                    expand: true,
-                    flatten: true,
-                    filter: 'isFile',
-                    src: [
-                        'flex/out/production/flex/*'
-                    ]/*,
-                    rename: function(dest, src) {
-                        return dest.replace('Application.html', 'index.html');
-                    }*/
-                },
-                {
-                    dest: '<%= config.dist %>/ie/content/',
-                    expand: true,
-                    flatten: false,
-                    cwd: 'flex/out/production/flex/content',
-                    src: '**/*'
-                },
-                {
-                    dest: '<%= config.dist %>/ie/assets/img',
-                    expand: true,
-                    flatten: false,
-                    cwd: 'flex/out/production/flex/assets/img',
-                    src: '**/*'
                 }]
             }
         },
@@ -112,7 +82,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.dist %>',
-                    src: ['*.html', 'templates/*.html'],
+                    src: ['*.html'],
                     dest: '<%= config.dist %>'
                 }]
             }
@@ -125,21 +95,9 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= config.app %>/content/imgs/lrg',
+                    cwd: '<%= config.app %>/img/carousel',
                     src: '{,}*.{png,jpg,jpeg}',
-                    dest: '<%= config.dist %>/content/imgs/lrg'
-                },
-                {
-                    expand: true,
-                    cwd: '<%= config.app %>/content/imgs/thumb',
-                    src: '{,}*.{png,jpg,jpeg}',
-                    dest: '<%= config.dist %>/content/imgs/thumb'
-                },
-                {
-                    expand: true,
-                    cwd: '<%= config.app %>/content/imgs/winery',
-                    src: '{,}*.{png,jpg,jpeg}',
-                    dest: '<%= config.dist %>/content/imgs/winery'
+                    dest: '<%= config.dist %>/img/carousel'
                 },
                 {
                     expand: true,
@@ -155,20 +113,20 @@ module.exports = function(grunt) {
                 src: '<%= config.dist %>/index.html',
                 dest: '<%= config.dist %>/index.html',
                 replacements: [{
-                    from: '<script src="libs/jquery-1.9.1.js"></script>',
-                    to: '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>'
+                    from: '<script src="libs/jquery/jquery.min.js"></script>',
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>'
                 },
                 {
                     from: '<script src="libs/angular.js">',
-                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js">'
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js">'
                 },
                 {
                     from: '<script src="libs/angular-resource.js"></script>',
-                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>'
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>'
                 },
                 {
                     from: '<script src="libs/angular-sanitize.js"></script>',
-                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-sanitize.min.js"></script>'
+                    to: '<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-sanitize.min.js"></script>'
                 }]
             }
         }

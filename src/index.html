@@ -41,12 +41,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand font-heading logo" href="#">R&R</a>
+                <a class="navbar-brand font-heading logo" href="#">R+R</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="" ng-click="setEnglishLanguage()">English</a></li>
-                    <li><a href="" ng-click="setCzechLanguage()">Čeština</a></li>
+                    <li><a href="" ng-click="setCzechLanguage()">Česky</a></li>
                 </ul>
             </div>
         </div>
@@ -80,16 +80,7 @@
 
         <div class="col-md-6 col-md-offset-3">
 
-
-
-
-
-
-
-
-
-
-            <div id="carousel-bestof" class="carousel slide">
+            <div id="carousel-bestof" class="carousel slide" data-interval="2000">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-bestof" data-slide-to="0" class="active"></li>
@@ -103,29 +94,29 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a data-toggle="modal" href="#proPhotosModal"><img src="img/carousel/CAS-014.jpg" class="txt-center-margin"></a>
+                        <a data-toggle="modal" data-remote="true" href="#proPhotosModal"><img src="img/carousel/CAS-014.jpg" class="txt-center-margin"></a>
                     </div>
                     <div class="item">
-                        <a data-toggle="modal" href="#proPhotosModal"><img src="img/carousel/1382778144102_CAS-069.jpg" class="txt-center-margin"></a>
+                        <a data-toggle="modal" data-remote="true" href="#proPhotosModal"><img src="img/carousel/1382778144102_CAS-069.jpg" class="txt-center-margin"></a>
                     </div>
                     <div class="item">
-                        <a data-toggle="modal" href="#proPhotosModal"><img src="img/carousel/1382778144118_CAS-165.jpg" class="txt-center-margin"></a>
+                        <a data-toggle="modal" data-remote="true" href="#proPhotosModal"><img src="img/carousel/1382778144118_CAS-165.jpg" class="txt-center-margin"></a>
                     </div>
                     <div class="item">
-                        <a data-toggle="modal" href="#proPhotosModal"><img src="img/carousel/1382778144121_CAS-177.jpg" class="txt-center-margin"></a>
+                        <a data-toggle="modal" data-remote="true" href="#proPhotosModal"><img src="img/carousel/1382778144121_CAS-177.jpg" class="txt-center-margin"></a>
                     </div>
                     <div class="item">
-                        <a data-toggle="modal" href="#proPhotosModal"><img src="img/carousel/1382778144130_CAS-238.jpg" class="txt-center-margin"></a>
+                        <a data-toggle="modal" data-remote="true" href="#proPhotosModal"><img src="img/carousel/1382778144130_CAS-238.jpg" class="txt-center-margin"></a>
                     </div>
                     <div class="item">
-                        <a data-toggle="modal" href="#proPhotosModal"><img src="img/carousel/1382778144151_CAS-325.jpg" class="txt-center-margin"></a>
+                        <a data-toggle="modal" data-remote="true" href="#proPhotosModal"><img src="img/carousel/1382778144151_CAS-325.jpg" class="txt-center-margin"></a>
                     </div>
                 </div>
 
             </div>
 
             <p class="txt-center padd-v20">
-                <a data-toggle="modal" href="#proPhotosModal" class="link-button-2">View all the professional photos</a>
+                <a data-toggle="modal" data-remote="true" href="#proPhotosModal" class="link-button-2">View all the professional photos</a>
             </p>
 
         </div>
@@ -138,11 +129,13 @@
         <h2 class="font-heading txt-center">Guests' photos</h2>
 
         <div class="col-md-8 col-md-offset-2">
-            <img src="img/yourphotos.jpg" width="100%"/>
+            <a data-toggle="modal" data-remote="true" href="#guestPhotosModal">
+                <img src="img/yourphotos.jpg" width="100%" border="0"/>
+            </a>
 
             <p class="txt-center expanded-lines">
-                <a data-toggle="modal" href="#guestPhotosModal" class="link-button-2">View uploaded photos and videos</a><br/>
-                <a data-toggle="modal" href="#yourPhotosModal" class="link-button-2">View photos from the mobile app</a><br/>
+                <a data-toggle="modal" data-remote="true" href="#guestPhotosModal" class="link-button-2">View guests' photos and videos</a><br/>
+                <a data-toggle="modal" data-remote="true" href="#yourPhotosModal" class="link-button-2">View photos from the mobile app</a><br/>
                 <a href="https://itunes.apple.com/au/app/wedding-party-getting-married/id494214305?mt=8" target="_blank">Download iPhone app</a><br/>
                 <a href="https://play.google.com/store/apps/details?id=com.micromobs.pkk&hl=en" target="_blank">Download Android app</a>
             </p>
@@ -158,8 +151,8 @@
 
         <div class="col-md-12 padded-row">
             <p class="txt-center">
-                <a data-toggle="modal" href="#uploadPhotosModal" class="btn btn-primary btn-lg">Upload your photos and videos now!</a><br>
-                <a data-toggle="modal" href="#guestPhotosModal">View uploaded photos</a>
+                <a data-toggle="modal" data-remote="true" href="#uploadPhotosModal" class="btn btn-primary btn-lg">Upload your photos and videos now!</a><br><br>
+                <a data-toggle="modal" data-remote="true" href="#guestPhotosModal">View uploaded photos</a>
             </p>
         </div>
 
@@ -167,14 +160,16 @@
 
     <footer>
         <div class="footer">
-            <p class="txt-center">wedding@rayandromana.com</p>
+            <p class="txt-center">
+                <img src="img/obscure.png" width="220" height="21">
+            </p>
         </div>
     </footer>
 
 
 
     <!-- Modal: Pro photos -->
-    <div class="modal fade full-window-modal" id="proPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal full-window-modal" id="proPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content full-height">
                 <button type="button" class="close modal-absolute-close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -188,7 +183,7 @@
     </div>
 
     <!-- Modal: Your mobile photos -->
-    <div class="modal fade full-window-modal modal-800" id="yourPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal full-window-modal modal-800" id="yourPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content full-height">
                 <button type="button" class="close modal-absolute-close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -202,7 +197,7 @@
     </div>
 
     <!-- Modal: uploaded photos -->
-    <div class="modal fade full-window-modal" id="guestPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal full-window-modal" id="guestPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content full-height">
                 <button type="button" class="close modal-absolute-close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -216,7 +211,7 @@
     </div>
 
     <!-- Modal: Upload photos -->
-    <div class="modal fade full-window-modal" id="uploadPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal full-window-modal" id="uploadPhotosModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content full-height">
                 <button type="button" class="close modal-absolute-close" data-dismiss="modal" aria-hidden="true">&times;</button>
