@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lte IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en" id="ng-app" ng-app="rayandromana"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en" id="ng-app" ng-app="rayandromana"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en" id="ng-app" ng-app="rayandromana"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en" id="ng-app" ng-app="rayandromana"> <!--<![endif]-->
+<html class="no-js" lang="en" id="ng-app" ng-app="rayandromana">
 
 <head>
     <meta charset="utf-8">
@@ -30,30 +27,21 @@
 
 <body ng-controller="AppController" ng-cloak>
 
-    <!--[if lte IE 8]>
-    <div>
-        <p class="ltie9"><strong>Unfortunately your browser is too old to display the site properly. However you can view the following links to see the photos.</strong></p>
-        <p>
-            <a href="http://rayandromana.smugmug.com/Wedding-Photos" target="_blank" class="link-button-2">View the professional photos</a><br>
-            <a href="http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420" target="_blank" class="link-button-2">View photos from the wedding app</a><br>
-            <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" class="link-button-2">View uploaded photos</a><br>
-            <a href="http://www.smugmug.com/photos/guest/SFHLZ4/cashmore" target="_blank" class="link-button-2">Contribute your photos</a>
-            <br><br><br><br><br><br><br>
-        </p>
-    </div>
-    <![endif]-->
-
     <!--Top Bar-->
 
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"><a href="" ng-click="setEnglishLanguage()">English</a></span>
+                    <span class="icon-bar"><a href="" ng-click="setCzechLanguage()">Česky</a></span>
+                </button>-->
                 <a class="navbar-brand font-heading logo" href="#">R+R</a>
+
+                <!--[if lte IE 8]>
+                <div><p><br>Unfortunately your browser is too old to display this site in its full glory. Try Chrome or Firefox.</strong></p></div>
+                <![endif]-->
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -82,18 +70,15 @@
             </div>
 
             <div class="col-md-6 col-md-offset-3">
-                <p class="sub-title font-primary">To our friends and family, thank you <br>for making our wedding day absolutely perfect.</p>
+                <p class="sub-title font-primary" ng-bind-html="'_Greeting_' | i18n">To our friends and family, thank you <br>for making our wedding day absolutely perfect.</p>
             </div>
         </div>
     </section>
 
     <section class="row padded-row">
-        <!--<h2 class="font-heading txt-center">Professional photos</h2>-->
-
         <div class="col-md-6 col-md-offset-3">
 
             <div id="carousel-bestof" class="carousel slide" data-interval="5000" data-ride="carousel">
-                <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-bestof" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-bestof" data-slide-to="1"></li>
@@ -103,7 +88,6 @@
                     <li data-target="#carousel-bestof" data-slide-to="5"></li>
                 </ol>
 
-                <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
                         <a href="http://rayandromana.smugmug.com/Wedding-Photos" target="_blank" ng-click="openModal('#proPhotosModal', $event)">
@@ -142,7 +126,7 @@
             <p class="txt-center padd-v20">
                 <a href="http://rayandromana.smugmug.com/Wedding-Photos" target="_blank"
                    ng-click="openModal('#proPhotosModal', $event)"
-                   class="link-button-2">View all the professional photos</a>
+                   class="link-button-2" ng-bind-html="'_ProPhotos_' | i18n">View all the professional photos</a>
             </p>
 
         </div>
@@ -152,7 +136,7 @@
     <hr class="col-md-8 col-md-offset-2">
 
     <section class="row padded-row">
-        <h2 class="font-heading txt-center">Guests' photos</h2>
+        <h2 class="font-heading txt-center" ng-bind-html="'_GuestPhotos_' | i18n">Guests' photos</h2>
 
         <div class="col-md-8 col-md-offset-2 guest-container">
 
@@ -162,11 +146,12 @@
 
             <p class="txt-center expanded-lines">
 
-                <a href="http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420" target="_blank" ng-click="openModal('#yourPhotosModal', $event)" class="link-button-2">
+                <a href="http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420" target="_blank" class="link-button-2"
+                    ng-click="openModal('#yourPhotosModal', $event)" ng-bind-html="'_MobileAppLink_' | i18n">
                     View photos from the mobile app
                 </a><br/>
-                <a href="https://itunes.apple.com/au/app/wedding-party-getting-married/id494214305?mt=8" target="_blank">Download iPhone app</a><br/>
-                <a href="https://play.google.com/store/apps/details?id=com.micromobs.pkk&hl=en" target="_blank">Download Android app</a>
+                <a href="https://itunes.apple.com/au/app/wedding-party-getting-married/id494214305?mt=8" target="_blank" ng-bind-html="'_iTunesLink_' | i18n">Download iPhone app</a><br/>
+                <a href="https://play.google.com/store/apps/details?id=com.micromobs.pkk&hl=en" target="_blank" ng-bind-html="'_GooglePlayLink_' | i18n">Download Android app</a>
             </p>
 
         </div>
@@ -177,10 +162,12 @@
     <section class="row padded-row">
         <div class="col-md-12 padded-row">
             <p class="txt-center">
-                <a href="http://www.smugmug.com/photos/guest/SFHLZ4/cashmore" target="_blank" ng-click="openModal('#uploadPhotosModal', $event)" class="btn btn-primary btn-lg">
+                <a href="http://www.smugmug.com/photos/guest/SFHLZ4/cashmore" target="_blank" class="btn btn-primary btn-lg"
+                    ng-click="openModal('#uploadPhotosModal', $event)" ng-bind-html="'_UploadLink_' | i18n">
                     Upload your photos and videos now!
                 </a><br><br>
-                <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" ng-click="openModal('#guestPhotosModal', $event)" class="link-button-2">
+                <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" class="link-button-2"
+                    ng-click="openModal('#guestPhotosModal', $event)" ng-bind-html="'_GuestLink_' | i18n">
                     View guests' photos and videos
                 </a><br/>
             </p>

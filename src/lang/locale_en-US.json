@@ -1,211 +1,34 @@
 [
     {
-        "key":"_BigDay_",
-        "value":"The Big Day"
-    },
-    {
         "key":"_Greeting_",
-        "value":"<p>Welcome to our wedding website. This is the place you’ll find every piece of information you will need regarding our wedding celebration and much more. We are so excited to be spending this special time with friends and family we hold so dear to our hearts.</p><p>We decided to get married in a place close to Romana’s hometown, an area rich in wine, folklore and warm-hearted people. If you are interested to learn some fun facts go to the “Czech this out!” section.</p><p>We can’t wait to see you on our Big Day!</p><p>Lots of love,<br/>Ray & Romana</p>"
+        "value":"To our friends and family, thank you <br>for making our wedding day absolutely perfect."
     },
     {
-        "key":"_Ceremony_",
-        "value":"Ceremony"
+        "key":"_ProPhotos_",
+        "value":"View all the professional photos"
     },
     {
-        "key":"_CeremonyWhere_",
-        "value":"Chateau Chapel, Valtice"
+        "key":"_GuestPhotos_",
+        "value":"Guests' photos"
     },
     {
-        "key":"_CeremonyWhen_",
-        "value":"Saturday, September 28, 2013 | 13:00 - 13:30"
+        "key":"_MobileAppLink_",
+        "value":"View photos from the mobile app"
     },
     {
-        "key":"_CeremonyBus_",
-        "value":"A bus will be organized for everyone to and from the Chateau Chapel leaving from the winery at 12:15pm."
+        "key":"_iTunesLink_",
+        "value":"Download iPhone app"
     },
     {
-        "key":"_Reception_",
-        "value":"Reception"
+        "key":"_GooglePlayLink_",
+        "value":"Download Android app"
     },
     {
-        "key":"_ReceptionWhere_",
-        "value":"Winery by the Chapel, Zaječí"
+        "key":"_UploadLink_",
+        "value":"Upload your photos and videos now!"
     },
     {
-        "key":"_ReceptionWhen_",
-        "value":"Saturday, September 28, 2013 | 14:30 - 16:30"
-    },
-    {
-        "key":"_Winetasting_",
-        "value":"Wine Tasting"
-    },
-    {
-        "key":"_WinetastingWhere_",
-        "value":"Winery by the Chapel, Zaječí"
-    },
-    {
-        "key":"_WinetastingWhen_",
-        "value":"Saturday, September 28, 2013 | 17:30 - 18:30"
-    },
-    {
-        "key":"_WinetastingLabel_",
-        "value":"While we are taking our wedding photos, you can enjoy some fine wine."
-    },
-    {
-        "key":"_Party_",
-        "value":"Party!"
-    },
-    {
-        "key":"_PartyWhere_",
-        "value":"Winery by the Chapel, Zaječí"
-    },
-    {
-        "key":"_PartyWhen_",
-        "value":"Saturday, September 28, 2013 | 19:00"
-    },
-    {
-        "key":"_PartyLabel_",
-        "value":"The newlyweds will open the party with their first dance and then we will all dance 'til we drop! Around 9pm there will also be a buffet dinner available in the Moravian wine cellar."
-    },
-    {
-        "key":"_Location_",
-        "value":"Location / Travel / Accommodation"
-    },
-    {
-        "key":"_LocationSpeil_",
-        "value":"<p>The wedding venue is in the lovely countryside in the south of the Czech Republic. It is quite remote, and not very close to any major city, so you will need to plan your transportation carefully.</p><p>You can fly to Prague or Brno Airport in Czech Republic, but also Vienna in Austria is very close. Romana will help you to find the best option how to get from the airport, please get in touch :)</p><h3>From Prague or Brno</h3><p>You can take train from Prague to Brno, it takes approx. 2.5 hours. Then in Brno train station you just change to a train to Zajeci. There are frequent trains from Brno to Zajeci which take 30 mins. Please contact Romana who will help you to find your best connection as there are some trains that have more stops and take longer.</p><p>When you arrive to Zajeci train station, we can arrange a pick up for you.</p><h3>From Vienna</h3><p>If you fly to Vienna, take a train from Vienna to Breclav. And then in Breclav change for a train to Zajeci. All together it takes 2 hours. When you arrive to Zajeci train station, we can arrange a pick up for you.</p><p>You could also rent a car from Vienna, which is only about an hour away by road.</p>"
-    },
-    {
-        "key":"_Accomm_",
-        "value":"Winery by the Chapel"
-    },
-    {
-        "key":"_AccommSpeil_",
-        "value":"<p>The winery has the accommodation, main reception room, a spa/wellness centre for relaxing on Sunday, as well as a ‘Retro disco’ club with a cool bowling ally, all in one location. So although remote, it has everything there for the weekend of celebrations.</p><p>We will book accommodation for you at the wedding venue. Please go to the RSVP link below to let us know how many nights you need and any requirements you may have.</p><p>1 night - Saturday (28 Sept)<br> 2 nights - Friday and Saturday (27 and 28 Sept)<br> 3 nights - Thursday, Friday and Saturday (26, 27, 28 Sep)</p>"
-    },
-    {
-        "key":"_Photos_",
-        "value":"Photos"
-    },
-    {
-        "key":"_CzechThis_",
-        "value":"Czech this out!"
-    },
-    {
-        "key":"_ScrollSideways_",
-        "value":"Scroll sideways >>"
-    },
-    {
-        "key":"_RSVP_",
-        "value":"RSVP"
-    },
-    {
-        "key":"_Guestbook_",
-        "value":"Guestbook"
-    },
-    {
-        "key":"_Gifts_",
-        "value":"Gifts"
-    },
-    {
-        "key":"_Contact_",
-        "value":"Contact Us"
-    },
-    {
-        "key":"_GiftsSpeil_",
-        "value":"<p>More than just kisses so far we've shared,<br>our home has been made with love and care.<br>Most things we need we’ve already got,<br>like a toaster and kettle, the pans and the pots.<br>A wishing well we thought would be great,<br>(but only if you wish to participate)<br>A gift of money is placed in the well,<br>then make a wish but do not tell.<br>Once we’ve replaced the old with the new,<br>we can look back and say it was thanks to you!<br>And in return for your kindness, we’re sure<br>that one day soon, you'll get what you wished for!</p>"
-    },
-    {
-        "key":"_PhotoTag_",
-        "value":"We will post photos of the wedding here after the big day."
-    },
-    {
-        "key":"_PhotoGuide_",
-        "value":"Click for larger images."
-    },
-    {
-        "key":"_BeerTitle_",
-        "value":"Czech beer"
-    },
-    {
-        "key":"_BeerTitleShort_",
-        "value":"Beer"
-    },
-    {
-        "key":"_BeerText_",
-        "value":"<p>Czech beer is world famous. The Czech Republic is the No. 1 beer drinking nation on the planet, with an annual per capita consummation of some 156 litres. The Czechs have been drinking beer since time immemorial. The secret for Czech beer brewing perfection is the agricultural conditions, which are ideal for growing hops. Chronicles place their cultivation in Bohemia as early as 859 A.D., while the first evidence of their export dates back to 903. Most Czech beers are lagers, brewed naturally from hand-picked hops. Czechs like their beer cellar temperature with a creamy, tall head. When ordering draught beer ask for “male pivo” (0.3l) or “pivo” (0.5l).</p><p>The best known Czech beer is the original Pils beer, Pilsner Urquell, brewed in the town of Plzen and exported worldwide. Many Czechs also drink another Plzen brew, Gambrinus, while Bernard from Eastern Bohemia was recently voted best beer of the year. The most widely exported Czech Beer is Budvar (Budweiser in German), the name of which is also used by an unrelated American brew.</p>"
-    },
-    {
-        "key":"_SlivoTitle_",
-        "value":"Slivovice"
-    },
-    {
-        "key":"_SlivoTitleShort_",
-        "value":"Slivovice"
-    },
-    {
-        "key":"_SlivoText_",
-        "value":"<p>The legendary and much appreciated spirit Slivovice (plum brandy) is made from distilled plums. This beverage is mainly popular in Southern Moravia. Anyone who's been to Moravia will most probably have sampled a glass of slivovice, the potent clear spirit (between 45-60% alcohol), which is synonymous with the region and which the local inhabitants are extremely proud of. Although many Moravians distill their own slivovice, there are also a handful of Czech firms who sell it on the Czech market. You can ask Ray how much he loves to drink it :-P</p><p>And don't worry, there will be plenty of good home-made 'slivo' at our wedding for you to have a taste!</p><p><a href='http://slivovice.org' target='_blank'>http://slivovice.org</a></p>"
-    },
-    {
-        "key":"_FolkloreTitle_",
-        "value":"Moravian folklore"
-    },
-    {
-        "key":"_FolkloreTitleShort_",
-        "value":"Folklore"
-    },
-    {
-        "key":"_FolkloreText_",
-        "value":"<p>The Moravian Slovakia 'Moravske Slovacko' is a region close to our hearts obviously as Romana comes from here. And you will spend a few days there while you are our guest. It is home to unique music, wine, folklore and traditions. It also has a number of historic palaces, gardens and castles, including the UNESCO Heritage Site of Lednice and Valtice (where our wedding ceremony takes place). <a href='http://www.czechtourism.com/c/lednice-valtice-area-unesco' target='_blank'>http://www.czechtourism.com/c/lednice-valtice-area-unesco</a></p><p>Local wine is a visible part of the culture, many people have their own wine cellars and make wine for their own consumption, to share with friends and family. And Romana's family is no exception. Ray could tell you how much fun it is to be doing a 'wine cellar crawl' tasting home-made wine, accompanied with plenty of ham and cheese :)</p><p>The most significant aspect of the region's cultural heritage is its folklore. Folklore traditions are still celebrated regularly at festivals and special occasions. The traditional costumes of this region are ornate and differ from one village to another. On the picture you can see little Romana wearing a local costume :)</p>"
-    },
-    {
-        "key":"_FamousTitle_",
-        "value":"Famous Czechs"
-    },
-    {
-        "key":"_FamousTitleShort_",
-        "value":"Famous Czechs"
-    },
-    {
-        "key":"_FamousText_",
-        "value":"<p>Some of the famous Czechs you might have heard of include: tennis greats Martina Navrátilová and Ivan Lendl, NHL players Jaromír Jágr and Dominik Hašek, architect Jan Kaplický (West India Quay Bridge in London, Selfridges in Birmingham, Lord's Media Centre in London), Oscar winning director Miloš Forman, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodels Petra Němcová, Eva Herzigová and Karolína Kurková; composer Antonín Dvořák, writer Franz Kafka, and early geneticist Gregor Mendel.</p><p>Modern soft contact lenses were the outcome of the work of two Czechs: Drahoslav Lim and Otto Wichterle.</p><p>The word robot was invented by the Czech writer Karel Čapek, who later credited his brother Josef (a famous cartoonist) for coming up with it. Karel wrote the play Rossum’s Universal Robots (R.U.R.) about a factory producing robots and explained that he wanted a name for these creatures that had something to do with the latin labor (work) and his brother suggested roboti (from the Slavic word robota).</p>"
-    },
-    {
-        "key":"_CastleTitle_",
-        "value":"Castles"
-    },
-    {
-        "key":"_CastleTitleShort_",
-        "value":"Castles"
-    },
-    {
-        "key":"_CastleText_",
-        "value":"<p>The Czech Republic is castle capital of the world! Given its location in the center of Europe, there were armies from all sides who always wanted to come through what is today the Czech Republic. As such, they built a lot of castles. Over 2,000 of them are in the country today which is the highest density of castles in the world. Prague castle is also the largest castle in the world by area at over 7 hectares (18 acres). In the picture you can see Valtice castle which is within the UNESCO heritage area 'Lednice-Valtice' where the wedding takes place.<br><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
-    },
-    {
-        "key":"_LanguageTitle_",
-        "value":"And last but not least, a few Czech words for you to learn :)"
-    },
-    {
-        "key":"_LanguageTitleShort_",
-        "value":"Language"
-    },
-    {
-        "key":"_LanguageText_",
-        "value":"<p>Hello = Dobrý den<br>Hi = Ahoj<br>beer = pivo<br>water = voda<br>I don´t understand = Nerozumím<br>My name is = Jmenuji se<br><a href='http://www.expats.cz/prague/article/czech-language/basic-czech/' target='_blank'>Click here to see more</a></p>"
-    },
-    {
-        "key":"_ContactIntro_",
-        "value":"We know that many of you are traveling a long way to get to our wedding so we’re here to help with any questions you may have! We can offer travel tips on Prague and the country in general, give you details about the wedding day or anything else you might need. Or just say hi!"
-    },
-    {
-        "key":"_IPhoneApp_",
-        "value":"Check out the iPhone app!"
-    },
-
-    {
-        "key":"_UserPhotos_",
-        "value":"Your photos"
+        "key":"_GuestLink_",
+        "value":"View guests' photos and videos"
     }
 ]

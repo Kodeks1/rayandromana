@@ -1,210 +1,34 @@
 [
     {
-        "key":"_BigDay_",
-        "value":"Svatební den"
-    },
-    {
         "key":"_Greeting_",
-        "value":"<p>Vítejte na našich stránkách. Vše co potřebujete vědět o našem svatebním dni najdete tady, ale nejen to, také spoustu dalších informací. Jsme moc šťastní, že tento jedinečný žážitek strávíme s rodinou a kamarády, kteří jsou blízcí našemu srdci.</p><p>Rozhodli jsme se vzít v místě nedaleko rodného města Romany, oblasti bohaté na víno, folklór a dobrosrdečné lidi. Pokud máte zájem se dozvědět pár zábavných informací podívejte se na „Czech this out!“ sekci.</p><p>Už se na vás moc těšíme!</p><p> S láskou<br> Ray & Romana</p>"
+        "value":"Děkujeme rodině a přátelům za to, <br>že díky nim byl náš svatební den dokonalý."
     },
     {
-        "key":"_Ceremony_",
-        "value":"Obřad"
+        "key":"_ProPhotos_",
+        "value":"Všechny profesionální fotky"
     },
     {
-        "key":"_CeremonyWhere_",
-        "value":"Zámecká kaple, Valtice"
+        "key":"_GuestPhotos_",
+        "value":"Fotky od hostů"
     },
     {
-        "key":"_CeremonyWhen_",
-        "value":"Sobota, 28. září 2013 | 13:00 - 13:30"
+        "key":"_MobileAppLink_",
+        "value":"Fotky z mobilní aplikace"
     },
     {
-        "key":"_CeremonyBus_",
-        "value":"Ve 12:15 bude připraven autobus, který vás všechny odveze z Vinařství do zámecké kaple na obřad a nazpět."
+        "key":"_iTunesLink_",
+        "value":"Stáhněte si iPhone aplikaci"
     },
     {
-        "key":"_Reception_",
-        "value":"Hostina"
+        "key":"_GooglePlayLink_",
+        "value":"Stáhněte si Android aplikaci"
     },
     {
-        "key":"_ReceptionWhere_",
-        "value":"Vinařství U Kapličky, Zaječí"
+        "key":"_UploadLink_",
+        "value":"Tady přidejte vaše fotky nebo videa!"
     },
     {
-        "key":"_ReceptionWhen_",
-        "value":"Sobota, 28. září 2013 | 14:30 - 16:30"
-    },
-    {
-        "key":"_Winetasting_",
-        "value":"Ochutnávka Vína"
-    },
-    {
-        "key":"_WinetastingWhere_",
-        "value":"Vinařství U Kapličky, Zaječí"
-    },
-    {
-        "key":"_WinetastingWhen_",
-        "value":"Sobota, 28. září 2013 | 17:30 - 18:30"
-    },
-    {
-        "key":"_WinetastingLabel_",
-        "value":"Zatímco se budeme fotit, můžete ochutnat různé druhy místního vína."
-    },
-    {
-        "key":"_Party_",
-        "value":"Party!"
-    },
-    {
-        "key":"_PartyWhere_",
-        "value":"Vinařství U Kapličky, Zaječí"
-    },
-    {
-        "key":"_PartyWhen_",
-        "value":"Sobota, 28. září 2013 | 19:00"
-    },
-    {
-        "key":"_PartyLabel_",
-        "value":"Party odstartuje první tanec novomanželů a pak budeme všichni pařit celou noc! Po deváté hodině bude k dispozici večeře formou bufetu v moravském vinném sklípku."
-    },
-    {
-        "key":"_Location_",
-        "value":"Místo / Doprava / Ubytování"
-    },
-    {
-        "key":"_LocationSpeil_",
-        "value":"<p>Svatba bude v malebném vinařství na jihu České republiky. Je to místo poměrně vzdálené a ne velmi blízko nějakého velkého města, takže si dobře naplánujte cestu.</p><p>Můžete letět do Prahy nebo do Brna v České republice, ale i Vídeň v Rakousku je velmi blízko. Romana vám pomůže najít nejlepší způsob, jak se dostat z letiště, prosím, napište nám :)</p><h3>Z Prahy nebo z Brna</h3><p>Můžete jet vlakem z Prahy do Brna, cesta trvá asi 2,5 hodiny. Pak na nádraží v Brně stačí přestoupit na vlak do Zaječí. Vlaky z Brna do Zaječí jedou často, trvá to 30 min. Prosím, kontaktujte Romanu, která vám pomůže najít nejlepší spojení.</p><p>Po příjezdu na vlakové nádraží v Zaječí bychom vám zajistili odvoz do Vinařství.</p><h3>Z Vídně</h3><p>Pokud poletíte do Vídně, tak pak sedněte na vlak z Vídně do Břeclavi. A pak musíte přesednout v Břeclavi na vlak do Zaječí. Celá cesta dohromady trvá 2 hodiny. Po příjezdu na vlakové nádraží v Zaječí bychom vám zajistili odvoz do Vinařství.</p><p>Můžete si také pronajmout auto z Vídně, neboť je to pouze hodinu jízdou po silnici.</p>"
-    },
-    {
-        "key":"_Accomm_",
-        "value":"Vinařství U Kapličky"
-    },
-    {
-        "key":"_AccommSpeil_",
-        "value":"<p>Vinařství má ubytování, restauraci, wellness centrum, stejně jako 'Retro disco' klub s bowlingem, vše na jednom místě. Takže i když je to vzdálené, je zde vše, abychom si to mohli pořádně užít.</p><p>Ubytování vám zamluvíme ve Vinařství u Kapličky. Dejte nám prosím vědět kolik nocí potřebujete a jakékoliv jiné požadavky, když budete potvrzovat účast formulářem viz níže.</p><p>  1 noc - sobota<br> 2 noci - pátek a sobota</p>"
-    },
-    {
-        "key":"_Photos_",
-        "value":"Photos"
-    },
-    {
-        "key":"_CzechThis_",
-        "value":"Czech this out!"
-    },
-    {
-        "key":"_ScrollSideways_",
-        "value":"Přejděte na stranu >>"
-    },
-    {
-        "key":"_RSVP_",
-        "value":"Potvrdte účast"
-    },
-    {
-        "key":"_Guestbook_",
-        "value":"Nástěnka"
-    },
-    {
-        "key":"_Gifts_",
-        "value":"Svatební dary"
-    },
-    {
-        "key":"_Contact_",
-        "value":"Kontakt"
-    },
-    {
-        "key":"_GiftsSpeil_",
-        "value":"<p>Svatebčané naši milí, dovolte nám prosbičku,<br>raději než věcné dary, naplňte nám kasičku.<br>Potěší nás příspěvek v jakékoliv výši,<br>který nám rozpočet na líbánky zvýší.<br>Mnohokrát vám děkujeme, za každičký halíř,<br>stokrát lepší než nést domů stodesátý talíř :o)<br>Berte tyto řádky jako drobnou radu,<br>svatba není o trápení co pořídit k daru.<br>Pokud něčím přispějete, budeme jen rádi,<br>ale hlavně, když to pořádně oslavíte s námi!</p>"
-    },
-    {
-        "key":"_PhotoTag_",
-        "value":"Později sem také dáme fotky ze svatby."
-    },
-    {
-        "key":"_PhotoGuide_",
-        "value":"Klikněte na obrázek pro zvětšení."
-    },
-    {
-        "key":"_BeerTitle_",
-        "value":"Pivo"
-    },
-    {
-        "key":"_BeerTitleShort_",
-        "value":"Pivo"
-    },
-    {
-        "key":"_BeerText_",
-        "value":"<p>České pivo je světoznámé. Česká republika je na prvním místě v pití piva na světě, s roční konzumací na obyvatele přibližně 156l. Češi pili pivo od nepaměti. Tajemstvím dokonalosti českého pivovarnictví jsou zemědělské podmínky, které jsou ideální pro pěstování chmele. Kroniky datují jeho pěstování v Čechách již v roce 859 našeho letopočtu, zatímco první důkaz jejich vývozu se datuje do roku 903. Většina českých piv jsou ležáky, které se vaří přirozeně z ručně sklízeného chmele. Češi mají pivo rádi o sklepní teplotě s krémovou vysokou pěnou. Při objednávání si řekněte o \"malé pivo\" (0,3 l) nebo \"pivo\" (0,5 l).</p><p>Nejznámější české pivo je původní plzeňské pivo Pilsner Urquell, které se vaří ve městě Plzeň a vyváží do celého světa. Mnoho Čechů také pije další plzeňské pivo Gambrinus, zatímco Bernard z východních Čech, byl nedávno zvolen nejlepším pivem roku. Nejvíce vyváženým českým pivem je Budvar (Budweiser v němčině), jehož jméno je také používáno pro nespřízněné americké pivo.</p>"
-    },
-    {
-        "key":"_SlivoTitle_",
-        "value":"Slivovice"
-    },
-    {
-        "key":"_SlivoTitleShort_",
-        "value":"Slivovice"
-    },
-    {
-        "key":"_SlivoText_",
-        "value":"<p>Legendární slivovice je vyrobena z destilovaných švestek. Tento nápoj je oblíben především na jižní Moravě. Každý, kdo byl na Moravě, pravděpodobně ochutnal štamprli slivovice, silnou čirou lihovinu (mezi 45-60% alkoholu), která je synonymem regionu a na kterou jsou místní obyvatelé velmi hrdí. Ačkoli mnoho Moraváků pálí vlastní slivovici, je zde i několik českých firem, které ji prodávají na českém trhu. Můžete se zeptat Raye, jak moc rád ji pije :-P</p><p>Nic se nebojte, i na naší svatbě bude spousta výborné domácí slivovice!<p><p><a href='http://slivovice.org' target='_blank'>http://slivovice.org</a></p>"
-    },
-    {
-        "key":"_FolkloreTitle_",
-        "value":"Moravský folklór"
-    },
-    {
-        "key":"_FolkloreTitleShort_",
-        "value":"Folklór"
-    },
-    {
-        "key":"_FolkloreText_",
-        "value":"<p>Moravské Slovácko je oblast blízká našemu srdci, neboť Romana odtud pochází. A vy tam také strávíte několik dní, když přijedete na naši svatbu. Je to domov unikátní hudby, vína, folklóru a tradic. Je zde řada historických zahrad, hradů a zámků, včetně Lednicko-valtického areálu spadajícího pod UNESCO. <a href='http://www.czechtourism.com/c/lednice-valtice-area-unesco' target='_blank'>http://www.czechtourism.com/c/lednice-valtice-area-unesco</a></p><p>Místní víno je viditelná část kultury, mnoho lidí má své vlastní vinné sklepy a vyrábí víno pro vlastní spotřebu, pro přátele a rodinu. A Romany rodina není výjimkou. Ray může potvrdit, jak si sám užil chození od sklepa ke sklepu spojeného s ochutnávkou domácího vína, a k vínu nesmí chybět ani spousta šunky a sýru :)</p><p>Nejvýznamnějším aspektem kulturního dědictví tohoto regionu je folklór. Folklórní tradice se stále slaví pravidelně na festivalech a při zvláštních příležitostech. Tradiční kroje jsou nazdobené a liší se od vesnice k vesnici. Na obrázku můžete vidět Romanu jakou malou oblečenou v místním kroji :)</p>"
-    },
-    {
-        "key":"_FamousTitle_",
-        "value":"Slavní Češi"
-    },
-    {
-        "key":"_FamousTitleShort_",
-        "value":"Slavní Češi"
-    },
-    {
-        "key":"_FamousText_",
-        "value":"<p>Možná jste již o některých slyšeli, mezi slavné Čechy patří: tenisová esa Martina Navrátilová a Ivan Lendl, NHL hráči Jaromír Jágr a Dominik Hašek, architekt Jan Kaplický (West India Quay Bridge v Londýně, obchodní dům Selfridges v Birminghamu, Lord's Media Centre v Londýně), oskarový režisér Miloš Forman, Oskar Schindler, Sigmund Freud, Ivana Trump, supermodelky Petra Němcová, Eva Herzigová a Karolína Kurková; skladatel Antonín Dvořák, spisovatel Franz Kafka, a genetik Gregor Mendel.</p><p>Moderní měkké kontaktní čočky byly výsledkem práce dvou Čechů: Drahoslav Lim a Otto Wichterle.</p><p>Slovo robot bylo vynalezeno českým spisovatelem Karlem Čapkem, který později připsal zásluhy za vymyšlení tohoto slova svému bratru Josefovi (slavný karikaturista). Karel napsal hru Rossumovi univerzální roboti (R.U.R.) o továrně na výrobu robotů a vysvětlil, že chtěl název pro tyto tvory, kteří měli co do činění s prací v latině a jeho bratr navrhl Roboti (od slovanského slova robota).</p>"
-    },
-    {
-        "key":"_CastleTitle_",
-        "value":"Hrady a zámky"
-    },
-    {
-        "key":"_CastleTitleShort_",
-        "value":"Hrady"
-    },
-    {
-        "key":"_CastleText_",
-        "value":"<p>Česká republika je hlavním městem zámků na světě! Vzhledem ke své poloze v centru Evropy, spousta různých armád vždy chtěla projít skrze to, co je dnes Česká republika. Proto bylo postaveno mnoho hradů. Nachází se jich zde přes 2000, což je nejvyšší hustota hradů na světě. Pražský hrad je také největší hrad na světě podle rozlohy, která činí více než 7 hektarů (18 akrů). Na obrázku můžete vidět zámek Valtice, který je součástí UNESCO chráněného \"Lednicko-valtického areálu\", kde se koná naše svatba.</p><p><a href='http://travelinos.com/castles/czech-castles' target='_blank'>http://travelinos.com/castles/czech-castles</a><br><a href='http://www.czechtourism.com/a/castles-chateaux' target='_blank'>http://www.czechtourism.com/a/castles-chateaux</a></p>"
-    },
-    {
-        "key":"_LanguageTitle_",
-        "value":""
-    },
-    {
-        "key":"_LanguageTitleShort_",
-        "value":""
-    },
-    {
-        "key":"_LanguageText_",
-        "value":""
-    },
-    {
-        "key":"_ContactIntro_",
-        "value":"Víme, že mnozí z Vás cestují z velké dálky, takže jsme tu pro Vás a rádi zodpovíme jakékoliv dotazy! Můžeme nabídnout tipy ohledně návštěvy Prahy a vůbec České republiky obecně, upřesnit detaily ohledně svatebního dne, nebo cokoliv jiného. Nebo nás můžete přes email jen pozdravit!"
-    },
-    {
-        "key":"_IPhoneApp_",
-        "value":"Check out the iPhone app!"
-    },
-    {
-        "key":"_UserPhotos_",
-        "value":"Vaše fotky"
+        "key":"_GuestLink_",
+        "value":"Otevřít fotky od hostů"
     }
 ]
