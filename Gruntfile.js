@@ -50,6 +50,7 @@ module.exports = function(grunt) {
                         'lang/**/*',
                         'fonts/**/*',
                         'libs/json3.min.js',
+                        'libs/modernizr.custom.06915.js',
                         'index.html',
                         'favicon.ico'
                     ]

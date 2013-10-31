@@ -40,7 +40,7 @@ body {
 }
 
 h2 {
-    font-size: 3.250em;
+    font-size: 3.5em;
     font-weight: normal;
 }
 
@@ -52,8 +52,7 @@ h2 {
 }
 
 .padded-row {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
 .full-height {
@@ -146,11 +145,11 @@ hr {
 }
 
 .modal-800 {
-    width: 800px;
+    width: 870px;
     margin: 0 auto;
 
     .modal-dialog {
-        width: 800px;
+        width: 870px;
     }
 }
 
@@ -176,3 +175,14 @@ hr {
     padding-top: 10px;
 }
 
+.guest-container {
+    padding: 0 40px;
+}
+
+.ltie9 {
+    font-size: 2em;
+}
+
+.lt-ie9 .contentblah {
+    display: none;
+}

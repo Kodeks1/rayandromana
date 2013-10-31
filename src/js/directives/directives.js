@@ -23,8 +23,14 @@ angular.module('rr.directives', [])
      */
     .directive('parallaxBanner', ["$window", function ($window) {
         return function($scope) {
+
+            if (Modernizr.touch) {
+                return; //don't bother for mobiles
+            }
+
             angular.element($window).bind('scroll', function() {
                 $scope.$apply(function () {
+
                     var scrollTop = $(document).scrollTop(),
                         opacity = 1 - (scrollTop / 450),
                         offset = -(30 - (opacity * 70));
