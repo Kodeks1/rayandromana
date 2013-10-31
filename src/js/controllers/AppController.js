@@ -33,8 +33,9 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
 
     $scope.openModal = function(modal, $event) {
 
-        var ie = navigator.userAgent.indexOf("MSIE") > 0;
-        var useBlankAppModal = (modal === '#yourPhotosModal' && ie);
+        var ie = navigator.userAgent.indexOf("MSIE") > 0,
+            useBlankAppModal = (modal === '#yourPhotosModal' && ie),
+            frame;
 
         if (!Modernizr.touch && !useBlankAppModal) {
             $(modal).modal({
@@ -43,13 +44,25 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
             });
 
             if (modal === '#proPhotosModal') {
-                $('#proPhotosFrame').attr('src', 'http://rayandromana.smugmug.com/Wedding-Photos');
+                frame = $('#proPhotosFrame');
+                if (!frame.attr('src')) {
+                    frame.attr('src', 'http://rayandromana.smugmug.com/Wedding-Photos');
+                }
             } else if (modal === '#yourPhotosModal') {
-                $('#yourPhotosFrame').attr('src', 'http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420');
+                frame = $('#yourPhotosFrame');
+                if (!frame.attr('src')) {
+                    frame.attr('src', 'http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420');
+                }
             } else if (modal === '#guestPhotosModal') {
-                $('#guestPhotosFrame').attr('src', 'http://rayandromana.smugmug.com/Guest-Photos');
+                frame = $('#guestPhotosFrame');
+                if (!frame.attr('src')) {
+                    frame.attr('src', 'http://rayandromana.smugmug.com/Guest-Photos');
+                }
             } else if (modal === '#uploadPhotosModal') {
-                $('#uploadPhotosFrame').attr('src', 'http://www.smugmug.com/photos/guest/SFHLZ4/cashmore');
+                frame = $('#uploadPhotosFrame');
+                if (!frame.attr('src')) {
+                    frame.attr('src', 'http://www.smugmug.com/photos/guest/SFHLZ4/cashmore');
+                }
             }
 
             $event.preventDefault();
