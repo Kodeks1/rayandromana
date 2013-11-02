@@ -57,9 +57,8 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
                 }
             } else if (modal === '#guestPhotosModal') {
                 frame = $('#guestPhotosFrame');
-                if (!frame.attr('src')) {
-                    frame.attr('src', 'http://rayandromana.smugmug.com/Guest-Photos');
-                }
+                frame.attr('src', 'http://rayandromana.smugmug.com/Guest-Photos');
+
             } else if (modal === '#uploadPhotosModal') {
                 frame = $('#uploadPhotosFrame');
                 if (!frame.attr('src')) {
