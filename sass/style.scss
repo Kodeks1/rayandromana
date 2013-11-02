@@ -1,6 +1,7 @@
 @import "compass";
 
-/*Fonts*/
+/* Fonts
+   ========================================================================== */
 
 @font-face {
     font-family: 'didot';
@@ -18,7 +19,8 @@
     font-style: normal;
 }
 
-/*Reusable*/
+/* Reusable
+   ========================================================================== */
 
 body {
     background-color: #F9F9F9;
@@ -80,7 +82,8 @@ hr {
     line-height: 220%;
 }
 
-/*Specific*/
+/* Specific
+   ========================================================================== */
 
 .logo {
     font-size: 1.5em;
@@ -179,4 +182,17 @@ hr {
 
 .lt-ie9 .contentblah {
     display: none;
+}
+
+.guests-section {
+    padding-bottom: 60px;
+}
+
+
+/* Overrides
+   ========================================================================== */
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }

@@ -7,17 +7,19 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
     /**
      * Set language to English
      */
-    $scope.setEnglishLanguage = function() {
+    $scope.setEnglishLanguage = function($event) {
         localize.setLanguage('en-US');
         $scope.selectedLang = 'en';
+        $event.preventDefault();
     };
 
     /**
      * Set language to Czech
      */
-    $scope.setCzechLanguage = function() {
+    $scope.setCzechLanguage = function($event) {
         localize.setLanguage('cs-CZ');
         $scope.selectedLang = 'cz';
+        $event.preventDefault();
     };
 
     /**

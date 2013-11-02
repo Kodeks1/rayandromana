@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Ray and Romana</title>
     <meta name="description" content="Ray and Romana :)">
+    <meta name="robots" content="noindex,nofollow">
 
     <!-- build:css css/styles.css -->
     <link rel="stylesheet" href="css/sass-bootstrap.css">
@@ -45,8 +46,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="" ng-click="setEnglishLanguage()">English</a></li>
-                    <li><a href="" ng-click="setCzechLanguage()">Česky</a></li>
+                    <li><a href="#" ng-click="setEnglishLanguage($event)">English</a></li>
+                    <li><a href="#" ng-click="setCzechLanguage($event)">Česky</a></li>
                 </ul>
             </div>
         </div>
@@ -150,8 +151,11 @@
                     ng-click="openModal('#yourPhotosModal', $event)" ng-bind-html="'_MobileAppLink_' | i18n">
                     View photos from the mobile app
                 </a><br/>
-                <a href="https://itunes.apple.com/au/app/wedding-party-getting-married/id494214305?mt=8" target="_blank" ng-bind-html="'_iTunesLink_' | i18n">Download iPhone app</a><br/>
-                <a href="https://play.google.com/store/apps/details?id=com.micromobs.pkk&hl=en" target="_blank" ng-bind-html="'_GooglePlayLink_' | i18n">Download Android app</a>
+
+                <div class="txt-center">
+                    <a href="https://itunes.apple.com/au/app/wedding-party-getting-married/id494214305?mt=8" target="_blank" ng-bind-html="'_iTunesLink_' | i18n">Download iPhone app</a><br/>
+                    <a href="https://play.google.com/store/apps/details?id=com.micromobs.pkk&hl=en" target="_blank" ng-bind-html="'_GooglePlayLink_' | i18n">Download Android app</a>
+                </div>
             </p>
 
         </div>
@@ -159,17 +163,17 @@
 
     <hr class="col-md-8 col-md-offset-2">
 
-    <section class="row padded-row">
+    <section class="row padded-row guests-section">
         <div class="col-md-12 padded-row">
             <p class="txt-center">
+                <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" class="link-button-2"
+                   ng-click="openModal('#guestPhotosModal', $event)" ng-bind-html="'_GuestLink_' | i18n">
+                    View guests' photos and videos
+                </a><br><br><br>
                 <a href="http://www.smugmug.com/photos/guest/SFHLZ4/cashmore" target="_blank" class="btn btn-primary btn-lg"
                     ng-click="openModal('#uploadPhotosModal', $event)" ng-bind-html="'_UploadLink_' | i18n">
                     Upload your photos and videos now!
-                </a><br><br>
-                <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" class="link-button-2"
-                    ng-click="openModal('#guestPhotosModal', $event)" ng-bind-html="'_GuestLink_' | i18n">
-                    View guests' photos and videos
-                </a><br/>
+                </a><br>
             </p>
         </div>
     </section>

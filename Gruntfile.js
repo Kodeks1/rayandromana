@@ -52,7 +52,8 @@ module.exports = function(grunt) {
                         'libs/json3.min.js',
                         'libs/modernizr.custom.06915.js',
                         'index.html',
-                        'favicon.ico'
+                        'favicon.ico',
+                        'robots.txt'
                     ]
                 }]
             }
