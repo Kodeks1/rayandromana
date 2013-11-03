@@ -139,9 +139,22 @@
     <section class="row padded-row">
         <h2 class="font-heading txt-center" ng-bind-html="'_GuestPhotos_' | i18n">Guests' photos</h2>
 
+        <div class="col-md-12 padded-row">
+            <p class="txt-center view-uploaded">
+                <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" class="link-button-2"
+                   ng-click="openModal('#guestPhotosModal', $event)" ng-bind-html="'_GuestLink_' | i18n">
+                    View uploaded photos and videos
+                </a><br>
+                <a href="http://www.smugmug.com/photos/guest/SFHLZ4/cashmore" target="_blank" class="btn btn-primary btn-lg"
+                   ng-click="openModal('#uploadPhotosModal', $event)" ng-bind-html="'_UploadLink_' | i18n">
+                    Upload your photos and videos now!
+                </a><br>
+            </p>
+        </div>
+
         <div class="col-md-8 col-md-offset-2 guest-container">
 
-            <a href="http://weddingpartyapp.com/e/4c4e7e991059574f05d876a0130b5420" target="_blank" ng-click="openModal('#yourPhotosModal', $event)">
+            <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" class="link-button-2" ng-click="openModal('#guestPhotosModal', $event)">
                 <img src="img/yourphotos.jpg" width="100%" border="0"/>
             </a>
 
@@ -153,28 +166,11 @@
                 </a><br/>
 
                 <div class="txt-center">
-                    <a href="https://itunes.apple.com/au/app/wedding-party-getting-married/id494214305?mt=8" target="_blank" ng-bind-html="'_iTunesLink_' | i18n">Download iPhone app</a><br/>
-                    <a href="https://play.google.com/store/apps/details?id=com.micromobs.pkk&hl=en" target="_blank" ng-bind-html="'_GooglePlayLink_' | i18n">Download Android app</a>
+                    <a href="https://itunes.apple.com/au/app/wedding-party-getting-married/id494214305?mt=8" target="_blank" ng-bind-html="'_iTunesLink_' | i18n">Download iPhone app</a><br>
+                    <a href="https://play.google.com/store/apps/details?id=com.micromobs.pkk&hl=en" target="_blank" ng-bind-html="'_GooglePlayLink_' | i18n">Download Android app</a><br><br><br>
                 </div>
             </p>
 
-        </div>
-    </section>
-
-    <hr class="col-md-8 col-md-offset-2">
-
-    <section class="row padded-row guests-section">
-        <div class="col-md-12 padded-row">
-            <p class="txt-center">
-                <a href="http://rayandromana.smugmug.com/Guest-Photos" target="_blank" class="link-button-2"
-                   ng-click="openModal('#guestPhotosModal', $event)" ng-bind-html="'_GuestLink_' | i18n">
-                    View guests' photos and videos
-                </a><br><br><br>
-                <a href="http://www.smugmug.com/photos/guest/SFHLZ4/cashmore" target="_blank" class="btn btn-primary btn-lg"
-                    ng-click="openModal('#uploadPhotosModal', $event)" ng-bind-html="'_UploadLink_' | i18n">
-                    Upload your photos and videos now!
-                </a><br>
-            </p>
         </div>
     </section>
 
