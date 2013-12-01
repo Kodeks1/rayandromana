@@ -59,6 +59,15 @@
         <div class="banner-bg" ng-style="bannerStyle" style="opacity: 1; background-position-y: 40px"></div>
     </section>
 
+
+
+    <div my-component username="{{myThing}}">
+        <p>{{username}}</p>
+        <!--<p>{{myThing}}</p>-->
+    </div>
+    <!--<p>{{myThing}}</p>-->
+
+
     <!--title-->
 
     <section class="row padded-row">
@@ -239,7 +248,13 @@
     <script src="js/app.js"></script>
     <script src="js/directives/directives.js"></script>
     <script src="js/utils/localize.js"></script>
-    <script src="js/utils/analytics.js"></script>
+    <!--<script src="js/utils/analytics.js"></script>-->
+
+
+    <script src="js/mymodule/MyComponent.js"></script>
+
+
+
 
     <script src="libs/sass-bootstrap-compass/js/modal.js"></script>
     <script src="libs/sass-bootstrap-compass/js/carousel.js"></script>

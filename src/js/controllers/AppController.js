@@ -4,6 +4,8 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
 
     $scope.selectedLang = 'en';
 
+    $scope.myThing = 'testa';
+
     /**
      * Set language to English
      */
