@@ -48,7 +48,7 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
             if (modal === '#proPhotosModal') {
                 frame = $('#proPhotosFrame');
                 if (!frame.attr('src')) {
-                    frame.attr('src', 'http://rayandromana.smugmug.com/Wedding-Photos');
+                    frame.attr('src', 'http://rayandromana.smugmug.com/Wedding-Photos/n-WVCcR/');
                 }
             } else if (modal === '#yourPhotosModal') {
                 frame = $('#yourPhotosFrame');
@@ -57,7 +57,7 @@ var AppController = ['$scope', 'localize', function($scope, localize) {
                 }
             } else if (modal === '#guestPhotosModal') {
                 frame = $('#guestPhotosFrame');
-                frame.attr('src', 'http://rayandromana.smugmug.com/Guest-Photos');
+                frame.attr('src', 'http://rayandromana.smugmug.com/Guest-Photos/n-wKX8W/');
 
             } else if (modal === '#uploadPhotosModal') {
                 frame = $('#uploadPhotosFrame');
